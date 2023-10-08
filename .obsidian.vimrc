@@ -8,7 +8,7 @@ exmap surround_curly_brackets surround { }
 
 " NOTE: must use 'map' and not 'nmap'
 map [[ :surround_wiki
-nunmap s
+" nunmap s
 vunmap s
 map s" :surround_double_quotes
 map s' :surround_single_quotes
