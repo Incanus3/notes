@@ -31,6 +31,9 @@ https://github.com/spring-projects/spring-security-samples
 	 * `ProviderManager` also allows configuring an optional parent `AuthenticationManager` which is consulted in the event that no `AuthenticationProvider` can perform authentication.
 * Request Credentials with `AuthenticationEntryPoint` - used for requesting credentials from a client (i.e. redirecting to a log in page, sending a WWW-Authenticate response, etc.)
 * `AbstractAuthenticationProcessingFilter` - a base Filter used for authentication. This also gives a good idea of the high level flow of authentication and how pieces work together
+### relevantni konfiguracni classy
+* `HttpSecurityConfiguration`
+* `AuthenticationConfiguration`
 ### poznamky
 * HttpSecurity:
 	* pokud neni AuthenticationManager nastaven explicitne, tak se v `beforeConfigure()` vytvari volanim `getAuthenticationRegistry().build()`, kde `getAuthenticationRegistry()` vraci `AuthenticationManagerBuilder` (ziskany pomoci `getSharedObject()`)
