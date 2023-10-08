@@ -16,7 +16,6 @@ https://github.com/spring-projects/spring-security-samples
 +--- org.springframework.security:spring-security-ldap -> 5.7.11
 |    +--- org.springframework.security:spring-security-core:5.7.11 (*)
 |    \--- org.springframework.ldap:spring-ldap-core:2.4.1
-
 ### entity, se kterymi spring security pracuje
 * `PasswordEncoder` interface
 	* konkretni implementace, napr. `BCryptPasswordEncoder`
