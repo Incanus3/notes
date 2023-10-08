@@ -32,4 +32,4 @@ https://github.com/spring-projects/spring-security-samples
 ### poznamky
 * HttpSecurity:
 	* pokud neni AuthenticationManager nastaven explicitne, tak se v `beforeConfigure()` vytvari volanim `getAuthenticationRegistry().build()`, kde `getAuthenticationRegistry()` vraci `AuthenticationManagerBuilder` (ziskany pomoci `getSharedObject()`)
- * `AuthenticationManagerBuilder` by mel byt poskytovan `AuthenticationConfiguration` classou
+ * `AuthenticationManagerBuilder` by mel byt poskytovan `AuthenticationConfiguration` classou, jeho vytvoreni ve skutecnosti neni extremne slozity
