@@ -1,0 +1,41 @@
+== inflection CR notes ==
+
+- I'm not sure if it's a good idea to have the "canonical" `InflectedTerm` work with InflectionCode
+  (if I think correctly that InflectionCode is the serialized inflection metadata representation)
+  - ideally there should be some more meaningful canonical representation of Inflection,
+    and InflectionCode should only be the serialized form used for storing them
+- should Inflectable.inflectedTerms really use KMutableProperty0 as the key?
+  - is the mutability relevant? is the absence of receiver relevant?
+  - if neither, we should just use generic KProperty
+  - if only mutability, we should use KMutableProperty
+  - if only absence, we should use KProperty0
+- what does InflectionTemplate interface actually bring to the table? it has only `name` property
+
+
+- kterej vychazi z toho, ze's ten `InflectionCode` zvolil jako hlavni reprezentaci toho
+  `InflectionRule`, takze naprosta vetsina qwazaru pracuje s hnusnejma, nezasvecenymu cloveku nic
+
+
+v tomhle vidim asi nejvetsi neduh tyhle implementace (zbytek jsou drobnosti, ktery se vyresej
+drobnejma lokalnima upravama, nebo par renamama) a je to vlastne opet instance "primitive obsession"
+na kterou uz jsem te kdysi upozornoval u nakyho jinyho MR. ten `InflectedTerm` je rekl bych celkem
+ustredni classou, ty logiky, kterou tohle MR prinasi, a byl by to celkem peknej domenovej objekt,
+kdybys jako reprezentaci toho "inflekcniho pravidla" tady zvolil (peknou, domenovou) classu
+`InflectionRule`, celej kod by pracoval s nim a az nekde na okrajich (po cteni, pred zapisem) by se
+prevadel na `InflectionCode`, kterej ma slouzit jen jako serializovana forma pro ulozeni (do db,
+string slotu, jako render param, atp.), ale pro pouzivani je extremne osklivej tim, ze a)
+nezasvecenym cloveku absolutne nic nerekne a b) nema zadny rozumny propky, se kterym by mohl
+"uzivajici kod" pracovat. tady je to ale obracene - vetsina externiho (vuci InflectionService)
+pracuje s InflectionCode (resp. InflectedTerm, kterej na nem stavi) a az nekde v hloubi ty
+InflectionService (decline -> inflect -> inflectWord) se konecne zavola
+CodeValidator.decodeCode(codeParts), coz je jeste k tomu trochu
+nehezky, protoze 1) proc to je CodeValidator, kdyz je zodpovednej za dekodovani a 2) proc ma ten
+volajici kod bejt zodpovednej za to, ze si nejdriv zavola `isCodeValid`, pak si ten code musi
+splitnout a az pote muze konecne zavolat `decodeCode`. idealne bych chtel proste zavolat neco jako
+`CodeDecoder.decode(code)` a on uz by se postaral o to, ze to nejdriv zvaliduje, pak splitne a pak
+teda konecne z tech partu prevede. ta nepeknost toho, ze externi kod musi pracovat s touhle osklivou
+reprezentaci, je krasne videt v tech Database- a InMemory- DeclinationTestech, kde se ty kody sestavujou jako
+`listOf("D", "pan", "0", "1", "0", "1").joinToString(CODE_PART_SEPARATOR)`. 1) proc mam bejt zvenci
+zodpovednej za to, ze to musim pospojovat separatorem, o kterym by idealne mel vedet `CodeDecoder`
+(resp. encoder, kterej mi tady chybi) a nikdo jinej a hlavne 2) co kurna znamena
+`"D", "pan", "0", "1", "0", "1"`?

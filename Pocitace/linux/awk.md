@@ -1,0 +1,50 @@
+=== Awk ===
+
+- basic syntax - 'condition { actions }'
+  - condition - default true - matches all
+  - actions   - default prints line
+- variables
+  - declared on first usage
+  - automatically coerced to numbers
+- special variables
+  - $0 whole line
+  - $1 - $9 - columns
+  - NR - number of processed lines
+  - NF - number of columns (fields) on current line
+  - FNR - NR for current file
+  - FILENAME - name of current file
+- printing
+  - print $1 "," $6  - concatenates directly
+  - print $1, $6, $5 - prints spaces btw params
+  - printf "%s %15s %.1f\n", $1, $6, $5 - full control
+- conditions
+  - awk '/^2015-/'      - matches whole line
+  - awk '$1 ~ /^2015-/' - matches column (or any other variable)
+  - support all common equality and comparison operators, including ~ and !~
+  - support &&, || and !
+- BEGIN { action }
+  - triggered before any lines are processed
+- END { action }
+  - triggered after all lines are processed
+- BEGIN { action }
+  - triggered before any lines are processed
+- multiple actions either separated by {} blocks, or by ;
+- input separators
+  - -F<sep> param
+- output separators
+  - awk 'BEGIN {OFS=","} {print $1, $6}'
+  - takes regex
+  - e.g. -F, -F'[,-]'
+- arrays/dictionaries
+  - awk '{volume[$1] += $8} END { for(year in volume) print year, volume[year]}'
+- examples
+  - awk '$2 > 100 { print $0 }'
+  - awk '/^2015-12/ {count++; print count, $0}'
+  - awk '!seen[$0]++'    - removes duplicates
+  - awk '++seen[$0] > 2' - shows duplicates
+  - awk '{ groups[$0]++ } END { for (k in groups) print groups[k], k }'
+    - print repetition counts (of whole lines)
+  - awk '{ groups[$1] += $2 } END { for (k in groups) print groups[k], k }'
+    - print sums ($1 as group identifier, $2 as value to be summed)
+  - awk 'NR == FNR {lut[$0] = 1; next} $0 in lut {print}' FILE1 FILE2    - intersection
+  - awk 'NR == FNR {lut[$0] = 1; next} !($0 in lut) {print}' FILE1 FILE2 - difference
