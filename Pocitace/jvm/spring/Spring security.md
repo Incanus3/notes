@@ -27,9 +27,31 @@ https://github.com/spring-projects/spring-security-samples
 * `AuthenticationManager` - the API that defines how Spring Security’s Filters perform authentication
 	* `ProviderManager` - the most common implementation of `AuthenticationManager`
 * `AuthenticationProvider` - used by `ProviderManager` to perform a specific type of authentication
+	* [`ProviderManager`](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/authentication/ProviderManager.html) is the most commonly used implementation of [`AuthenticationManager`](https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/servlet/authentication/architecture.html#servlet-authentication-authenticationmanager). `ProviderManager` delegates to a `List` of [`AuthenticationProvider`s](https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/servlet/authentication/architecture.html#servlet-authentication-authenticationprovider). Each `AuthenticationProvider` has an opportunity to indicate that authentication should be successful, fail, or indicate it cannot make a decision and allow a downstream `AuthenticationProvider` to decide.
+	 * `ProviderManager` also allows configuring an optional parent `AuthenticationManager` which is consulted in the event that no `AuthenticationProvider` can perform authentication.
 * Request Credentials with `AuthenticationEntryPoint` - used for requesting credentials from a client (i.e. redirecting to a log in page, sending a WWW-Authenticate response, etc.)
 * `AbstractAuthenticationProcessingFilter` - a base Filter used for authentication. This also gives a good idea of the high level flow of authentication and how pieces work together
 ### poznamky
 * HttpSecurity:
 	* pokud neni AuthenticationManager nastaven explicitne, tak se v `beforeConfigure()` vytvari volanim `getAuthenticationRegistry().build()`, kde `getAuthenticationRegistry()` vraci `AuthenticationManagerBuilder` (ziskany pomoci `getSharedObject()`)
  * `AuthenticationManagerBuilder` by mel byt poskytovan `AuthenticationConfiguration` classou, jeho vytvoreni ve skutecnosti neni extremne slozity
+
+// - v pripade ldapu bude nejspis lepsi pouzit ProviderManager
+// - na druhou stranu, AuthenticationManagerBuilder ma metodu `ldapAuthentication()`,
+//   ktera aplikuje `LdapAuthenticationProviderConfigurer`,
+//   ktery pak muze byt (presumably) dale konfigurovan
+// - AMB ve skutecnosti vraci ProviderManager, vychazejici z registrovanych
+//   `authenticationProviders` a `parentAuthenticationManager`u (pokud byl nastaven)
+//   - providery lze konfigurovat bud manualne volanim `authenticationProvider()`,
+//     nebo je typicky registruje configurer (viz LdapAuthenticationProviderConfigurer.configure()`
+
+// @Bean
+// override fun authenticationManager(
+//     userDetailsService: UserDetailsService,
+//     objectPostProcessor: ObjectPostProcessor<Any>,
+// ): AuthenticationManager {
+//     // return super.authenticationManager()
+//     return AuthenticationManagerBuilder(objectPostProcessor).also {
+//         it.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder)
+//     }.build()
+// }
