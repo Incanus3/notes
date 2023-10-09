@@ -103,3 +103,11 @@ z AuthenticationManager beanu (ktery muzeme providenout my)
 -> pokud zajistime, ze se nezaregistruje ani `parentAuthenticationManager()`,
    ani zadny authenticationProvider(), tak by se mel pouzit manazer,
    ktery vratime z AuthenticationManager @Beanu
+
+AuthenticationConfiguration.getAuthenticationManager() se vola na 3 mistech:
+- GlobalMethodSecurityConfiguration.authenticationManager()
+- HttpSecurityConfiguration.authenticationManager()
+  - vola se z HSC.httpSecurity(), coz je bean, ktera vraci `HttpSecurity`, coz znamena, ze
+    jakmile injectneme HttpSecurity, tak uz nemuzeme overridnout `authenticationManager`
+- WebSecurityConfigurationAdapter.authenticationManager()
+  - ten je deprecated a snad uz by se volat nemel
