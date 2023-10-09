@@ -40,6 +40,8 @@ https://github.com/spring-projects/spring-security-samples
 	- `HttpSecurityConfiguration` (a `WebSecurityConfigurerAdapter`) maji privatni field na `AuthenticationConfiguration`, ktery se nastavuje v `@Autowired` setteru
 	- `GlobalMethodSecurityConfiguration` taha `AuthenticationConfiguration` z kontextu (primo pres `getBean`)
 	- `@EnableGlobalAuthentication` importuje `AuthenticationConfiguration`
+		- `@EnableGlobalMethodSecurity` pridava `@EnableGlobalAuthentication`
+			- tuhle anotaci mame v projektu na `MethodSecurityConfiguration`, otazka je, zda-li je stale potreba, protoze method security se podle me nepouziva
 
 ### poznamky
 * `HttpSecurity`:
