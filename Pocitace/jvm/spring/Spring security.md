@@ -36,6 +36,11 @@ https://github.com/spring-projects/spring-security-samples
 * `WebSecurityConfiguration`
 * `DelegatingWebMvcConfiguration`
 
+- v jakem poradi se vyhodnocuji?
+	- `HttpSecurityConfiguration` (a `WebSecurityConfigurerAdapter`) maji privatni field na `AuthenticationConfiguration`, ktery se nastavuje v `@Autowired` setteru
+	- `GlobalMethodSecurityConfiguration` taha `AuthenticationConfiguration` z kontextu (primo pres `getBean`)
+	- `@EnableGlobalAuthentication` importuje `AuthenticationConfiguration`
+
 ### poznamky
 * `HttpSecurity`:
 	* pokud neni `AuthenticationManager` nastaven explicitne, tak se v `beforeConfigure()` vytvari volanim `getAuthenticationRegistry().build()`, kde `getAuthenticationRegistry()` vraci `AuthenticationManagerBuilder` (ziskany pomoci `getSharedObject()`)
@@ -105,3 +110,7 @@ viz `(Abstract)DaoAuthenticationConfigurer`)
   - vola se z `WebSecurityConfigurerAdapter.getHttp()` <- `init.()` <- `AbstractConfiguredSecurityBuilder.init(),` coz tedy znamena, ze jde o `SecurityBuilder`, ktery se musi nekde registrovat
   - `AutowiredWebSecurityConfigurersIgnoreParents.getWebSecurityConfigurers()` najde v kontextu vsechny beany typu `WebSecurityConfigurer` (coz je i `WSCAdapter`)
 	  - vola se z `WebSecurityConfiguration.setFilterChainProxySecurityConfigurer()`, coz je `@Autowired` setter
+
+### LDAP
+- https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/servlet/authentication/passwords/ldap.html
+- https://www.zytrax.com/books/ldap/
