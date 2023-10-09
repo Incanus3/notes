@@ -32,8 +32,12 @@ https://github.com/spring-projects/spring-security-samples
 
 ### relevantni konfiguracni classy
 * `AuthenticationConfiguration`
+	* poskytuje `@Bean`y pro `AuthenticationManagerBuilder`, `GlobalAuthenticationConfigurerAdapter`, `InitializeUserDetailsBeanManagerConfigurer`, `InitializeAuthenticationProviderBeanManagerConfigurer`
+	* poskytuje public `getAuthetenticationManager()` getter, ktery nam ale v nasi konfiguraci nejspis k nicemu neni, protoze v tu chvili uz musi byt dobuildovano, teoreticky by ale mohlo jit pouzit v konfiguraci `SimpleAuth`oveho filteru
 * `HttpSecurityConfiguration`
+	* poskytuje `@Bean` pro `HttpSecurity`, coz je `SecurityBuilder` pro `DefaultSecurityFilterChain`
 * `WebSecurityConfiguration`
+	* poskytuje `@Bean`y pro `DelegatingApplicationListener`, `SecurityExpressionHandler`, `springSecurityFilterChain(): Filter`, `WebInvocationPrivilegeEvaluator` a `BeanFactoryPostProcessor`
 * `DelegatingWebMvcConfiguration`
 
 - v jakem poradi se vyhodnocuji?
@@ -51,6 +55,9 @@ https://github.com/spring-projects/spring-security-samples
  * `AuthenticationManagerBuilder` by mel byt poskytovan `AuthenticationConfiguration` classou, jeho vytvoreni ve skutecnosti neni extremne slozity
 
 - `ProviderManager` je v podstate jedinou pouzitelnou implementaci `AuthenticationManager`u (pokud nechceme implementovat vlastni), vsechny ostatni implementace jsou privatni
+- relevantni subclassy `AuthenticationProvider`u:
+	- `AbstractUserDetailsAuthenticationProvider` -> `DaoAuthenticationProvider`
+	- `AnonymousAuthenticationProvider`
 
 - v pripade ldapu bude nejspis lepsi pouzit `ProviderManager`
 - na druhou stranu, `AuthenticationManagerBuilder` ma metodu `ldapAuthentication()`,
