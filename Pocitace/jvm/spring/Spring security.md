@@ -7,8 +7,8 @@ https://github.com/spring-projects/spring-security-samples
 
 ### aktualne pouzivame
 - spring-boot-starter-security -> 2.7.16
-- spring-security-config:5.7.11
 - spring-security-core:5.7.11
+- spring-security-config:5.7.11
 - spring-security-crypto:5.7.11
 - spring-security-web:5.7.11
 - spring-security-ldap -> 5.7.11
@@ -31,13 +31,15 @@ https://github.com/spring-projects/spring-security-samples
 * `AbstractAuthenticationProcessingFilter` - a base Filter used for authentication. This also gives a good idea of the high level flow of authentication and how pieces work together
 
 ### relevantni konfiguracni classy
-* `HttpSecurityConfiguration`
 * `AuthenticationConfiguration`
+* `HttpSecurityConfiguration`
 * `WebSecurityConfiguration`
 * `DelegatingWebMvcConfiguration`
 
 - v jakem poradi se vyhodnocuji?
 	- `HttpSecurityConfiguration` (a `WebSecurityConfigurerAdapter`) maji privatni field na `AuthenticationConfiguration`, ktery se nastavuje v `@Autowired` setteru
+	- `@EnableWebSecurity` importuje `HttpSecurityConfiguration`, `WebSecurityConfiguration` (a taky `SpringWebMvcImportSelector` a `OAuth2ImportSelector`) a pridava `@EnableGlobalAuthentication`
+		- tuhle anotaci mame na `SecurityConfigurationBase`
 	- `GlobalMethodSecurityConfiguration` taha `AuthenticationConfiguration` z kontextu (primo pres `getBean`)
 	- `@EnableGlobalAuthentication` importuje `AuthenticationConfiguration`
 		- `@EnableGlobalMethodSecurity` pridava `@EnableGlobalAuthentication`
@@ -47,6 +49,8 @@ https://github.com/spring-projects/spring-security-samples
 * `HttpSecurity`:
 	* pokud neni `AuthenticationManager` nastaven explicitne, tak se v `beforeConfigure()` vytvari volanim `getAuthenticationRegistry().build()`, kde `getAuthenticationRegistry()` vraci `AuthenticationManagerBuilder` (ziskany pomoci `getSharedObject()`)
  * `AuthenticationManagerBuilder` by mel byt poskytovan `AuthenticationConfiguration` classou, jeho vytvoreni ve skutecnosti neni extremne slozity
+
+- `ProviderManager` je v podstate jedinou pouzitelnou implementaci `AuthenticationManager`u (pokud nechceme implementovat vlastni), vsechny ostatni implementace jsou privatni
 
 - v pripade ldapu bude nejspis lepsi pouzit `ProviderManager`
 - na druhou stranu, `AuthenticationManagerBuilder` ma metodu `ldapAuthentication()`,
