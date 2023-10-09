@@ -39,6 +39,10 @@ https://github.com/spring-projects/spring-security-samples
 * `WebSecurityConfiguration`
 	* poskytuje `@Bean`y pro `DelegatingApplicationListener`, `SecurityExpressionHandler`, `springSecurityFilterChain(): Filter`, `WebInvocationPrivilegeEvaluator` a `BeanFactoryPostProcessor`
 * `DelegatingWebMvcConfiguration`
+	* nesouvisi primo se securitou
+	* importuje ho `@EnableWebMvc` anotace
+	* extenduje `WebMvcConfigurationSupport`, ktery poskytuje spoustu WebMvc-related `@Bean`u
+	* narazil jsem na nej v souvislosti s tim, ze pokud se v `HttpSecurity` konfiguraci `authorizeRequests {}` vola `authorize()` se stringovymi patterny, tak to pada, protoze se z nich snazi vytvorit `MVC` matchery, coz vyzaduje `mvcHandlerMappingIntrospector` `@Bean`, ktery je prave poskytovany touhle classou, ktera v tu chvili ale nejspis jeste neni zprocessovana
 
 - v jakem poradi se vyhodnocuji?
 	- `HttpSecurityConfiguration` (a `WebSecurityConfigurerAdapter`) maji privatni field na `AuthenticationConfiguration`, ktery se nastavuje v `@Autowired` setteru
