@@ -111,4 +111,6 @@ AuthenticationConfiguration.getAuthenticationManager() se vola na 3 mistech:
     jakmile injectneme HttpSecurity, tak uz nemuzeme overridnout `authenticationManager`
 - WebSecurityConfigurationAdapter.authenticationManager()
   - ten je deprecated a snad uz by se volat nemel
-  - vola se z WebSecurityConfigurerAdapter.getHttp() <- init.()
+  - vola se z WebSecurityConfigurerAdapter.getHttp() <- init.() <- AbstractConfiguredSecurityBuilder.init(), coz tedy znamena, ze jde o SecurityBuilder, ktery se musi nekde registrovat
+	  - AutowiredWebSecurityConfigurersIgnoreParents.getWebSecurityConfigurers() najde v kontextu vsechny beany typu `WebSecurityConfigurer` (coz je i `WSCAdapter`)
+	  - vola se z `WebSecurityConfiguration.setFilterChainProxySecurityConfigurer()`
