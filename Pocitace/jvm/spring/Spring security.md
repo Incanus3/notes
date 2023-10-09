@@ -41,22 +41,65 @@ https://github.com/spring-projects/spring-security-samples
 	* pokud neni AuthenticationManager nastaven explicitne, tak se v `beforeConfigure()` vytvari volanim `getAuthenticationRegistry().build()`, kde `getAuthenticationRegistry()` vraci `AuthenticationManagerBuilder` (ziskany pomoci `getSharedObject()`)
  * `AuthenticationManagerBuilder` by mel byt poskytovan `AuthenticationConfiguration` classou, jeho vytvoreni ve skutecnosti neni extremne slozity
 
-// - v pripade ldapu bude nejspis lepsi pouzit ProviderManager
-// - na druhou stranu, AuthenticationManagerBuilder ma metodu `ldapAuthentication()`,
-//   ktera aplikuje `LdapAuthenticationProviderConfigurer`,
-//   ktery pak muze byt (presumably) dale konfigurovan
-// - AMB ve skutecnosti vraci ProviderManager, vychazejici z registrovanych
-//   `authenticationProviders` a `parentAuthenticationManager`u (pokud byl nastaven)
-//   - providery lze konfigurovat bud manualne volanim `authenticationProvider()`,
-//     nebo je typicky registruje configurer (viz LdapAuthenticationProviderConfigurer.configure()`
-
+- v pripade ldapu bude nejspis lepsi pouzit ProviderManager
+- na druhou stranu, AuthenticationManagerBuilder ma metodu `ldapAuthentication()`,
+  ktera aplikuje `LdapAuthenticationProviderConfigurer`,
+  ktery pak muze byt (presumably) dale konfigurovan
+- AMB ve skutecnosti vraci ProviderManager, vychazejici z registrovanych
+  `authenticationProviders` a `parentAuthenticationManager`u (pokud byl nastaven)
+	- providery lze konfigurovat bud manualne volanim `authenticationProvider()`, nebo je typicky registruje configurer (viz LdapAuthenticationProviderConfigurer.configure()`
+	
+```
 // @Bean
 // override fun authenticationManager(
 //     userDetailsService: UserDetailsService,
 //     objectPostProcessor: ObjectPostProcessor<Any>,
 // ): AuthenticationManager {
 //     // return super.authenticationManager()
+//
+//     tady mam akorat trochu obavu, ze pokud si vytvorime vlastni instanci builderu,
+//     tak jiny classy, ktery pouzivaji shared builder, ho nebudou mit spravne nastavenej
+//     problem ale je, ze na shared builderu nemuzeme zavolat build(), protoze ten se smi zavolat
+//     jenom jednou a uz se vola jinde
 //     return AuthenticationManagerBuilder(objectPostProcessor).also {
 //         it.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder)
 //     }.build()
 // }
+
+// UserDetailService se nejspis pouzije automaticky, pokud je nastavena username&password
+// autentifikace, tedy aktualne bud Form, Basic, nebo Digest
+// - v configureru by tedy melo nejspis jit dohledat neco, co springu rekne, ze SimpleAuth je
+//   username&password autentifikace
+
+// UserDetailsService se vola z DaoAuthenticationProvideru (coz je jeden z provideru,
+// registrovanych v ProviderManageru AuthenticationManagerBuilderem,
+// viz (Abstract)DaoAuthenticationConfigurer)
+// - AuthenticationManagerBuilder aplikuje DaoAuthenticationConfigurer pri volani
+//   `.userDetailsService()`
+
+// AuthenticationConfiguration.getAuthenticationManager() builduje AuthenticationManager pomoci
+// AuthenticationManagerBuilder beanu (ktery sama providuje), ale s tim, ze pokud `build()`
+// vrati null (kdy se to muze stat?), nastavi si `this.authanticationManager` primo
+// z AuthenticationManager beanu (ktery muzeme providenout my)
+// - prubeh buildu:
+//   - AbstractSecurityBuilder.build() vola `doBuild()` s tim, ze pokud uz je sbuildovano, hodi vyjimku
+//   - AbstractConfiguredSecurityBuilder.doBuild() vola postupne
+//     - beforeInit() - defaultni implementace nedela nic, nezda se, ze by nekdo overridoval
+//     - init() - zavola init() na vsechny configurery
+//     - beforeConfigure() - defaultni implementace nedela nic, HttpSecurity overriduje tak,
+//       ze pokud uz je nastaven `this.authenticationManager`, nastavi ho jako shared object,
+//       pokud neni, sbuilduje (pomoci `getAuthenticationRegistry().build()`), nastavi jako
+//       shared object, ale neulozi do `this.authenticationManager`
+//     - configure() - zavola configure na vsechny configurery
+//     - preformBuild() - je abstract, overriduje se v AuthenticationManagerBuilderu,
+//       HttpSecurity a WebSecurity
+//       - AuthenticationManagerBuilder.performBuild():
+//         - pokud neni nakonfigurovan (nebyl nastaven parent a ani jeden provider), zaloguje
+//           debug a vrati null, HA!
+//         - vytvori ProviderManager s parentem a providery, donastavi dalsi propky
+//         - prozene `postProcess()`em a vrati
+
+// -> pokud zajistime, ze se nezaregistruje ani `parentAuthenticationManager()`,
+//    ani zadny authenticationProvider(), tak by se mel pouzit manazer,
+//    ktery vratime z AuthenticationManager @Beanu
+```
