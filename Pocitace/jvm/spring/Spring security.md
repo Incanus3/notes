@@ -111,3 +111,4 @@ AuthenticationConfiguration.getAuthenticationManager() se vola na 3 mistech:
     jakmile injectneme HttpSecurity, tak uz nemuzeme overridnout `authenticationManager`
 - WebSecurityConfigurationAdapter.authenticationManager()
   - ten je deprecated a snad uz by se volat nemel
+  - vola se z WebSecurityConfigurerAdapter.getHttp() <- init.()
