@@ -2,6 +2,8 @@
 
 https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/index.html
 https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/servlet/authentication/architecture.html
+https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter
+https://www.baeldung.com/spring-deprecated-websecurityconfigureradapter
 https://www.baeldung.com/kotlin/spring-security-dsl
 https://github.com/spring-projects/spring-security-samples
 
@@ -131,3 +133,6 @@ viz `(Abstract)DaoAuthenticationConfigurer`)
 ### LDAP
 - https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/servlet/authentication/passwords/ldap.html
 - https://www.zytrax.com/books/ldap/
+- https://www.openidentityplatform.org/opendj
+- https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Documentation
+- https://directory.apache.org/studio/
