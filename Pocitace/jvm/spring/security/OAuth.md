@@ -51,3 +51,8 @@
   3. "interni" login
 	- FE obsahuje login form (tak jako doted), ktery postuje na BE endpoint (tak jako doted), BE overi udaje proti auth serveru a bud vytvori, nebo ziska od auth serveru token, ten pak vrati FE
 	- pro FE nejjednodussi reseni - nevyzaduje vubec zadnou upravu
+
+### Zakladni postup rozbehnuti FusionAuth
+- nainstalovat a spustit, nejjednoduseji pres docker compose
+- projit zakladnim wizardem pro nastaveni superusera
+- vytvorit aplikaci
