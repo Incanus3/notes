@@ -55,4 +55,11 @@
 ### Zakladni postup rozbehnuti FusionAuth
 - nainstalovat a spustit, nejjednoduseji pres docker compose
 - projit zakladnim wizardem pro nastaveni superusera
-- vytvorit aplikaci
+- vytvorit aplikaci ![[Screenshot from 2023-11-05 19-54-17.png]]
+- vytvorit uzivatele a pridat mu registraci do aplikace
+![[Screenshot from 2023-11-05 19-58-53.png]]
+- pro schema *3* (viz predchozi sekce) vytvorit API key (idealne omezit jen na nektere endpointy, pokud se nevybere nic, funguje na vsechno)
+![[Screenshot from 2023-11-05 20-00-22.png]]
+- uzivatele pak lze autentifikovat takto:
+![[Screenshot from 2023-11-05 20-02-15.png]]
+- pro vice detailu, viz https://fusionauth.io/articles/oauth/modern-guide-to-oauth#authorization-code-grant
