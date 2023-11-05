@@ -3,8 +3,8 @@
 - https://fusionauth.io/articles/oauth/modern-guide-to-oauth
 - https://fusionauth.io/articles/oauth/saml-vs-oauth
 - https://fusionauth.io/docs/get-started/
+- https://fusionauth.io/docs/quickstarts/
 - https://fusionauth.io/docs/
-- https://aaronparecki.com/oauth-2-simplified/
 - https://oauth.tools/
 
 ### Mody (podle FusionAuth nomenklatury)
