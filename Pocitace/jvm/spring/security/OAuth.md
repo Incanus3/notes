@@ -9,10 +9,13 @@
 
 ### Mody (podle FusionAuth nomenklatury)
 1. Local login and registration
-2. Third-party login and registration _(federated identity)_
-3. First-party login and registration _(reverse federated identity)_
-4. Enterprise login and registration _(federated identity with a twist)_
-5. Third-party service authorization
-6. First-party service authorization
-7. Machine-to-machine authentication and authorization
-8. Device login and registration
+- the same provider (e.g. sentica) controls both the application (e.g. qwazar) and the auth server (e.g. FusionAuth)
+- application redirects to OAuth server pages that handle the registration and log-in, then they're redirected back
+- the OAuth server may be tightly integrated so its pages look consistent with the application's and the user might not even be aware he's left the application
+1. Third-party login and registration _(federated identity)_
+2. First-party login and registration _(reverse federated identity)_
+3. Enterprise login and registration _(federated identity with a twist)_
+4. Third-party service authorization
+5. First-party service authorization
+6. Machine-to-machine authentication and authorization
+7. Device login and registration
