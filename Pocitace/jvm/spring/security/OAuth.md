@@ -30,6 +30,18 @@
 	- one service needs to call other service with authentication
 	- the flow - service 1 requests auth token from auth service (with some credentials), auth service verifies credentials and sends back the token, service 1 calls service 2 and includes the token, service 2 verifies the token agains auth service and only then does the thing it's been asked to do
 8. Device login and registration
+	- used to log in to the user's account on a device that doesn't have a keyboard
+	- for example smart TV or a game console might show a qr code that the user will scan and authenticate using his phone
+
+### OAuth grants
+- grants are authentication flows for obtaining access tokens from the Authorization Server
+- the grant encapsulates a process, data flow and rules used to generate a token
+- the core OAuth2 grants (as outlined in RFC 6749) are:
+1. Authorization Code grant - This grant has a one time authorization code generated after authentication. This is exchanged for the token using server side code.
+2. Implicit grant - A simplified flow to be used by browser based applications implemented with JavaScript. This is a legacy grant. Don’t use this grant.
+3. Resource Owner’s Password Credentials grant - Helpful when the username and password are required for authorization. Also called the Password grant. It should only be used if there is a high level of trust between the Resource Owner and the third-party application or for migrating from legacy systems to OAuth2.
+4. Client Credentials grant - A useful grant when the application is trying to act on behalf of itself without the user’s presence. An example is the Printing Website calling into an Invoice Generation service to create invoices for the prints. This is not done for any user, but instead for the Printing Website itself.
+5. Device grant - Enables users to gain access to an application or device by allowing it to use account information from another application or device.
 
 ### Schemata, ktera by sla pouzit v qwazaru
 1. externi login, interagujici primo s FE
