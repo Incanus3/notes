@@ -22,9 +22,14 @@
 	- this is basically mode *2* from the other side - you are the auth server provider and some application is consuming you're services to delegate their auth to you
 4. Enterprise login and registration _(federated identity with a twist)_
 5. Third-party service authorization
+	- doesn't handle in-application auth externally, but provides access to some external API
+	- user is already logged into the application (either internally, or using some of the previous modes), but he wants to access some external service, for example post on fb, so the application will show sth like "connect your fb account" button, which will redirect to fb oauth page, where user will log in and authorize your application, the application will then get some access token which will allow it to call fb API with your account
 6. First-party service authorization
+	- like mode *5*, but reversed - you're the fb and someone application redirects to you're OAuth to call your APIs using their users' accounts
 7. Machine-to-machine authentication and authorization
-8. Device login and registration
+	- one service needs to call other service with authentication
+	- the flow - service 1 requests auth token from auth service (with some credentials), auth service verifies credentials and sends back the token, service 1 calls service 2 and includes the token
+1. Device login and registration
 
 ### Schemata, ktera by sla pouzit v qwazaru
 1. externi login, interagujici primo s FE
