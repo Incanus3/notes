@@ -28,8 +28,8 @@
 	- like mode *5*, but reversed - you're the fb and someone application redirects to you're OAuth to call your APIs using their users' accounts
 7. Machine-to-machine authentication and authorization
 	- one service needs to call other service with authentication
-	- the flow - service 1 requests auth token from auth service (with some credentials), auth service verifies credentials and sends back the token, service 1 calls service 2 and includes the token
-1. Device login and registration
+	- the flow - service 1 requests auth token from auth service (with some credentials), auth service verifies credentials and sends back the token, service 1 calls service 2 and includes the token, service 2 verifies the token agains auth service and only then does the thing it's been asked to do
+8. Device login and registration
 
 ### Schemata, ktera by sla pouzit v qwazaru
 1. externi login, interagujici primo s FE
