@@ -18,12 +18,13 @@
 	- in some cases, there's also additional "permission grant screen" with sth like "Qwazar wants to access you're user info"
 	- the application can usually also call some of the auth provider APIs, e.g. to get the user's contact list
 	- this can even be combined with mode *1* - application redirects user to local auth server (e.g. FusionAuth), which then provides the ability to log in using some 3rd party service (e.g. google)
-1. First-party login and registration _(reverse federated identity)_
-2. Enterprise login and registration _(federated identity with a twist)_
-3. Third-party service authorization
-4. First-party service authorization
-5. Machine-to-machine authentication and authorization
-6. Device login and registration
+3. First-party login and registration _(reverse federated identity)_
+	- this is basically mode *2* from the other side - you are the auth server provider and some application is consuming you're services to delegate their auth to you
+4. Enterprise login and registration _(federated identity with a twist)_
+5. Third-party service authorization
+6. First-party service authorization
+7. Machine-to-machine authentication and authorization
+8. Device login and registration
 
 ### Schemata, ktera by sla pouzit v qwazaru
 1. externi login, interagujici primo s FE
