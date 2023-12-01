@@ -7,6 +7,11 @@
 - https://fusionauth.io/docs/
 - https://oauth.tools/
 
+### Dotazy na KB
+- jakou technologii pro OAuth pouzivaji?
+- bude se pres OAuth resit jen autentifikace, nebo i autorizace?
+- 
+
 ### Mody (podle FusionAuth nomenklatury)
 1. Local login and registration
 	- the same provider (e.g. sentica) controls both the application (e.g. qwazar) and the auth server (e.g. FusionAuth)
