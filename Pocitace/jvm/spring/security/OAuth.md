@@ -11,7 +11,7 @@
 - jakou technologii pro OAuth pouzivaji?
 - bude k dispozici vyvojova licence, abychom si mohli rozjet lokalne a vyvijet proti tomu?
 - bude se pres OAuth resit jen autentifikace, nebo i autorizace?
-- jaky mod se bude pouzivat? ROZVEST
+- jaky mod se bude pouzivat? v uvahu prichazi 1, 2, potencialne 4, ale tomu moc nerozumim
 
 ### Mody (podle FusionAuth nomenklatury)
 1. Local login and registration
