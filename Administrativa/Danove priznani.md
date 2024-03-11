@@ -1,7 +1,7 @@
 ### Ja
 - [x] vypis z zivnostenskeho rejstriku
 - [x] registrace k dani z prijmu
-- [ ] prehled faktur a prijatych plateb
+- [x] prehled faktur a prijatych plateb
 - [x] zamestnavatel - prehled o zdanitelnych prijmech
 - [ ] VZP - vyuctovani pojistneho
 - [ ] CSSZ - prehled zaloh a plateb
