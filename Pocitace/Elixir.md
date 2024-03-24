@@ -25,7 +25,23 @@
 - https://hexdocs.pm/explorer/Explorer.html - Explorer brings series (one-dimensional) and dataframes (two-dimensional) for fast data exploration to Elixir
 - https://hexdocs.pm/ex_unit/main/ExUnit.html
 - https://github.com/lpil/mix-test.watch
-### Phoenix
+## Phoenix
 - https://hexdocs.pm/phoenix/overview.html
 - https://hexdocs.pm/phoenix_live_view/welcome.html
 - https://hexdocs.pm/ecto/Ecto.html
+- https://ash-hq.org
+- https://surface-ui.org
+- https://daisyui.com/
+	- https://www.moendigital.com/blog/how-add-daisyui-elixir-phoenix-project-and-why-you-should/
+- https://dev.to/lubien/the-lazy-programmers-intro-to-liveview-chapter-1-1487
+- https://www.viget.com/articles/how-to-redirect-from-the-phoenix-router/
+- https://fly.io/phoenix-files/dynamic-forms-with-streams/
+- https://binarynoggin.com/blog/dynamic-form-inputs-in-elixir-liveview/
+- https://www.youtube.com/watch?v=rvwShn-c-_M&ab_channel=GoodToHear - Pragmatic Forms with Phoenix Live View
+### Interesting projects for code exploration
+- https://github.com/livebook-dev/livebook
+- https://github.com/chrismccord/todo_trek
+- https://github.com/fly-apps/live_beats
+	- https://fly.io/blog/livebeats/
+- https://github.com/rauversion/rauversion-phx
+- https://github.com/BanchanArt/banchan
