@@ -20,7 +20,7 @@
 - https://hexdocs.pm/elixir/main/enum-cheat.html
 - https://hexdocs.pm/gen_stage/GenStage.html - Stages are data-exchange steps that send and/or receive data from other stages
 - https://hexdocs.pm/flow/Flow.html - computational flows with stages
-	- [`Flow`](https://hexdocs.pm/flow/Flow.html#content) allows developers to express computations on collections, similar to the [`Enum`](https://hexdocs.pm/elixir/Enum.html) and [`Stream`](https://hexdocs.pm/elixir/Stream.html) modules, although computations will be executed inparallel using multiple [`GenStage`](https://hexdocs.pm/gen_stage/1.2.1/GenStage.html)s.
+	- [`Flow`](https://hexdocs.pm/flow/Flow.html#content) allows developers to express computations on collections, similar to the [`Enum`](https://hexdocs.pm/elixir/Enum.html) and [`Stream`](https://hexdocs.pm/elixir/Stream.html) modules, although computations will be executed in parallel using multiple [`GenStage`](https://hexdocs.pm/gen_stage/1.2.1/GenStage.html)s.
 - https://hex.pm/orgs/dashbit - Jose's company, many interesting libs including broadway, flow and the nimble toolkit
 - https://hexdocs.pm/explorer/Explorer.html - Explorer brings series (one-dimensional) and dataframes (two-dimensional) for fast data exploration to Elixir
 - https://hexdocs.pm/ex_unit/main/ExUnit.html
