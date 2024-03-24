@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-06-11T03:21:35+02:00
-
-====== git ======
-Created Tuesday 11 June 2013
-
 ===== git config =====
 user.name=Jakub Kalab
 user.email=jakub.kalab@friendlysystems.cz

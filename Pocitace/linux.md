@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-06-11T04:30:41+02:00
-
-====== linux ======
-Created Tuesday 11 June 2013
-
 http://www.ansibleworks.com/ - automate server administration
 
 http://www.root.cz/clanky/fail2ban-konec-hadani-hesel-na-serveru/#utm_source=rss&utm_medium=text&utm_campaign=rss

@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-27T03:47:48+01:00
-
-====== vim ======
-Created Wednesday 27 November 2013
-
 http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 http://www.glump.net/howto/desktop/vim-graphical-cheat-sheet-and-tutorial - pdf version of tutorial
 http://www.viemu.com/a-why-vi-vim.html

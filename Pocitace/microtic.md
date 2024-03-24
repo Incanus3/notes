@@ -1,5 +1,3 @@
-=== MIKROTIK ===
-
 - v interfaces-ethernet nastavit jmena portu, rychlost a pokud maji byt porty spojeny/switchovany (master port)
 - v Bridge-Bridge vyvorime bridge pro kazdou vnitrnich sit (treba LAN a DMZ), to nam da pozdeji svobodu sdruzovat do nich ethernetove i wireless interfaces
 - v Bridge-Ports zaradime do jednotlivych bridges interfaces, ktere chceme

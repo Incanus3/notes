@@ -1,5 +1,3 @@
-==== PostgreSQL ====
-
 https://postgresqlco.nf
 - configuration option reference
 

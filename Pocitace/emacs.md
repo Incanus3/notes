@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-08-08T20:31:11+02:00
-
-====== emacs ======
-Created Thursday 08 August 2013
-
 * M-x eshell - shell inside emacs
 * C-h b - describe bindings - shows available key bindings, grouped by modes
 
