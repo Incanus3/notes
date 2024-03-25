@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-06-29T18:35:26+02:00
-
-====== slime ======
-Created Saturday 29 June 2013
-
 slime-cheat-sheet
 help-for-help							C-h ?, C-h C-h	shows various help options
 slime-describe-symbol					C-c C-d d

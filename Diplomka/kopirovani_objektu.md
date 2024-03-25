@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-07-03T11:19:46+02:00
-
-====== kopirovani objektu ======
-Created Wednesday 03 July 2013
-
 * integration test by mel testovat vystup facts a ne pouzivat eenv::find-facts - pouzit with-output-to-string
 * udelat "integration test" na urovni prostredi - nastavit prostredi rucne jako v tst-rete-copy, provest kroky, zkontrolovat finalni objekt jako v integration testech
 * test ekvivalence kopie prostredi

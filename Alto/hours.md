@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-08-14T15:33:12+02:00
-
-====== hours ======
-Created Wednesday 14 August 2013
-
 * vyhrady (oproti rails)
 	* padrino
 		* dokumentace - v guidech jsou zdokumentovane jednotlive casti, nikde ale nejsou poradne priklady toho, jak to funguje dohromady

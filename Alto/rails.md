@@ -1,12 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-08-07T19:34:36+02:00
-
-====== rails ======
-Created Wednesday 07 August 2013
-
-* pouzit turbolinks pro navigaci mezi dny
-
 http://api.rubyonrails.org/classes/ActionView/Helpers/DateHelper.html - select date/time either from Time object or for specific model's (date/time) attribute
 
 * duvody pro pouziti rails:

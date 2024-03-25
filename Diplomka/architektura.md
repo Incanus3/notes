@@ -1,30 +1,23 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-06-29T15:24:52+02:00
-
-====== architektura ======
-Created Saturday 29 June 2013
-
 ===== core =====
 * templates
-'''
+```lisp
 (defclass template () (name slots))
 (defgeneric exil-equal-p (obj1 obj2))
 (defun make-template (name slots))
 (defmacro doslots ((name default template &optional retval) &body body))
-'''
+```
 
 * base-objects
-'''
+```lisp
 (defgeneric copy-object (object))
 (defgeneric object-slot (object slot-spec))
 (defgeneric (setf object-slot) (val object slot-spec))
 (defgeneric atom-position (object atom))
 (defgeneric description (object))
-'''
+```
 
 * patterns
-'''
+```lisp
 (defclass pattern () (negated match-variable))
 (defclass simple-pattern (pattern simple-object) (specifier))
 (defun make-simple-pattern (pattern-spec &key negated match-var))
@@ -33,42 +26,41 @@ Created Saturday 29 June 2013
 (defun variable-p (expr))
 (defun constant-test (desired-value real-value))
 (defun var-or-equal-p (atom1 atom2))
-'''
+```
 
 * facts
-'''
+```lisp
 (defclass fact () ())
 (defclass simple-fact (fact simple-object) (specifier))
 (defun make-simple-fact (fact-spec))
 (defclass template-fact (fact template-object) ())
 (defgeneric make-template-fact (template slot-spec))
-'''
+```
 
 * rules
-'''
+```lisp
 (defclass rule () (name conditions activations))
 (defgeneric rule-equal-p (rule1 rule2))
 (defun make-rule (name conditions activations)
-'''
+```
 
 
 ===== rete =====
-'''
+```lisp
 (defgeneric token-equal-p (token1 token2))
 (defun token->list (token))
-'''
-'''
+```
 
+```lisp
 (defun make-rete (environment))
 (defgeneric add-wme (rete wme))
 (defgeneric rem-wme (rete wme))
 (defgeneric new-production (rete production))
 (defgeneric remove-production (rete production))
-'''
-
+```
 
 ===== environment =====
-'''
+```lisp
 (defclass environment () (watchers templates facts fact-groups strategies current-strategy-name rules rete actNMNMivations))
 ;; constructor:
 (defun make-environment ())
@@ -102,11 +94,11 @@ Created Saturday 29 June 2013
 (defgeneric clear-env (env))
 (defgeneric reset-env (env))
 (defgeneric completely-reset-env (env))
-'''
+```
 
 
 ===== parser =====
-'''
+```lisp
 ;; used by front-end:deftemplate
 (defgeneric parse-template (name slots)
   (:documentation "create template from external representation"))
@@ -125,11 +117,11 @@ Created Saturday 29 June 2013
 ;; used by front-end:defrule
 (defgeneric parse-rule (env name body)
   (:documentation "create rule from external representation"))
-'''
+```
 
 
 ===== front-end =====
-'''
+```lisp
 ;; multiple environments:
 (defmacro defenv (name &key redefine))
 (defmacro setenv (name))
@@ -162,4 +154,4 @@ Created Saturday 29 June 2013
 ;; environment cleanup:
 (defun clear ())
 (defun complete-reset ())
-'''
+```

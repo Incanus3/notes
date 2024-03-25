@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2012-07-16T17:00:34+02:00
-
-====== apache ======
-Created Monday 16 July 2012
-
 ===== vytvoreni hostingu =====
 groupadd -g 5050 client50
 mkdir /var/www/clients/client50

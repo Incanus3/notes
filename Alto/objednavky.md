@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-10T15:21:47+02:00
-
-====== objednavky ======
-Created Tuesday 10 September 2013
-
 mailova schranka pro odesilani mailu z objednavek:
 objednavka@altopraha.cz, obj1244.xP
 smtp.web4u.cz

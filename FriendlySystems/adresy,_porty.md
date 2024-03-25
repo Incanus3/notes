@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2012-08-30T17:43:17+02:00
-
-====== adresy, porty ======
-Created Čtvrtek 30 srpen 2012
-
 multicast:
 239.1.1.1 - lb1,lb2 - corosync, port 5404,5405
 226.94.1.1, port 5405

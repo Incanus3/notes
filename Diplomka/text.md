@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-07-03T21:18:15+02:00
-
-====== text ======
-Created Wednesday 03 July 2013
-
 ===== Literatura =====
 Introduction to Expert Systems - Peter Jackson
 Practical Common Lisp - Peter Seibel

@@ -1,12 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-08-18T23:14:02+02:00
-
-====== centralpoint ======
-Created Sunday 18 August 2013
-
-* vyresit, zda je treba prevadet ciselne hodnoty, obdrzene jako string z params, pri vkladani do db
-
 === zamky ===
 (03:08:57 PM) evzen kalab: s tema zamkama je to takhle: kdyz zakaznici konzumujou v hospode nacitaj se jim body a za ne si muzou vybrat naky odmeny ...
 (03:09:30 PM) evzen kalab: ovsem pred vyberem je poteba zjistit, jestli na danou odmenu ma dost bodu a zaroven to zajistit jako transakci ...
