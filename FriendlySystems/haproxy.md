@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-08-28T14:52:44+02:00
-
-====== haproxy ======
-Created Wednesday 28 August 2013
-
 ==== logovani ====
 http://kvz.io/blog/2010/08/11/haproxy-logging/
 [root@ch01bl02 ~]# cat /etc/rsyslog.d/haproxy 

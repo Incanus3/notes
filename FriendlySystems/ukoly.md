@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2012-06-28T18:35:54+02:00
-
-====== ukoly ======
-Created Thursday 28 June 2012
-
 * lucid - node1-4, web1a, mysql1a, nix
 * precise - dev, testing, production, nebula, lbcka, mail, apps, eye, nove mysql
 

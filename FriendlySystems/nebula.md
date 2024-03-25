@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-04-20T00:27:51+02:00
-
-====== nebula ======
-Created Saturday 20 April 2013
-
 ==== rozlozeni procesoru ====
 * Portal,Portal2 - 4
 * dev,lb1,lb2,mail,production,testing,Violette,test2,WinTest - 2

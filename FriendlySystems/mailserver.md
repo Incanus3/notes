@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2012-07-16T16:53:52+02:00
-
-====== mailserver ======
-Created Monday 16 July 2012
-
 ===== iRedMail =====
 * iRedMail nema zadnou vlastni slozku - je to v podstate jen pohodlny bundle postfixu, spamassassinu, antiviru a roundcube
 

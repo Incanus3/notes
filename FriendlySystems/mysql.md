@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-28T14:04:37+01:00
-
-====== mysql ======
-Created Thursday 28 November 2013
-
 ===== apps =====
 * zabbix pouziva InnoDB engine, /var/lib/mysql/ibdata1 stale roste - zvetsit misto, pripadne upravit nastaveni toho, jak dlouho zabbix informace uchovava
 

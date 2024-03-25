@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2012-07-24T12:53:13+02:00
-
-====== firewally ======
-Created Tuesday 24 July 2012
-
 # EYE:
 * all - 0.0.0.0
 	* 22/tcp - sshd - open
