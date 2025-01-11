@@ -12,7 +12,18 @@
 	- there are actually three "things" (I'd say "entities" here, but this would be easy to confuse with `Entity` above) here
 		- the behavior module above
 		- the "thing" that actually stores the data (which changes in time - mutable state) and a "handle" to communicate with it
-			- this can be either external (e.g. db, file), in which case the "handle" will be a db connection, a file or filne
+			- this can be either "external" (e.g. db, file), in which case the "handle" will be a db connection, a file or filename (depending on whether we want to keep it open), etc.
+			- or it can be "internal", typically a process holding the state (an `Agent`, `GenServer`, etc.), in which case the "handle" will be a `pid`
 - `Repository`
+	- a registry of entity stores, probably in a process (`Agent`)
+	- if we have just one implementation, we can have a single `Repository` module and a `pid` to the storing process (or maybe even register the process under a global name)
+	- if we have more than one implementation, then we need a similar pattern as above - behavior module + handle to the storing process / etc table or whatever
 - `View`
-- `ViewSet`
+	- probably just a function taking some predefined params
+	- each view may live in a separate module, if we don't need to reuse any helper functions, or several views can share one module, if we do
+	- if we wanted to make the contract more formalized, we could use a behavior module instead of a simple function, in this case, we have two options:
+		- one view per module - then the callback function doesn't need to take the view name
+		- more views per module - then it does, but then this is basically a `ViewSet`
+- `ViewSet` - "something" representing a set of related `View`s
+	- this could either be just a map of 
+- `ViewSetRegistry`
