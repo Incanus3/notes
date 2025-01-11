@@ -3,9 +3,16 @@
 	- there are basically two "structures" here:
 		- the "instance" of the entity, holding actual values of the slots (+ id)
 		- the "class" of the entity, holding the slot metadata
-	- we'd typically represent the instance as a `Struc`
-- `EntityStorage` (manager class in `qwazar`)
-- `EntityStore` (manager instance in `qwazar`)
+	- we'll probably represent "class" as a module with a nullary function returning the list of all slots and another function to get the slot metadata by it's name, and the instance as a `Struct` of this module
+- `EntityStorage` (manager class in `qwazar`) - knows how entities are stored in the given type of persistence backend (e.g. db, file, JSON API, etc.)
+	- this will probably be a module implementing a `@behaviour`
+- `EntityStore` (manager instance in `qwazar`) - a specific "instance" of the storage for a specific entity type.
+	- this will probably be a struct holding the storage module + data needed to work with it
+	- for example, if the storage is implemented as an `Agent`, the store will hold the `pid` of the `Agent` process
+	- there are actually three "things" (I'd say "entities" here, but this would be easy to confuse with `Entity` above) here
+		- the behavior module above
+		- the "thing" that actually stores the data (which changes in time - mutable state) and a "handle" to communicate with it
+			- this can be either external (e.g. db, file), in which case the "handle" will be a db connection, a file or filne
 - `Repository`
 - `View`
 - `ViewSet`
