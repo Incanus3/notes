@@ -49,4 +49,24 @@
 		- in this case, we'd loose the re-usability of the `View`s for document generation, but gained the interactivity
 		- in this case, the "render view" handler would be a `LiveView` instead of a `Controller`
 ### First steps
-- we should probably start with the "`View`s as pure functions" model, because it will be much simpler (especially without )
+- we should probably start with the "`View`s as pure functions" model, because it will be much simpler (especially without pre-existing knowledge of `LiveView`) and allow as to try out the rest of the architecture without getting mired up in the `LiveView` (and phoenix in general)
+- how would we start then?
+	- create a phoenix app, add minimal configuration if needed
+	- add the main "render view" route - something like `GET /render/viewset_id/view_id`
+	- add controller for it
+	- add simplest implementation of `View`, `ViewSet` and `ViewSetRegistry`
+	- add a simple `View`, without any data retrieval
+	- retrieve view in the `ViewController`
+	- add simplest implementation of `Entity`, `EntityStorage` and `Repository`
+	- add a simple, specific `Entity` and `EntityStore`
+	- add a `View` utilizing these
+- then we can
+	- refactor and reorganize the above, until it feels right
+	- play with existing parts of the architecture
+	- add different implementations (db entities, EA entities, JSON API entities)
+	- see how far we can take the "views as pure functions" approach - are they interactive enough? where are they lacking? can we solve it or do we need `LiveView`s?
+	- if needed, switch to `LiveView`s
+### Prerequisites
+- should we just start, or study first?
+	- I think I more or less grasp the basic Elixir concepts
+	- maybe go over the  standard lib + OTP to see if I missed something
