@@ -33,9 +33,20 @@
 ### Main flow
 - Elizar would be a web application, so the entry-point will be a request
 - the main type of request (especially if the app is backend-rendered, so we don't need to make FE->BE requests for actions and data retrieval), will be a "get view" request
-### "Get view" request
+#### "Render view" request
 - the `ViewSet` controller (or something similar - maybe a `LiveView`) will receive a request to render `{viewset_id, view_id}` with given `params`
 - the controller will retrieve the `ViewSet` from `ViewSetRegistry` and depending on the considerations above, it will either
 	- call `render(view_id, params, context)` on it
 	- retrieve a view from it and call `render(params, context)` if `View` is a module
-	- retrieve a view f
+	- retrieve a view from it and call it with `(params, context)` if `View` is a function
+### View rendering
+- how will the rendering work? what will the `View` rendering functions return?
+- this is one of the main decisions that need to be made early enough
+- there are two main options here:
+	- the `render` functions will be pure and will return "something to be rendered" - either an `HTML` directly (probably rendered by calling some lower-level phoenix rendering logic), or some data structure, which will then be converted into `HTML` (or something else)
+		- the advantage of this is that we could use the same tools to render other kinds of output, e.g. Word, PDF, etc.
+	- we will want to take advantage of `LiveView` (which would be really nice, because this allows for much more interactive experience), but then the `View`s can no longer be/provide simple pure functions, instead they will probably be `LiveComponents`
+		- in this case, we'd loose the re-usability of the `View`s for document generation, but gained the interactivity
+		- in this case, the "render view" handler would be a `LiveView` instead of a `Controller`
+### First steps
+- we should probably start with the "`View`s as pure functions" model, because it will be much simpler (especially without )
