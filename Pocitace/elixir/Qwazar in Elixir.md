@@ -1,0 +1,11 @@
+### Main concepts and how to implement them
+- `Entity` - a structure with slot metadata
+	- there are basically two "structures" here:
+		- the "instance" of the entity, holding actual values of the slots (+ id)
+		- the "class" of the entity, holding the slot metadata
+	- we'd typically represent the instance as a `Struc`
+- `EntityStorage` (manager class in `qwazar`)
+- `EntityStore` (manager instance in `qwazar`)
+- `Repository`
+- `View`
+- `ViewSet`

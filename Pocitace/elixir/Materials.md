@@ -1,4 +1,3 @@
-## Materials
 ### Books
 - Elixir in Action - https://livebook.manning.com/book/elixir-in-action-third-edition/
 - Programming Phoenix - bohuzel jen pro verzi 1.4 - zastarale
