@@ -69,4 +69,7 @@
 ### Prerequisites
 - should we just start, or study first?
 	- I think I more or less grasp the basic Elixir concepts
-	- maybe go over the  standard lib + OTP to see if I missed something
+	- maybe go over the getting started and OTP guides to see if I missed something
+	- probably should go over the phoenix guides, if/when we decide to switch to `LiveView`s, go over `LiveView` guides
+	- it would be nice to read "Elixir in action" first, but then I may never start
+	- it would be even nicer to read the "Programming Phoenix" and "Programming Phoenix LiveView", but 1) ditto and 2) "programming phoenix" is pretty outdated
