@@ -25,5 +25,17 @@
 		- one view per module - then the callback function doesn't need to take the view name
 		- more views per module - then it does, but then this is basically a `ViewSet`
 - `ViewSet` - "something" representing a set of related `View`s
-	- this could either be just a map of 
+	- this could either be just a map `%{view_name: View}` (where `View` is either a function, or a behavior module)
+	- or the `ViewSet` itself could be a behavior module, implementing `views()` and `render(view, params, context)`
 - `ViewSetRegistry`
+	- a registry of `ViewSet`s
+	- similar design as `Repository` above
+### Main flow
+- Elizar would be a web application, so the entry-point will be a request
+- the main type of request (especially if the app is backend-rendered, so we don't need to make FE->BE requests for actions and data retrieval), will be a "get view" request
+### "Get view" request
+- the `ViewSet` controller (or something similar - maybe a `LiveView`) will receive a request to render `{viewset_id, view_id}` with given `params`
+- the controller will retrieve the `ViewSet` from `ViewSetRegistry` and depending on the considerations above, it will either
+	- call `render(view_id, params, context)` on it
+	- retrieve a view from it and call `render(params, context)` if `View` is a module
+	- retrieve a view f
