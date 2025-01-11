@@ -45,6 +45,7 @@
 - there are two main options here:
 	- the `render` functions will be pure and will return "something to be rendered" - either an `HTML` directly (probably rendered by calling some lower-level phoenix rendering logic), or some data structure, which will then be converted into `HTML` (or something else)
 		- the advantage of this is that we could use the same tools to render other kinds of output, e.g. Word, PDF, etc.
+		- another advantage of this approach is that the `View`s (written by less technical staff) would use a more high-level DSLs to build the pages and didn't need to interact with lower-level stuff like HEEX templates
 	- we will want to take advantage of `LiveView` (which would be really nice, because this allows for much more interactive experience), but then the `View`s can no longer be/provide simple pure functions, instead they will probably be `LiveComponents`
 		- in this case, we'd loose the re-usability of the `View`s for document generation, but gained the interactivity
 		- in this case, the "render view" handler would be a `LiveView` instead of a `Controller`
@@ -72,4 +73,5 @@
 	- maybe go over the getting started and OTP guides to see if I missed something
 	- probably should go over the phoenix guides, if/when we decide to switch to `LiveView`s, go over `LiveView` guides
 	- it would be nice to read "Elixir in action" first, but then I may never start
-	- it would be even nicer to read the "Programming Phoenix" and "Programming Phoenix LiveView", but 1) ditto and 2) "programming phoenix" is pretty outdated
+		- currently read up-to chapter 7.3, but a long time ago - will have to skim it again
+	- it would be even nicer to also read the "Programming Phoenix" and "Programming Phoenix LiveView", but 1) ditto and 2) "programming phoenix" is pretty outdated
