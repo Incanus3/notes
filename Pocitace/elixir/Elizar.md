@@ -45,7 +45,7 @@
 - there are two main options here:
 	- the `render` functions will be pure and will return "something to be rendered" - either an `HTML` directly (probably rendered by calling some lower-level phoenix rendering logic), or some data structure, which will then be converted into `HTML` (or something else)
 		- the advantage of this is that we could use the same tools to render other kinds of output, e.g. Word, PDF, etc.
-		- another advantage of this approach is that the `View`s (written by less technical staff) would use a more high-level DSLs to build the pages and didn't need to interact with lower-level stuff like HEEX templates
+		- another advantage of this approach is that the `View`s (written by less technical staff) would use a more high-level DSLs to build the pages and didn't need to interact with lower-level stuff like HEEX templates and phoenix components
 	- we will want to take advantage of `LiveView` (which would be really nice, because this allows for much more interactive experience), but then the `View`s can no longer be/provide simple pure functions, instead they will probably be `LiveComponents`
 		- in this case, we'd loose the re-usability of the `View`s for document generation, but gained the interactivity
 		- in this case, the "render view" handler would be a `LiveView` instead of a `Controller`
@@ -65,6 +65,7 @@
 	- refactor and reorganize the above, until it feels right
 	- play with existing parts of the architecture
 	- add different implementations (db entities, EA entities, JSON API entities)
+	- start adding more complex stuff, like forms, dependent inputs, bg jobs, reports, etc.
 	- see how far we can take the "views as pure functions" approach - are they interactive enough? where are they lacking? can we solve it or do we need `LiveView`s?
 	- if needed, switch to `LiveView`s
 ### Prerequisites
