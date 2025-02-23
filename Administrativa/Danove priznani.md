@@ -5,10 +5,10 @@
 - [x] zamestnavatel - prehled o zdanitelnych prijmech
 - [ ] VZP - vyuctovani pojistneho
 - [ ] CSSZ - prehled zaloh a plateb
-- [ ] zivotni pojisteni - danove potvrzeni
-- [ ] penzijni pripojisteni - potvrzeni pro danovy odpocet
+- [x] zivotni pojisteni - danove potvrzeni
+- [x] penzijni pripojisteni - potvrzeni pro danovy odpocet
 ### Deti
 - [x] rodny list
 - [x] potvrzeni o skolnem
 - uz neni
-- [ ] neuplatneni slevy partnerem
+- [x] neuplatneni slevy partnerem
