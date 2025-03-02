@@ -13,7 +13,7 @@
 		- the behavior module above
 		- the "thing" that actually stores the data (which changes in time - mutable state) and a "handle" to communicate with it
 			- this can be either "external" (e.g. db, file), in which case the "handle" will be a db connection, a file or filename (depending on whether we want to keep it open), etc.
-			- or it can be "internal", typically a process holding the state (an `Agent`, `GenServer`, etc.), in which case the "handle" will be a `pid`
+			- or it can be "internal", typically a process holding the state (an `Agent`, `GenServer`, etc.), in which case the "handle" will be a `pid` (actually the external handles will often be pids too since they are typically worked with through some managing process)
 - `Repository`
 	- a registry of entity stores, probably in a process (`Agent`)
 	- if we have just one implementation, we can have a single `Repository` module and a `pid` to the storing process (or maybe even register the process under a global name)
