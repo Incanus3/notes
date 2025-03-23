@@ -50,6 +50,7 @@
 	- we will want to take advantage of `LiveView` (which would be really nice, because this allows for much more interactive experience), but then the `View`s can no longer be/provide simple pure functions, instead they will probably be `LiveComponents`
 		- in this case, we'd loose the re-usability of the `View`s for document generation, but gained the interactivity
 		- in this case, the "render view" handler would be a `LiveView` instead of a `Controller`
+- this https://github.com/wkhere/webassembly could be used as inspiration
 ### First steps
 - we should probably start with the "`View`s as pure functions" model, because it will be much simpler (especially without pre-existing knowledge of `LiveView`) and allow as to try out the rest of the architecture without getting mired up in the `LiveView` (and phoenix in general)
 - how would we start then?
