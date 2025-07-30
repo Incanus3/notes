@@ -9,7 +9,8 @@ vim run_postgres.sh # edit name
 ./run_postgres.sh 
 mix phx.gen.auth Accounts User users --hashing-lib argon2
 mix phx.gen.live Test Resource resources name:string age:integer
+# add printed routes to router.ex
 mix setup
 mix test
-mix phx.server
+iex -S mix phx.server
 ```
