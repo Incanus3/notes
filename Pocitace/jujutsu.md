@@ -25,6 +25,7 @@
 	- prints the change log
 	- `-r` - which revisions to show, e.g.:
 		- `jj log -r 'heads(all())'` will print all heads
+	- `--limit n`
 #### configuration
 - `jj git init`
 	- initializes a new repo with git as storage
