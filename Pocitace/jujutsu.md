@@ -11,9 +11,11 @@
 - `jj describe`- describes a change, by default opens editor to write the message
 	- `-m "message"` set the message directly
 - `jj edit <rev>` - switch (move `@`) to `<rev>` to continue editing it
-- `jj next` - switch (move `@`) to the child of current `@`
+- `jj next` - switch (move `@`) to child change
 	- by default, makes a `new` change on top of it
 	- `--edit` don't make a new change - continue editing the existing one
+- `jj prev` - switch (move `@`) to parent change
+- `jj abandon` - abandon (drop) a change
 - `jj squash`- move changes from current change into the parent one (by default)
 	- by default, moves all changes
 	- can take file(set)s
@@ -24,10 +26,16 @@
 	- `-r <rev>` (`--revisions`) - what to rebase - will rebase a single rev, while its descendants will be rebased onto its parent
 	- `-d <rev>` (`--destination`) - what to rebase onto
 - `jj resolve` - resolve rebase/merge conflicts
-- `jj bookmark create` - create a bookmark (named branch)
-- `jj bookmark set <names>` - update bookmark(s)
-	- by default, sets them to point to `@`, but we can specify `-r <rev>`
 - `jj undo` -  undo the last command
+- `jj bookmark` - work with bookmarks (named branches)
+	- subcommands: `list`, `create`, `move`, `set`, `rename`, `forget`, `delete`, `track`, `untrack`
+		- `create` - create a bookmark (named branch)
+		- `set <names>` - update bookmark(s)
+			- by default, sets them to point to `@`, but we can specify `-r <rev>`
+- `jj git remote` - work with git remotes
+	- subcommands: `list`, `add`, `rename`, `remove`
+- `jj git push` - push changes to git remote
+- `jj git fetch` - fetch changes from git remote
 #### informative
 - `jj status`
 	- shows repo status
