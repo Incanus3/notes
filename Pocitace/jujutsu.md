@@ -49,7 +49,8 @@
 			- any unique prefix of ID can be used
 		- `@` - current working change
 	- an operator applied to other rev-sets
-		- `<rev>-` - parent of `<rev>`
+		- `<rev>-` - parent of `<rev>` (which one?)
+		- `<rev>+` - child of `<rev>` (which one?)
 		- `x & y` - changes that are in both `x` and `y` (an intersection)
 		- `x | y` - changes in either (a union)
 		- `::x` - ancestors of `x`
@@ -58,7 +59,7 @@
 	- a function application
 		- `root()` - the root change
 		- `trunk()` - looks for a remote named `origin` or `upstream`, and looks for a `main`, `master`, or `trunk` branch, and then provides that. since we don't have any of those right now, it gives us the same as `root()`
-		- `all()` - all visible changes (?)
+		- `all()` - all visible (?) changes
 		- `mine()` - all changes authored by current user
 		- `parents(x)`
 		- `ancestors(x)` - same as `::x`
