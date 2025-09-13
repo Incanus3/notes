@@ -18,6 +18,9 @@
 	- can take file(set)s
 	- `-i` interactive
 	- default (no rev-set specified) is equal to `-r @` or `--from @ --into @-`
+- `jj rebase` - rebase a change onto a new parent
+	- `-r <rev>` (`--revisions`) - what to rebase - will detach (and re-attach) it and its descendants
+	- `-d <rev>` (`--destination`) - what to rebase onto
 - `jj undo` -  undo the last command
 #### informative
 - `jj status`
