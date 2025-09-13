@@ -1,4 +1,4 @@
-### Commands
+## Commands
 #### change management
 - `jj new`- creates a new change, empty and undescribed by default
 	- `-m "message"` set the starting message
@@ -30,3 +30,10 @@
 	- `--colocate` - use existing git repo - git commands can be used alongside `jj`
 - `jj config`
 	- get/set config options
+
+## Revsets
+- most commands take optional `-r` param, which defaults to `@`
+- 
+- commit IDs - hex digits
+- change IDs - only letters g..z - never collide with commit ID
+- any unique prefix of ID can be used
