@@ -46,8 +46,10 @@
 		- `x | y` - changes in either (a union)
 		- `::x` - ancestors of `x`
 		- `x::` - descendants of `x`
+		- ...
 	- a function application
 		- `root()` - the root change
+		- `trunk()` - looks for a remote named `origin` or `upstream`, and looks for a `main`, `master`, or `trunk` branch, and then provides that. since we don't have any of those right now, it gives us the same as `root()`
 		- `all()` - all visible changes (?)
 		- `mine()` - all changes authored by current user
 		- `parents(x)`
@@ -55,3 +57,7 @@
 		- `ancestors(x, depth)`
 		- `heads(x)` - commits in `x` that are not ancestors of other commits in `x`
 		- `description(x)`: commits that have `x` in their description
+		- ...
+	- more complex expressions composed of the previous:
+		- `jj log -r 'author("Steve Klabnik") & description(print)'`
+		- `jj log -r '@ | ancestors(remote_bookmarks().., 2) | trunk()'`
