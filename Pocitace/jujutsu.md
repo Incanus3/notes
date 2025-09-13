@@ -35,6 +35,9 @@
 - `jj git remote` - work with git remotes
 	- subcommands: `list`, `add`, `rename`, `remove`
 - `jj git push` - push changes to git remote
+	- `-b <bookmark>` push only this bookmark
+	- `--all` all bookmarks
+	- `-c <rev>` push this change by creating a bookmark
 - `jj git fetch` - fetch changes from git remote
 #### informative
 - `jj status`
