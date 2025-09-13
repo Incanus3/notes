@@ -6,6 +6,7 @@
 	- `-A <rev>` create the change after `<rev>`
 	- can take one or more parent rev-sets
 		- if the parent already has a child, this will create a branching
+	- when more than one parent is specified, it creates a merge change
 - `jj describe`- describes a change, by default opens editor to write the message
 	- `-m "message"` set the message directly
 - `jj edit <rev>` - switch (move `@`) to `<rev>` to continue editing it
@@ -17,6 +18,7 @@
 	- can take file(set)s
 	- `-i` interactive
 	- default (no rev-set specified) is equal to `-r @` or `--from @ --into @-`
+- `jj undo` -  undo the last command
 #### informative
 - `jj status`
 	- shows repo status
