@@ -25,6 +25,8 @@
 	- `-d <rev>` (`--destination`) - what to rebase onto
 - `jj resolve` - resolve rebase/merge conflicts
 - `jj bookmark create` - create a bookmark (named branch)
+- `jj bookmark set <names>` - update bookmark(s)
+	- by default, sets them to point to `@`, but we can specify `-r <rev>`
 - `jj undo` -  undo the last command
 #### informative
 - `jj status`
