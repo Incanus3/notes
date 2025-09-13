@@ -4,6 +4,7 @@
 	- `-m "message"` set the starting message
 	- `-B <rev>` create the change before `<rev>`
 	- `-A <rev>` create the change after `<rev>`
+	- `--no-edit` don't switch `@` to the new change
 	- can take one or more parent rev-sets
 		- if the parent already has a child, this will create a branching
 	- when more than one parent is specified, it creates a merge change
