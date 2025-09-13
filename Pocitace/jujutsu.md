@@ -23,6 +23,8 @@
 	- `-s <rev>` (`--revisions`) - what to rebase - will detach (and re-attach) it and its descendants - typical usage
 	- `-r <rev>` (`--revisions`) - what to rebase - will rebase a single rev, while its descendants will be rebased onto its parent
 	- `-d <rev>` (`--destination`) - what to rebase onto
+- `jj resolve` - resolve rebase/merge conflicts
+- `jj bookmark create` - create a bookmark (named branch)
 - `jj undo` -  undo the last command
 #### informative
 - `jj status`
