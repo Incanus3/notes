@@ -19,7 +19,8 @@
 	- `-i` interactive
 	- default (no rev-set specified) is equal to `-r @` or `--from @ --into @-`
 - `jj rebase` - rebase a change onto a new parent
-	- `-r <rev>` (`--revisions`) - what to rebase - will detach (and re-attach) it and its descendants
+	- `-s <rev>` (`--revisions`) - what to rebase - will detach (and re-attach) it and its descendants
+	- `-r <rev>` (`--revisions`) - what to rebase - will rebase a single rev, while its descendants will be rebased onto its parent
 	- `-d <rev>` (`--destination`) - what to rebase onto
 - `jj undo` -  undo the last command
 #### informative
