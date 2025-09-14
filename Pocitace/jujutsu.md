@@ -21,12 +21,16 @@
 	- can take file(set)s
 	- `-i` interactive
 	- default (no rev-set specified) is equal to `-r @` or `--from @ --into @-`
+- `jj split` - split a revision in two
 - `jj rebase` - rebase a change onto a new parent
 	- `-s <rev>` (`--revisions`) - what to rebase - will detach (and re-attach) it and its descendants - typical usage
 	- `-r <rev>` (`--revisions`) - what to rebase - will rebase a single rev, while its descendants will be rebased onto its parent
 	- `-d <rev>` (`--destination`) - what to rebase onto
 - `jj resolve` - resolve rebase/merge conflicts
+- `jj restore` - restore files from other revs - similar to `git checkout` with file path
+- `jj revert` - apply the reverse of the given revision(s)
 - `jj undo` -  undo the last command
+- `jj redo` -  redo the last undo
 - `jj bookmark` - work with bookmarks (named branches)
 	- subcommands: `list`, `create`, `move`, `set`, `rename`, `forget`, `delete`, `track`, `untrack`
 		- `create` - create a bookmark (named branch)
@@ -40,14 +44,15 @@
 	- `-c <rev>` push this change by creating a bookmark
 - `jj git fetch` - fetch changes from git remote
 #### informative
-- `jj status`
-	- shows repo status
+- `jj status` - shows repo status
 	- `--no-pager`
-- `jj log`
-	- prints the change log
+- `jj show` - show details of revision
+- `jj log` - prints the change log
 	- `-r` - which revisions to show, e.g.:
 		- `jj log -r 'heads(all())'` will print all heads
 	- `--limit n`
+- `jj op log` - shows a log of all operations
+	- this is useful when making more edits without creating a new change
 #### configuration
 - `jj git init`
 	- initializes a new repo with git as storage
