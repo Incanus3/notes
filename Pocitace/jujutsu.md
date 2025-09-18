@@ -22,6 +22,8 @@
 	- `-i` interactive
 	- default (no rev-set specified) is equal to `-r @` or `--from @ --into @-`
 - `jj split` - split a revision in two
+	- this is nice, but can be really confusing
+	- if you specify paths, those will appear in the **new**
 - `jj rebase` - rebase a change onto a new parent
 	- `-s <rev>` (`--revisions`) - what to rebase - will detach (and re-attach) it and its descendants - typical usage
 	- `-r <rev>` (`--revisions`) - what to rebase - will rebase a single rev, while its descendants will be rebased onto its parent
