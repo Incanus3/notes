@@ -1,1 +1,5 @@
 - `ls -l | where size > 1kb | sort-by size | reverse`
+- `ps | where status not-in [Sleeping, Unknown]`
+- `ps | describe` - prints type of the output
+	- > `table<pid: int, ppid: int, name: string, status: string, cpu: float, mem: filesize, virtual: filesize> (stream)`
+- `^ps aux` - external (non-tabular) command
