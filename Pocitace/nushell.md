@@ -3,3 +3,4 @@
 - `ps | describe` - prints type of the output
 	- > `table<pid: int, ppid: int, name: string, status: string, cpu: float, mem: filesize, virtual: filesize> (stream)`
 - `^ps aux` - external (non-tabular) command
+- `ls | sort-by size | reverse | first | get name | cp $in ~` - use stdin as param
