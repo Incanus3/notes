@@ -1,0 +1,1 @@
+- `ls -l | where size > 1kb | sort-by size | reverse`
