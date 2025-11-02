@@ -9,5 +9,5 @@ https://github.com/impulse-os/impulseos-live - would be really nice, but doesn't
 
 ### Config files
 ~/.config/hypr
-~/.config/illogical-impulse
 ~/.config/quickshell
+~/.config/illogical-impulse
