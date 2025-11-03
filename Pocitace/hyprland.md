@@ -12,5 +12,11 @@ https://github.com/impulse-os/impulseos-live - would be really nice, but doesn't
 ~/.config/quickshell
 ~/.config/illogical-impulse
 
-3024_night - bright but readable, black bg
+- 3024_night - bright but readable, black bg
+- adwaita dark, alabaster dark, bl1nk, bright lights - nice, pastel, good bg
+- Base4Tone - some of them nice
+- atom - brighter, good bg
+- carbonfox - similar
+- github dark
+- campbell - darker bg
 afterglow, arthur, AtomOneLight, ayu_light, ayu_mirage - pastel colors, black bg
