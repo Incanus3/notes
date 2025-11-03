@@ -13,7 +13,7 @@ https://github.com/impulse-os/impulseos-live - would be really nice, but doesn't
 ~/.config/illogical-impulse
 
 - 3024_night - bright but readable, black bg
-- alabaster darkk
+- alabaster darkk - ***
 - adwaita dark - nice, pastel, good bg
 - argonaut
 - bl1nkk
@@ -21,7 +21,6 @@ https://github.com/impulse-os/impulseos-live - would be really nice, but doesn't
 - Base4Tone - some of them nice
 - atom - brighter, good bg
 - hardcore - very nice
-- carbonfox - similar
 - mathias
 - molokai
 - github dark
@@ -38,6 +37,8 @@ https://github.com/impulse-os/impulseos-live - would be really nice, but doesn't
 - obsidian
 #### middle bg
 - brogrammer - ***
+- carbonfox - ***
+- cherry midnight
 - seti
 - wombat
 #### darker bg
