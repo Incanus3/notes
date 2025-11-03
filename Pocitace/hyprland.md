@@ -13,7 +13,11 @@ https://github.com/impulse-os/impulseos-live - would be really nice, but doesn't
 ~/.config/illogical-impulse
 
 - 3024_night - bright but readable, black bg
-- adwaita dark, alabaster dark, bl1nk, bright lights - nice, pastel, good bg
+- alabaster darkk
+- adwaita dark - nice, pastel, good bg
+- argonaut
+- bl1nkk
+- bright lights
 - Base4Tone - some of them nice
 - atom - brighter, good bg
 - hardcore - very nice
@@ -33,6 +37,7 @@ https://github.com/impulse-os/impulseos-live - would be really nice, but doesn't
 - night lion v2
 - obsidian
 #### middle bg
+- brogrammer - ***
 - seti
 - wombat
 #### darker bg
