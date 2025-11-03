@@ -13,4 +13,4 @@ https://github.com/impulse-os/impulseos-live - would be really nice, but doesn't
 ~/.config/illogical-impulse
 
 3024_night - bright but readable, black bg
-afterglow - 
+afterglow, arthur, AtomOneLight, ayu_light, ayu_mirage - pastel colors, black bg
