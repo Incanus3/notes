@@ -16,7 +16,35 @@ https://github.com/impulse-os/impulseos-live - would be really nice, but doesn't
 - adwaita dark, alabaster dark, bl1nk, bright lights - nice, pastel, good bg
 - Base4Tone - some of them nice
 - atom - brighter, good bg
+- hardcore - very nice
 - carbonfox - similar
+- mathias
+- molokai
 - github dark
-- campbell - darker bg
-afterglow, arthur, AtomOneLight, ayu_light, ayu_mirage - pastel colors, black bg
+- grape
+- modus vivendi
+- kaolin aurora
+- monokai soda
+- kibble
+- kurayami
+- mayukai
+- material dark
+- neobones_dark
+- night lion v2
+- obsidian
+#### middle bg
+- seti
+- wombat
+#### darker bg
+- campbell
+- gnome-ishl
+- liquid carbon transl
+- mishran
+- night lion v1
+- papercolor dark
+- paul millr
+- symfonic
+- tango dark
+- vibrant ink
+- vscode_dark
+- wez
