@@ -2,6 +2,7 @@ https://wiki.hypr.land
 https://ii.clsty.link/en/
 https://github.com/end-4/dots-hyprland
 https://ii.clsty.link/en/ii-qs/03config/
+https://ii.clsty.link/en/ii-qs/01setup/#post-installation
 https://github.com/uiriansan/SilentSDDM
 https://wiki.archlinux.org/title/Hyprland
 https://wiki.archlinux.org/title/KDE_Wallet#Using_the_KDE_Wallet_to_store_ssh_key_passphrases
