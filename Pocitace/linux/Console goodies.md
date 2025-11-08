@@ -1,9 +1,11 @@
 - https://ghostty.org/docs - fast terminal emulator with really good font rendering
 - https://eza.rocks - a great alternative to ls
 - https://github.com/sharkdp/fd - a nice alternative to find
+- https://github.com/sharkdp/bat - cat with wings
 - https://yazi-rs.github.io - terminal file manager
 - https://junegunn.github.io/fzf/ - fuzzy finder
 	- https://junegunn.github.io/fzf/shell-integration/
+- https://tldr.sh - simplified man pages
 - https://zellij.dev - terminal multiplexer with discoverable actions
 - https://starship.rs - a nice prompt
 - https://fishshell.com - a modern shell
