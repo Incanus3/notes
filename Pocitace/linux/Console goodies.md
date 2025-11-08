@@ -1,4 +1,4 @@
-- https://ghostty.org/docs - fast terminal emulator with really good font rendering
+- https://ghostty.org - fast terminal emulator with really good font rendering
 - https://eza.rocks - a great alternative to ls
 - https://github.com/sharkdp/fd - a nice alternative to find
 - https://github.com/sharkdp/bat - cat with wings
