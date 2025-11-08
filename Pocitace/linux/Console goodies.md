@@ -1,0 +1,5 @@
+- https://eza.rocks - a great alternative to ls
+- https://yazi-rs.github.io - terminal file manager
+- https://zellij.dev - terminal multiplexer with discoverable actions
+- https://fishshell.com - a modern shell
+- https://starship.rs - a nice prompt

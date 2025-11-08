@@ -1,7 +1,3 @@
-http://www.ansibleworks.com/ - automate server administration
-
-http://www.root.cz/clanky/fail2ban-konec-hadani-hesel-na-serveru/#utm_source=rss&utm_medium=text&utm_campaign=rss
-
 # PORTS TO PROCESSES:
 for line in `netstat -lnp 2>&1 | awk '{if (match($0,"UNIX")) exit; print}' | tail -n +3 | cut -c 1-5,21-38,80-120 | egrep ':digit:+\.:digit:+\.:digit:+\.:digit:+::digit:+'`
 do echo 
