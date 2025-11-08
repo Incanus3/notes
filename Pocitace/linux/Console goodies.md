@@ -2,6 +2,7 @@
 - https://github.com/sharkdp/fd - a nice alternative to find
 - https://yazi-rs.github.io - terminal file manager
 - https://junegunn.github.io/fzf/ - fuzzy finder
+	- https://junegunn.github.io/fzf/shell-integration/
 - https://zellij.dev - terminal multiplexer with discoverable actions
 - https://starship.rs - a nice prompt
 - https://fishshell.com - a modern shell
