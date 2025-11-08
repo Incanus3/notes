@@ -1,3 +1,4 @@
+- https://ghostty.org/docs - fast terminal emulator with really good font rendering
 - https://eza.rocks - a great alternative to ls
 - https://github.com/sharkdp/fd - a nice alternative to find
 - https://yazi-rs.github.io - terminal file manager
@@ -9,4 +10,4 @@
 	- https://github.com/PatrickF1/fzf.fish - fzf integration
 - https://jj-vcs.github.io/ - a modern vcs
 	- https://github.com/idursun/jjui - nice ui
-- https://github.com/garabik/grc - a generic coloursier
+- https://github.com/garabik/grc - a generic colouriser
