@@ -2,6 +2,12 @@
 - https://eza.rocks - a great alternative to ls
 - https://github.com/sharkdp/fd - a nice alternative to find
 - https://github.com/sharkdp/bat - cat with wings
+- https://github.com/dalance/procs - a better ps
+- https://github.com/aristocratos/btop - a better htop
+- https://github.com/BurntSushi/ripgrep - a better grep
+- https://github.com/imsnif/bandwhich - bandwidth usage monitor
+- https://github.com/dundee/gdu - fast disk usage analyzer
+- https://github.com/bootandy/dust - similar, but recursive graph
 - https://yazi-rs.github.io - terminal file manager
 - https://junegunn.github.io/fzf/ - fuzzy finder
 	- https://junegunn.github.io/fzf/shell-integration/
