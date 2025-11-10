@@ -12,6 +12,8 @@
 - https://yazi-rs.github.io - terminal file manager
 - https://junegunn.github.io/fzf/ - fuzzy finder
 	- https://junegunn.github.io/fzf/shell-integration/
+- https://alexpasmantier.github.io/television/
+	- fuzzy finder tui with customizable sources
 - https://tldr.sh - simplified man pages
 - https://zellij.dev - terminal multiplexer with discoverable actions
 - https://starship.rs - a nice prompt
