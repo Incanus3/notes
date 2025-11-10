@@ -22,3 +22,7 @@
 - https://jj-vcs.github.io/ - a modern vcs
 	- https://github.com/idursun/jjui - nice ui
 - https://github.com/garabik/grc - a generic colouriser
+- https://neovim.io - a modern text editor
+	- https://astronvim.com
+	- https://www.lazyvim.org
+	- https://nvchad.com
