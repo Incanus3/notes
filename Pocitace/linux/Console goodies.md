@@ -2,6 +2,7 @@
 - https://eza.rocks - a great alternative to ls
 - https://github.com/sharkdp/fd - a nice alternative to find
 - https://github.com/sharkdp/bat - cat with wings
+	- https://github.com/eth-p/bat-extras
 - https://github.com/dalance/procs - a better ps
 - https://github.com/aristocratos/btop - a better htop
 - https://github.com/BurntSushi/ripgrep - a better grep
