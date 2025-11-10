@@ -19,6 +19,7 @@
 - https://starship.rs - a nice prompt
 - https://fishshell.com - a modern shell
 	- https://github.com/PatrickF1/fzf.fish - fzf integration
+- https://www.nushell.sh - another shell great for working with structured data
 - https://jj-vcs.github.io/ - a modern vcs
 	- https://github.com/idursun/jjui - nice ui
 - https://github.com/garabik/grc - a generic colouriser
