@@ -16,6 +16,8 @@
 	- fuzzy finder tui with customizable sources
 - https://tldr.sh - simplified man pages
 - https://zellij.dev - terminal multiplexer with discoverable actions
+	- https://github.com/dj95/zjstatus
+	- https://github.com/b0o/zjstatus-hints
 - https://starship.rs - a nice prompt
 - https://fishshell.com - a modern shell
 	- https://github.com/PatrickF1/fzf.fish - fzf integration
