@@ -1,6 +1,7 @@
 https://wiki.hypr.land
-https://ii.clsty.link/en/
+https://danklinux.com/docs/
 https://github.com/end-4/dots-hyprland
+https://ii.clsty.link/en/
 https://ii.clsty.link/en/ii-qs/03config/
 https://ii.clsty.link/en/ii-qs/01setup/#post-installation
 https://github.com/uiriansan/SilentSDDM
