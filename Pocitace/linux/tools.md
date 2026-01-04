@@ -1,4 +1,5 @@
 https://lnav.org
+https://github.com/goodroot/hyprwhspr
 http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
 ### sitove utility
 - nslookup, host, dig, whois
