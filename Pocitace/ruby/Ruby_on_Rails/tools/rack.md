@@ -1,15 +1,7 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-02T10:54:44+01:00
-
-====== rack ======
-Created Saturday 02 November 2013
-
+https://github.com/rack/rack-attack
 http://railscasts.com/episodes/317-rack-app-from-scratch - build a rack app from the scratch
 
-rails-footnotes - display various usefull info in page footer
-
-===== rack middleware used in rails apps =====
+### rack middleware used in rails apps
 * ActionDispatch::RemoteIp
 	* env["action_dispatch.remote_ip"] = GetIp.new(env,self) - stores remote ip in request.env
 
