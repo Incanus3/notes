@@ -36,6 +36,10 @@ http://www.youtube.com/watch?v=iUe6tacW3JE - deconstructing the framework
 	* wrappers for external services (good reason for models) - ruby has a culture of fast change without much regard to backward compatibility - you want
 		to insulate yourself from their api
 
+http://www.youtube.com/watch?v=uDaBtqEYNBo - Rocky Mountain Ruby 2013 How I architected my big Rails app for success! by Ben Smith
+  * avoid cyclical dependencies in rails app (e.g. User <-> Post)
+  * use engines to cut monolitic app to pieces - better scalability, easier parallel development
+
 http://www.informit.com/store/practical-object-oriented-design-in-ruby-an-agile-primer-9780321721334
 http://www.amazon.com/gp/product/0321603508 - Refactoring - ruby edition
 
@@ -43,7 +47,6 @@ http://blog.steveklabnik.com/posts/2011-09-06-the-secret-to-rails-oo-design
 http://blog.steveklabnik.com/posts/2011-09-09-better-ruby-presenters
 
 http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052
-
 * instead of supplying several callbacks as procs to a method for handling various result states
   (e.g. payment service object method may result in success or 5 types of failures) or processing all
   exceptions it may throw (which must be done around every call), you can implement callbacks as

@@ -1,1 +1,2 @@
 - https://www.youtube.com/@AICodeKing/videos
+- https://github.com/decodingai-magazine
