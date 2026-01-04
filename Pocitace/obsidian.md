@@ -1,0 +1,1 @@
+https://github.com/jesse-r-s-hines/obsidian-open-tab-settings
