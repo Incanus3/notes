@@ -1,13 +1,5 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-30T14:42:24+01:00
-
-====== controls ======
-Created Saturday 30 November 2013
-
-:h index - list of all commands
-
-=== motion ===
+`:h index` - list of all commands
+### motions
 * hjkl - left, down, up, right
 * w - start of next word
 * e - end of this word
@@ -20,15 +12,15 @@ Created Saturday 30 November 2013
 * M - screen middle
 * () - beg/end of sentence
 * {} - beg/end of paragraph
-* t<char> - forward before char
-* f<char> - forward on char
-* <number><motion> - repeat motion
-* % go to matching ), ], or } and back
+* `t<char>` - forward before char
+* `f<char>` - forward on char
+* `<number><motion>` - repeat motion
+* `%` go to matching ), ], or } and back
 * G - go to EOF
 * <number>G - go to line <number>
 * searching (/, ?) works as motion, so we can do d/ge<cr> and the text between cursor and first occurrence of "ge" is deleted
 
-=== commands ===
+### commands
 * u - undo
 * U - undo whole line
 * . - repeat last change

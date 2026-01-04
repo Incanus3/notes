@@ -1,6 +1,7 @@
 https://github.com/rack/rack-attack
+https://github.com/MiniProfiler/rack-mini-profiler
+- http://samsaffron.com/archive/2012/07/12/miniprofiler-ruby-edition
 http://railscasts.com/episodes/317-rack-app-from-scratch - build a rack app from the scratch
-
 ### rack middleware used in rails apps
 * ActionDispatch::RemoteIp
 	* env["action_dispatch.remote_ip"] = GetIp.new(env,self) - stores remote ip in request.env
