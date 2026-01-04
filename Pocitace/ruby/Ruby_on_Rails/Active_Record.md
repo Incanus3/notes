@@ -1,11 +1,4 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-17T00:08:57+02:00
-
-====== Active Record ======
-Created Tuesday 17 September 2013
-
-* config/initializers/inflections.rb - configure translating singular forms to plural
+http://api.rubyonrails.org/classes/ActiveRecord/Aggregations/ClassMethods.html
 
 ===== columns =====
 * Model.column_names
