@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-08T14:58:49+02:00
-
-====== testing ======
-Created Sunday 08 September 2013
-
 http://martinfowler.com/articles/mocksArentStubs.html
 * state/behavior verification
 * classical/mockist testing
@@ -27,6 +20,7 @@ http://martinfowler.com/articles/mocksArentStubs.html
 Avoiding method chains is also known as following the Law of Demeter
 
 http://fredwu.me/post/59395419899/writing-sensible-tests-for-happiness
+http://robots.thoughtbot.com/how-to-stub-external-services-in-tests/
 
 https://github.com/stympy/faker - generate random data - names, numbers, emails, streets, ...
 http://robots.thoughtbot.com/post/23039827914/get-your-callbacks-on-with-factory-girl-3-3 - nice examples of more advanced factory_girl usage
