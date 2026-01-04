@@ -1,26 +1,3 @@
-=== Thu, 3.4. ===
-
-- prace - alto
-  - 1.15-2
-    - client now has proper error message when associated user couldn't be
-      created
-      - added custom validation
-      - added translation for user attribute and error message
-      - tested in Client::Create service spec
-  = 0h45
-
-http://www.elasticsearch.org/blog/kibana-3-0-0-ga-now-available/
-http://www.elasticsearch.org/guide/en/kibana/current/index.html
-http://www.elasticsearch.org/resources/
-http://www.elasticsearch.org/blog/elasticsearch-definitive-guide
-http://www.elasticsearch.org/overview/elkdownloads
-http://logstash.net/docs/1.4.0/
-http://www.elasticsearch.org/blog/logstash-1-4-0-ga-unleashed
-https://github.com/elasticsearch/kibana/tree/master/docs
-http://www.elasticsearch.com/blog/press/elasticsearch-releases-logstash-1-4-makes-log-analysis-faster-simpler
-
-
-=== Tomáš ===
   Ahoj Tomáši,
 v prvé řadě se omlouvám, že píši tak pozdě. Nechtěl jsem ale psát jen proto,
 abych něco napsal, aniž bych měl co říci. Nejprve jsem dokončoval studium, potom

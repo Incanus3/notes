@@ -41,3 +41,6 @@ http://pivotal.github.io/jasmine/ - RSpec-like testing framework for javascript
 https://github.com/jnicklas/capybara#drivers - capybara-webkit - headless, can execute JS, faster; poltergeist - uses PhantomJS, 'truly headless', will detect javascript errors, may be even faster
 
 https://github.com/bblimke/webmock - stubbing and expectations for HTTP requests - e.g. when communicating with external API
+### commerce
+https://spreecommerce.org - open source eCommerce platform giving you full control and customizability
+- https://github.com/spree/spree

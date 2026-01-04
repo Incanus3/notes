@@ -1,26 +1,13 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-02T10:50:39+01:00
-
-====== standard library ======
-Created Saturday 02 November 2013
-
-===== FileUtils =====
-'''
-pry(main)> ls FileUtils
-FileUtils.methods: 
-'''
-
-            ''cd              compare_stream  install   mv                       rm         ''
-''  chdir           copy            link      options                  rm_f       ''
-''  chmod           copy_entry      ln        options_of               rm_r       ''
-''  chmod_R         copy_file       ln_s      private_module_function  rm_rf      ''
-''  chown           copy_stream     ln_sf     pwd                      rmdir      ''
-''  chown_R         cp              makedirs  remove                   rmtree     ''
-''  cmp             cp_r            mkdir     remove_dir               safe_unlink''
-''  collect_method  getwd           mkdir_p   remove_entry             symlink    ''
-''  commands        have_option?    mkpath    remove_entry_secure      touch      ''
-''  compare_file    identical?      move      remove_file              uptodate?''  
-
-
+- FileUtils
 * File.expand_path(path - possibly relative, may start with ~, starting-point = '.')
+
+http://tech.natemurray.com/2007/03/ruby-shell-commands.html
+- exec 'command' - replaces process by command, than exits
+- system 'command' - runs command in subshell, returns true/false, sets $? to
+  exit status (integer)
+- `comand` - returns output of the command (in array of lines), sets $? to
+  Process::Status object (user .to_i or .exitstatus)
+- IO.popen(command,&block) - yields IO object bound to stdin and stdout of
+  process
+- stdin,stdout,stderr = Open3.popen3(command)
+  http://www.ruby-doc.org/stdlib-2.1.1/libdoc/open3/rdoc/Open3.html
