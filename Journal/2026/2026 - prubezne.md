@@ -1,0 +1,2 @@
+- pri programovani vice pouzivat AI
+- delat cinnosti driv - dokud mam v hlave kontext a nez me zacnou strasit
