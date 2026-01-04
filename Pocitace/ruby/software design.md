@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-08T15:26:45+02:00
-
-====== software desing ======
-Created Sunday 08 September 2013
-
 * SOLID
 https://practicingruby.com/articles/shared/tvtqekhpyjla
 http://confreaks.com/videos/240-goruco2009-solid-object-oriented-design
@@ -58,3 +51,6 @@ http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052
     - if it's not - e.g. three different calls to the service object all can result in the same
       failures, but the handling code for them needs to differ, then separate handling is needed -
       either by rescuing exceptions or providing callback procs, etc.
+### decorators
+http://robots.thoughtbot.com/post/14825364877/evaluating-alternative-decorator-implementations-in
+method_missing, Delegator, SimpleDelegator, DelegateClass, or Forwardable.

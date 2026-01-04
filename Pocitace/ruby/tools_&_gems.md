@@ -1,9 +1,4 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-08T15:54:45+02:00
-
-====== tools & gems ======
-Created Sunday 08 September 2013
+https://www.ruby-toolbox.com/
 
 https://github.com/tarcieri/http - very simple dsl for making http requests
 
@@ -24,10 +19,4 @@ https://github.com/cowboyd/mvcli - framework for creating cli apps with rails-li
 
 https://github.com/tpope/gem-browse - use gem open to open gem with root set correctly, gem clone also works, gem browse shows homepage
 
-
-===== God =====
-http://godrb.com/ - God is an easy to configure, easy to extend monitoring framework written in Ruby.
-* god watch.log by mel logovat STDOUT (pokud neni definovany, STDOUT se presmeruje do /dev/null), watch.err_log by mel logovat STDERR (pokud neni definovany, STDERR se presmeruje do STDOUT)
-	* kdyz ale tisknu do STDOUT, god nic neloguje - musim tisknout do STDERR (vytvorit issue)
-
-https://rvm.io/deployment/god
+http://godrb.com/ - god is an easy to configure, easy to extend monitoring framework written in Ruby.
