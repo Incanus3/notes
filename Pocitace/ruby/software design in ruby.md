@@ -1,3 +1,5 @@
+- [ ] move non-ruby-specific stuff out
+
 * SOLID
 https://practicingruby.com/articles/shared/tvtqekhpyjla
 http://confreaks.com/videos/240-goruco2009-solid-object-oriented-design

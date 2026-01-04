@@ -21,6 +21,7 @@ Avoiding method chains is also known as following the Law of Demeter
 
 http://fredwu.me/post/59395419899/writing-sensible-tests-for-happiness
 http://robots.thoughtbot.com/how-to-stub-external-services-in-tests/
+http://brentlavelle.wordpress.com/2011/04/04/rspec-and-instance-variables/
 
 https://github.com/stympy/faker - generate random data - names, numbers, emails, streets, ...
 http://robots.thoughtbot.com/post/23039827914/get-your-callbacks-on-with-factory-girl-3-3 - nice examples of more advanced factory_girl usage
