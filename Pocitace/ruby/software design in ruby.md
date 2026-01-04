@@ -1,13 +1,5 @@
 - [ ] move non-ruby-specific stuff out
 
-* SOLID
-https://practicingruby.com/articles/shared/tvtqekhpyjla
-http://confreaks.com/videos/240-goruco2009-solid-object-oriented-design
-video - 20th minute - questions you should ask yourself when your tests go green:
-is it DRY?
-does it have one resoponsibility?
-does everything in it change at the same rate?
-does it depend on things that change less often than it does?
 http://www.growing-object-oriented-software.com/
 http://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/[[http://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445/|0135974445/]]
 
