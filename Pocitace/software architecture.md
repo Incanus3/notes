@@ -20,6 +20,8 @@ http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052
 	
 http://www.growing-object-oriented-software.com
 https://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445
+### sites
+http://sourcemaking.com/ - design patterns, refactoring
 ### concepts
 http://en.wikipedia.org/wiki/Connascence_(computer_programming)
 http://en.wikipedia.org/wiki/Law_of_Demeter

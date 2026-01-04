@@ -11,6 +11,12 @@ http://vimcasts.org/
 http://got-ravings.blogspot.cz/search/label/vim
 http://blog.venthur.de/index.php/2013/09/what-are-the-most-popular-vimrc-options/
 
+http://www.moolenaar.net/habits.html - vim - Seven habits of effective text editing
+http://robots.thoughtbot.com/integrating-vim-into-your-life
+http://learnvimscriptthehardway.stevelosh.com/
+http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
+http://robots.thoughtbot.com/vim-you-complete-me
+
 http://tedlogan.com/techblog3.html - secrets of tabs in vim
 * :set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 * tabstop - how many columns a tab counts for, this is the only command here that will affect how existing text displays
