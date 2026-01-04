@@ -1,53 +1,26 @@
 - [ ] move non-ruby-specific stuff out
-
-http://www.growing-object-oriented-software.com/
-http://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/[[http://www.amazon.com/Software-Development-Principles-Patterns-Practices/dp/0135974445/|0135974445/]]
-
-http://en.wikipedia.org/wiki/Law_of_Demeter
-
-http://confreaks.com/videos/77-mwrc2009-the-building-blocks-of-modularity - "Grand Unified Theory of Software Development"
-http://en.wikipedia.org/wiki/Connascence_(computer_programming)
-
-http://sandimetz.com/
-
-http://www.youtube.com/watch?v=WpkDN78P884 - software architecture -
-	 web is only a delivery mechanism and it's slow
-	the web should not be the application's main concern - it's an implementational detail
-	don't design your code to fit to a framework,
-	defer implementation-specific decisions untill needed
-	why do we have a test suite? to be able to refactor with confidence
-	you need your tests to run fast - decouple everything, that's slow - web, database
-
+### talks
 http://www.youtube.com/watch?v=iUe6tacW3JE - deconstructing the framework
-	* rails controller terribly violates the single responsibility principle (object should have only one reason to change)
-	* usual responsibilities: authentication/authorization, wrap http (headers, params, status), manipulate model, manipulate/query database
-		present models, create response content, route (redirect), choose content type
-	* decompose - introduce presenter, db read, db write - entities, http read, http write - controller becomes logic
-		* response part handles http write
-		* authentication should be route's concern - route should match object x, action (verb) y and state z (e.g. auth status)
-	* wrappers for external services (good reason for models) - ruby has a culture of fast change without much regard to backward compatibility - you want
-		to insulate yourself from their api
+* rails controller terribly violates the single responsibility principle (object should have only one reason to change)
+* usual responsibilities: authentication/authorization, wrap http (headers, params, status), manipulate model, manipulate/query database
+	present models, create response content, route (redirect), choose content type
+* decompose - introduce presenter, db read, db write - entities, http read, http write - controller becomes logic
+	* response part handles http write
+	* authentication should be route's concern - route should match object x, action (verb) y and state z (e.g. auth status)
+* wrappers for external services (good reason for models) - ruby has a culture of fast change without much regard to backward compatibility - you want
+	to insulate yourself from their api
 
 http://www.youtube.com/watch?v=uDaBtqEYNBo - Rocky Mountain Ruby 2013 How I architected my big Rails app for success! by Ben Smith
   * avoid cyclical dependencies in rails app (e.g. User <-> Post)
   * use engines to cut monolitic app to pieces - better scalability, easier parallel development
 
+http://www.youtube.com/watch?v=CGN4RFkhH2M - hexagonal architecture with rails
+### books
 http://www.informit.com/store/practical-object-oriented-design-in-ruby-an-agile-primer-9780321721334
 http://www.amazon.com/gp/product/0321603508 - Refactoring - ruby edition
 
+### blog posts
 http://blog.steveklabnik.com/posts/2011-09-06-the-secret-to-rails-oo-design
 http://blog.steveklabnik.com/posts/2011-09-09-better-ruby-presenters
-
-http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052
-* instead of supplying several callbacks as procs to a method for handling various result states
-  (e.g. payment service object method may result in success or 5 types of failures) or processing all
-  exceptions it may throw (which must be done around every call), you can implement callbacks as
-  methods in the caller and supply self
-  * the choice depends on whether the callback handling is always the same
-    - if it is, then a method for each situation is ideal
-    - if it's not - e.g. three different calls to the service object all can result in the same
-      failures, but the handling code for them needs to differ, then separate handling is needed -
-      either by rescuing exceptions or providing callback procs, etc.
-### decorators
 http://robots.thoughtbot.com/post/14825364877/evaluating-alternative-decorator-implementations-in
-method_missing, Delegator, SimpleDelegator, DelegateClass, or Forwardable.
+- method_missing, Delegator, SimpleDelegator, DelegateClass, or Forwardable
