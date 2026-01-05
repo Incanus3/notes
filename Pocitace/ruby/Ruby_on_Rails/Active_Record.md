@@ -10,6 +10,7 @@ https://github.com/camertron/arel-helpers
 http://www.scuttle.io/ - A SQL and Arel Editor
 http://rdoc.info/github/rails/arel
 - lists classes and methods, usually w/o comments
+
 ===== columns =====
 * Model.column_names
 * Model.columns_hash

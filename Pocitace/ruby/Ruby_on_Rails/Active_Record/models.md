@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-01T22:14:08+01:00
-
-====== models ======
-Created Friday 01 November 2013
-
 ===== refactoring =====
 http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/
 http://hasghari.github.io/2013/09/15/active-record-enhanced-query-objects.html
