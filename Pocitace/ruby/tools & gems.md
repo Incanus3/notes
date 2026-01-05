@@ -1,4 +1,5 @@
 https://www.ruby-toolbox.com/
+https://github.com/markets/awesome-ruby
 
 https://github.com/tpope/gem-browse - use gem open to open gem with root set correctly, gem clone also works, gem browse shows homepage
 
