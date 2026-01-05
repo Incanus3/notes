@@ -29,6 +29,8 @@ https://github.com/rails/thor
 https://github.com/cowboyd/mvcli - framework for creating cli apps with rails-like architecture - templates, routes, ...
 
 https://github.com/flori/term-ansicolor - probably better
+### time
+https://github.com/Intrepidd/working_hours
 ### http
 https://github.com/tarcieri/http - very simple dsl for making http requests
 https://github.com/lostisland/faraday
@@ -54,6 +56,15 @@ https://github.com/bmabey/email-spec - rails mailer RSpec (, Cucumber, MiniTest)
 https://github.com/jnicklas/capybara#drivers - capybara-webkit - headless, can execute JS, faster; poltergeist - uses PhantomJS, 'truly headless', will detect javascript errors, may be even faster
 
 https://github.com/bblimke/webmock - stubbing and expectations for HTTP requests - e.g. when communicating with external API
+
+https://github.com/site-prism/site_prism - Page Object Model DSL for Capybara
 ### commerce
 https://spreecommerce.org - open source eCommerce platform giving you full control and customizability
 - https://github.com/spree/spree
+### must-have list (pretty outdated)
+- devise, simple_form (initializer), cancancan, capistrano(rvm, bundler, rails),
+  sass-rails, bootstrap, hb, wice_grid, kaminari, kaminari-boostrap, mysql2,
+  therubyracer, jquery-rails, jquery-ui-rails
+- development - annotate, better_errors, binding_of_caller, pry-rails, pry-doc,
+  rakc-mini-profiler, letter_opener
+- test - shoulda-matchers, factory_girl_rails, minitest/rspec, capybara

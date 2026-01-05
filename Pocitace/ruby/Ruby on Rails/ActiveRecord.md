@@ -1,5 +1,6 @@
 http://api.rubyonrails.org/classes/ActiveRecord/Aggregations/ClassMethods.html
 http://blog.plataformatec.com.br/2013/02/active-record-scopes-vs-class-methods/
+http://robots.thoughtbot.com/active-record-eager-loading-with-query-objects-and-decorators
 
 https://github.com/salsify/goldiloader - just the right amount of Rails eager loading
 

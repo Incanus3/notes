@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-17T17:51:26+02:00
-
-====== Action Pack ======
-Created Tuesday 17 September 2013
-
 * ActionDispatch - routes requests to controller actions
 * ActionController - converts requests into responses
 * ActionView - formats these responses

@@ -4,8 +4,12 @@ https://postgresqlco.nf
 https://www.postgresql.org/docs/10/monitoring-stats.html
 - postgresql stat views
 
-=== monitoring ===
+== window functions ==
+http://robots.thoughtbot.com/postgres-window-functions
+http://www.postgresql.org/docs/18/tutorial-window.html
+http://www.postgresql.org/docs/18/functions-window.html
 
+=== monitoring ===
 https://pgmetrics.io
 - command line tool that reports a lot of info about the cluster instance
 
@@ -19,7 +23,6 @@ https://severalnines.com/database-blog/key-things-monitor-postgresql-analyzing-y
 https://www.influxdata.com/blog/metrics-to-monitor-in-your-postgresql-database/
 
 === backups and replication ===
-
 https://www.opsdash.com/blog/postgresql-replication-topologies.html
 https://www.opsdash.com/blog/postgresql-replication-slots.html
 - general replication info

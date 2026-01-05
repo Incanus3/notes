@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-11T17:22:30+02:00
-
-====== legacy databases ======
-Created Wednesday 11 September 2013
-
 ===== working with databases that don't follow AR naming guidelines =====
 http://edgeguides.rubyonrails.org/active_record_basics.html#overriding-the-naming-conventions
 http://jvans1.github.io/blog/2012/11/20/new-post/

@@ -46,5 +46,5 @@ class Order < ActiveRecord::Base
 	end
 end
 ```
-* for performance reasons after_find and after_initialize are treated specially, Active Record won’t
-	know to call an after_find handler unless it sees an actual after_find() method in the model class
+
+* for performance reasons after_find and after_initialize are treated specially, Active Record won’t know to call an after_find handler unless it sees an actual after_find() method in the model class
