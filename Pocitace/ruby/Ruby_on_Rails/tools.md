@@ -1,20 +1,13 @@
 ### api
 https://github.com/rails-api/rails-api - generatory pro programovani API v railsech - osekane o zbytecne moduly, rack middleware, ...
-### templating
+### views
 http://builder.rubyforge.org/ - ruby xml builder
 http://haml.info/tutorial.html - markup language for HTML templating
 https://github.com/slim-template/slim - haml alternative
 
-http://foundation.zurb.com/docs/ - organizace stranky do gridu
-* twitter bootstrap
-
-https://github.com/michelson/lazy_high_charts - charts for rails
-* chart as model, nice dsl
-https://github.com/xiaods/highcharts-bootstrap
-* example app
-### form builders
 https://www.ruby-toolbox.com/categories/rails_form_builders
-http://stackoverflow.com/questions/18935536/integration-of-simple-form-with-bootstrap-3
+http://foundation.zurb.com/docs/ - organizace stranky do gridu
+https://github.com/michelson/lazy_high_charts - charts for rails
 ### controllers
 https://github.com/plataformatec/responders
 - additions to respond_with - setting of flash, redirect location, cache, collection
@@ -62,3 +55,5 @@ https://github.com/ryanb/cancan - Authorization Gem for Ruby on Rails. - which u
 	* https://github.com/ryanb/cancan/wiki/defining-abilities
 	* https://github.com/ryanb/cancan/wiki/Role-Based-Authorization
 	* https://github.com/RailsApps/rails3-bootstrap-devise-cancan
+### search
+https://github.com/activerecord-hackery/ransack
