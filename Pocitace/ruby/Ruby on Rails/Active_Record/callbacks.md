@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-01T22:11:39+01:00
-
-====== callbacks ======
-Created Friday 01 November 2013
-
 * before_validation, (validation), after_validation, before_save, before_create/before_update, (insert/update), after_create/after_update, after_save
 * before_destroy, (delete), after_destroy
 * (before/after)_validation accept on: (:create / :update)
@@ -17,6 +10,7 @@ Created Friday 01 November 2013
 	* when handler returns false, subsequent handlers aren't called (and the action won't take place if it's a before hook)
 
 * example of callback object
+```ruby
 class Encrypter
 	# We're passed a list of attributes that should
 	# be stored encrypted in the database
@@ -51,5 +45,6 @@ class Order < ActiveRecord::Base
 	def after_find
 	end
 end
+```
 * for performance reasons after_find and after_initialize are treated specially, Active Record won’t
 	know to call an after_find handler unless it sees an actual after_find() method in the model class
