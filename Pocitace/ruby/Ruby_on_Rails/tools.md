@@ -1,7 +1,6 @@
-===== api =====
+### api
 https://github.com/rails-api/rails-api - generatory pro programovani API v railsech - osekane o zbytecne moduly, rack middleware, ...
-
-===== templating =====
+### templating
 http://builder.rubyforge.org/ - ruby xml builder
 http://haml.info/tutorial.html - markup language for HTML templating
 https://github.com/slim-template/slim - haml alternative
@@ -13,25 +12,20 @@ https://github.com/michelson/lazy_high_charts - charts for rails
 * chart as model, nice dsl
 https://github.com/xiaods/highcharts-bootstrap
 * example app
-
-===== form builders =====
+### form builders
 https://www.ruby-toolbox.com/categories/rails_form_builders
 http://stackoverflow.com/questions/18935536/integration-of-simple-form-with-bootstrap-3
-
-===== controllers =====
+### controllers
 https://github.com/plataformatec/responders
 - additions to respond_with - setting of flash, redirect location, cache, collection
-
-===== databases =====
+### databases
 https://github.com/TalentBox/sequel-rails
 http://fredwu.me/post/58910814911/gotchas-in-the-ruby-sequel-gem
 https://github.com/zdennis/activerecord-import/ - save AR records in batch
 http://www.amberbit.com/blog/2014/2/4/postgresql-awesomeness-for-rails-developers
-
-===== desing patterns =====
+### desing patterns
 https://github.com/drapergem/draper - decorators/view-models for rails apps
-
-===== development helpers =====
+### development helpers
 https://github.com/charliesome/better_errors - lepsi hlaseni chyb pro railsy/sinatru
 	* click file name link in code frame to open editor, should work with gem files too
 		* to customize editor, add initializer with BetterErrors.editor = ... (if BetterErrors.defined?)
@@ -45,28 +39,23 @@ https://github.com/cldwalker/hirb - database viewers (as table) for irb
 https://github.com/ctran/annotate_models - adds comments with schema to models
 https://github.com/evrone/quiet_assets - disables logging of asset pipeline (requests for js, css, favicon, ...)
 
-	* methodfinder - "abc".find_method("ABC") #=> ["String#swapcase", "String#upcase", ...]
-
 https://github.com/mattetti/Weasel-Diesel - DSL to describe, document and test web services
 
 https://github.com/josevalim/inherited_resources
 https://www.petekeen.net/dry-your-rails-crud-with-simple-form-and-inherited-resources
 
 https://github.com/sferik/rails_admin
-
-===== code metrics =====
+### code metrics
 https://github.com/railsbp/rails_best_practices
 https://github.com/troessner/reek
-
-===== authentication =====
+### authentication
 https://github.com/plataformatec/devise
 https://github.com/plataformatec/devise/wiki
 http://rubydoc.info/github/plataformatec/devise/master/frames
 https://github.com/plataformatec/devise/wiki/Example-Applications
 http://railscasts.com/episodes/209-introducing-devise
 http://railscasts.com/episodes/210-customizing-devise
-
-===== authorization =====
+### authorization
 https://github.com/ryanb/cancan - Authorization Gem for Ruby on Rails. - which users can access which resources
 	* expects current_user method in controller - on top of devise
 	* very good dsl - expressive, simple
