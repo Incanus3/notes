@@ -18,6 +18,10 @@ https://github.com/xiaods/highcharts-bootstrap
 https://www.ruby-toolbox.com/categories/rails_form_builders
 http://stackoverflow.com/questions/18935536/integration-of-simple-form-with-bootstrap-3
 
+===== controllers =====
+https://github.com/plataformatec/responders
+- additions to respond_with - setting of flash, redirect location, cache, collection
+
 ===== databases =====
 https://github.com/TalentBox/sequel-rails
 http://fredwu.me/post/58910814911/gotchas-in-the-ruby-sequel-gem
