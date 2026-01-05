@@ -1,5 +1,7 @@
 http://api.rubyonrails.org/classes/ActiveRecord/Aggregations/ClassMethods.html
 
+https://github.com/flyerhzm/bullet
+
 == Arel ==
 http://robots.thoughtbot.com/using-arel-to-compose-sql-queries
 http://pivotallabs.com/using-arel-to-build-complex-sql-expressions
@@ -10,6 +12,7 @@ https://github.com/camertron/arel-helpers
 http://www.scuttle.io/ - A SQL and Arel Editor
 http://rdoc.info/github/rails/arel
 - lists classes and methods, usually w/o comments
+- http://jpospisil.com/2014/06/16/the-definitive-guide-to-arel-the-sql-manager-for-ruby.html
 
 ===== columns =====
 * Model.column_names
