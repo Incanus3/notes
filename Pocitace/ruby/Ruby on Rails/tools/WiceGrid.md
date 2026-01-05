@@ -1,20 +1,3 @@
-=== Tue, 22.9. ===
-
-- 5-6 - rezervace
-  fixed OrdersMailer
-  - orders_table partial now uses price_with_dph_label helper, but PricesHelper wasn't included in
-    OrdersMailer
-
-- 6-9
-  - wice_grid filtrovani nefunguje pres https, protoze prohlizec zablokuje jako mixed active content
-    https://developer.mozilla.org/en-US/docs/Security/MixedContent
-  - treba donutit wice_grid, aby request delala na https
-
-  - pocatek vyzkumu
-
-= 4h
-
-=== WiceGrid ===
 == GridViewHelper ==
 - definuje tabulku
 https://github.com/leikind/wice_grid/blob/rails3/lib/wice/helpers/wice_grid_view_helpers.rb#L83
