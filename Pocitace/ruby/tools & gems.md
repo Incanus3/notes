@@ -10,12 +10,16 @@ http://www.ruby-doc.org/stdlib-2.0/libdoc/English/rdoc/English.html - rozumna jm
 
 http://www.ruby-doc.org/stdlib-2.0/libdoc/pstore/rdoc/PStore.html , YAML::Store
 
-https://github.com/tmm1/perftools.rb - performance benchmarks for ruby apps - where the most execution time goes, method calls, bottlenecks
-* fantastic discovery tool - e.g. when you just inherited a big software
-
 https://codeclimate.com/ - automated ruby code review - code quality metrics
 
 http://godrb.com/ - god is an easy to configure, easy to extend monitoring framework written in Ruby.
+### performance
+https://github.com/tmm1/perftools.rb - performance benchmarks for ruby apps - where the most execution time goes, method calls, bottlenecks
+* fantastic discovery tool - e.g. when you just inherited a big software
+https://github.com/tmm1/stackprof - sampling profiler, replacement for perftools.rb
+http://samsaffron.com/archive/2013/03/19/flame-graphs-in-ruby-miniprofiler
+https://github.com/tmm1/rbtrace - like strace for ruby
+http://youtu.be/cOaVIeX6qGg
 ### data structures
 https://github.com/intridea/hashie
 - hashie is a simple collection of useful Hash extensions
