@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-08T15:06:34+02:00
-
-====== testing ======
-Created Sunday 08 September 2013
-
 http://guides.rubyonrails.org/testing.html
 
 https://github.com/rspec/rspec-rails
@@ -24,13 +17,32 @@ http://re-factor.com/blog/2013/09/27/slow-tests-are-the-symptom-not-the-cause/
 
 guard-livereload - reload browser when files change
 
-===== factory_girl =====
-* easily create factories for various types of objects (AR by default)
-* FactoryGirl.attributes_for ignores associations, workaround helper:
-'''
-def build_attributes(*args)
-  FactoryGirl.build(*args).attributes.delete_if do |k, v| 
-    ["id", "created_at", "updated_at"].member?(k)
+- spec type inference from path disabled by default, enable it using
+```ruby
+RSpec.configure do |config|
+  config.infer_spec_type_from_file_location!
+end
+```
+
+- or use metadata explicitly
+```ruby
+RSpec.describe ThingsController, type: :controller do
+  # Equivalent to being in spec/controllers
+end
+```
+
+- mock_model and stub_model extracted into rspec-activemodel-mocks
+
+- define methods for mock controller in controller specs
+https://relishapp.com/rspec/rspec-rails/v/3-0/docs/controller-specs/anonymous-controller
+
+### mocks
+RSpec.configure do |config|
+  config.mock_with :rspec do |mocks|
+    mocks.verify_partial_doubles = true
   end
 end
-'''
+- will check when mocking/stubbing a method, that it actually existed
+expect(MyClass).to receive(:some_message)
+- or use instance_double, class_double and object_double explicitly
+https://relishapp.com/rspec/rspec-mocks/v/3-0/docs/verifying-doubles
