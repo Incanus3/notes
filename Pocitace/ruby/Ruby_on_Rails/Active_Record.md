@@ -1,6 +1,8 @@
 http://api.rubyonrails.org/classes/ActiveRecord/Aggregations/ClassMethods.html
 
-https://github.com/flyerhzm/bullet
+https://github.com/salsify/goldiloader - just the right amount of Rails eager loading
+
+https://github.com/flyerhzm/bullet - watch your queries and notify you when you should add eager loading (N+1 queries), when you're using eager loading that isn't necessary and when you should use counter cache
 
 == Arel ==
 http://robots.thoughtbot.com/using-arel-to-compose-sql-queries
