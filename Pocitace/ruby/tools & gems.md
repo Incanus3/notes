@@ -1,14 +1,18 @@
 https://www.ruby-toolbox.com/
+http://awesome-ruby.com/
 https://github.com/markets/awesome-ruby
+https://github.com/ruby-concurrency/concurrent-ruby
 https://github.com/thoughtbot
 
 https://github.com/tpope/gem-browse - use gem open to open gem with root set correctly, gem clone also works, gem browse shows homepage
 
-http://krainboltgreene.github.io/hexpress/ - constructing regular expressions in human readable form
-
 http://www.ruby-doc.org/stdlib-2.0/libdoc/English/rdoc/English.html - rozumna jmena pro konstanty $!, $@, $;, ...
 
 http://www.ruby-doc.org/stdlib-2.0/libdoc/pstore/rdoc/PStore.html , YAML::Store
+
+https://github.com/egonSchiele/contracts.ruby
+
+http://krainboltgreene.github.io/hexpress/ - constructing regular expressions in human readable form
 
 https://codeclimate.com/ - automated ruby code review - code quality metrics
 
