@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-08T17:45:38+02:00
-
-====== tools ======
-Created Sunday 08 September 2013
-
 ===== api =====
 https://github.com/rails-api/rails-api - generatory pro programovani API v railsech - osekane o zbytecne moduly, rack middleware, ...
 
@@ -15,7 +8,6 @@ https://github.com/slim-template/slim - haml alternative
 
 http://foundation.zurb.com/docs/ - organizace stranky do gridu
 * twitter bootstrap
-
 
 https://github.com/michelson/lazy_high_charts - charts for rails
 * chart as model, nice dsl

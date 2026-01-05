@@ -16,6 +16,9 @@ https://github.com/tmm1/perftools.rb - performance banchmarks for ruby apps - wh
 https://codeclimate.com/ - automated ruby code review - code quality metrics
 
 http://godrb.com/ - god is an easy to configure, easy to extend monitoring framework written in Ruby.
+### configuration
+https://github.com/bkeepers/dotenv
+- load environment variables from .env file (before aplication start)
 ### cli
 http://whatisthor.com/ - build powerful command-line interfaces - used by bundler, rails
 https://github.com/rails/thor
