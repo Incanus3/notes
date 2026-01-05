@@ -1,14 +1,8 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-01T23:26:38+01:00
-
-====== articles, material ======
-Created Friday 01 November 2013
-
 http://pragprog.com/book/rails4/agile-web-development-with-rails
 http://pragprog.com/book/jvrails2/crafting-rails-applications
 http://rails4.codeschool.com/videos
 http://pragmaticstudio.com/rails
+https://gorails.com
 
 http://guides.rubyonrails.org/security.html
 http://guides.rubyonrails.org/caching_with_rails.html
