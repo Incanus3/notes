@@ -1,4 +1,3 @@
-=== ROM ===
 == Registry ==
 - includes Enumerable
 - delegates each to elements
@@ -50,4 +49,3 @@ OtherClass.two # => 'two'
 == Plugins::Relation::RegistryReader ==
 - adds class option __registry__
 - defines method_missing to interpret unknown methods as registry fetches
-

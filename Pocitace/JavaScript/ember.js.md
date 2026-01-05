@@ -1,69 +1,3 @@
-==== Navrh ====
-- cely stav hry by mel byt serializovatelny kvuli persistenci
-- pouzit ROM,  nejspis rom-sql, slo by ale i rom-mongodb
-  - bud mapovat db recordy bud primo na modely hry
-    - podporovat konstruktor s hashem parametru
-      - snadne u value koncovych objektu typu Card, problematictejsi u hry, ktera muze mit
-        neserializovatelne collaboratory -> extra value object GameModel, ze ktereho pujde hra
-        vytvorit
-  - nebo mapovat db recordy na value objekty, z nichz bude mozno objekty hry vytvorit
-    - bud pro kazdy objekt nejaky serializacni objekt - umi konverzi tam i zpet, pri serializaci se
-      taze na stavy objektu
-    - problem ale je, ze serializovat je treba i stav, ktery je jinak z pohledu objektu interni
-      -> volani privatnich metod
-    - nebo objekt dedit z herniho objektu, v tu chvili mame pristup k private stavu, to ale taky
-      prinasi obrovsky coupling - serializacni kod bude treba menit pri kazde zmene vnitrni
-      reprezentace
-    - nebo bude kazdy objekt proste implementovat serializaci do hashe, ze ktere se pak budou modely
-      inicializovat
-    - definice serializace muze byt velmi strucna, nebot lze extrahovat Serializable modul, ktery
-      poskytne dsl (napr. serialize [`<atributy>`], ktery proste zavola dane metody a vrati hash)
-- druhou moznosti je taky subclassovat kazdy objekt hry a prepsat metody, ktere meni stav, tak, aby
-  krome volani super rovnou persistovaly zmeny, to je ale problematicke
-  1) opet coupling
-  2) spoustu zmen je treba provadet 'transakcne' - provest nejakou kompletni zmenu hry (napr. presun
-     karty z ruky na stul) a tu pak kompletne persistovat, kdyby se persistovala kazda zmena zvlast,
-     hrozi nekonsistentnimi stavy - treba zachytavat chyby v dalsim behu a pripadne revokovat zmeny
-
-na jedne strane
-```ruby
-model Game
-  has_one :player1
-  has_one :player2
-
-  attribute :current_player, :phase
-end
-
-model Player
-  attribute :health, :mana
-  attribute :hand (list of ids to cards in deck)
-  # cards should't know about objects holding them - they should be just value objects
-  attribute :graveyard (list of ids to cards in deck)
-  attribute :table (list of ids to cards on table)
-
-  has_one :deck (if we need to store some additional info about deck)
-end
-
-model CardOnTable
-... - corresponds to core card objects, since these are mostly value objects
-end
-```
-
-- veci jako specialni schopnosti karet (ktere bychom bezne definovali jako callable objekt, ktery
-  obdrzi nejakou reprezentaci kontextu), bude taky treba serializovat, napr. `[:summon, <id prisery>]`
-
-- veskera logika bude na serveru, klient bude dostavat pouze informace o zmenach viditelneho stavu,
-  pripadne se muze dotazovat na pravidla (jake jsou aktualne mozne stavy)
--> rails --api + rails-rom template (slo by pouzit i grape a jine) + hloupy ember client
-
-- idealne stavet po vrstvach - zatim existuje core hry, nad tim lze oddelene (bez web frameworku)
-  vystavet persistencni vrstvu -> otestovat, ze veskery stav lze plne ulozit a nacist
-- vystavet api -> otestovat requesty
-- vystavet klienta (cast lze vyvijet i nezavisle - modely bude na klientske strane treba castecne
-  duplikovat, lze si zatim hrat s fixture daty, ci pouzit uloziste u klienta)
-- vedle vystavet AI, klient i server bude vedet, zda dalsim hracem je AI hrac, v takovem pripade
-  bude klient nejspis iniciovat jednotlive faze tahu umeleho hrace a api bude vracet jejich vysledky
-
 ==== Ember.js ====
 === Object model ===
 == Classes and Instances ==
@@ -294,31 +228,37 @@ states.mapBy('capital');
       object)
 
 == Binding element attributes ==
+```hbs
 <img src={{logoUrl}} alt="Logo">
 <input type="checkbox" disabled={{isAdministrator}}>
+```
 
 - view helpers ignore data attributes
   - to enable them - http://guides.emberjs.com/v1.13.0/templates/binding-element-attributes/ -
     at the bottom
 
 == Binding element class names ==
-- <div class={{priority}}>
-- conditional - <div class={{if isUrgent 'is-urgent' ['is-not-urgent']}}>
+- `<div class={{priority}}>`
+- conditional - `<div class={{if isUrgent 'is-urgent' ['is-not-urgent']}}>`
   - non-block form of if
   - if no else branch, no class is added
 
 == Links ==
+```js
 Router.map(function() {
   this.route("photos", function(){
     this.route("edit", { path: "/:photo_id" });
   });
 });
+```
 
+```hbs
 <ul>
   {{#each photos as |photo|}}
     <li>{{#link-to 'photos.edit' photo}}{{photo.title}}{{/link-to}}</li>
   {{/each}}
 </ul>
+```
 
 - takes
   - name of a route
@@ -326,6 +266,7 @@ Router.map(function() {
     array)
   - link has class="active" if current path matches it
 - nested routes - multiple segments:
+```js
 Router.map(function() {
   this.route("photos", function(){
     this.route("photo", { path: "/:photo_id" }, function(){
@@ -334,26 +275,28 @@ Router.map(function() {
     });
   });
 });
+```
 
-{{#link-to 'photos.photo.comment' primaryComment}}Main Comment{{/link-to}}
+`{{#link-to 'photos.photo.comment' primaryComment}}Main Comment{{/link-to}}`
 - only one model specified - will represent innermost dynamic segment (rightmost - :comment_id),
   photo_id will use the current photo
 
-{{#link-to 'photo.comment' 5 primaryComment}}sadf{{/link-to}}
+`{{#link-to 'photo.comment' 5 primaryComment}}sadf{{/link-to}}`
 - model hook for PhotoRoute will run with params.photo_id = 5
 - the model hook for CommentRoute won't run since you supplied a model object for the comment
   segment
 - the comment's id will populate the url according to CommentRoute's serialize hook
 
-- inline form - {{link-to 'Inline Form' 'index'}}
+- inline form - `{{link-to 'Inline Form' 'index'}}`
 - may contain additional attributes for the link
 - use replace=true to replace the current entry in the browser's history - can't return back
 
 == Actions ==
-<button {{action 'contract'}}>Contract</button>
+`<button {{action 'contract'}}>Contract</button>`
 - will call action on the controller (or route, or component?)
 
-# app/templates/post.hbs
+```hbs
+// app/templates/post.hbs
 <div class='intro'>
   {{intro}}
 </div>
@@ -364,7 +307,9 @@ Router.map(function() {
 {{else}}
   <button {{action 'expand'}}>Show More...</button>
 {{/if}}
-
+```
+``
+```js
 # app/controllers/post.js
 PostController = Ember.Controller.extend({
   intro: Ember.computed.alias('model.intro'),
@@ -383,6 +328,7 @@ PostController = Ember.Controller.extend({
     }
   }
 });
+```
 
 - action triggers method on template's controller
 - if not implemented (present in actions), sent to current leaf route
@@ -401,7 +347,7 @@ PostController = Ember.Controller.extend({
 
 - by default, the {{action}} helper allows events it handles to bubble up to parent DOM nodes. If
   you want to stop propagation, you can disable propagation to the parent node
-<button {{action 'close' bubbles=false}}>✗</button>
+`<button {{action 'close' bubbles=false}}>✗</button>`
 
 - components can handle events from their templates
 
@@ -411,15 +357,17 @@ http://guides.emberjs.com/v1.13.0/templates/input-helpers/
 == Development helpers ==
 - log
 - debugger - will have access to get function - retrieves values in template context
+```hbs
 {{#each items as |item|}}
   {{debugger}}
 {{/each}}
 > get('item.name')
 > context
+```
 
 == Rendering helpers ==
-- partial <template name> - does not change scope
-- render <template> <model> - model will be passed to controller if provided - template can access
+- `partial <template name>` - does not change scope
+- `render <template> <model>` - model will be passed to controller if provided - template can access
   controller's attributes (and model's through it)
   - does not require presence of a matching route (neither does partial)
 - outlet - router determines nested route, finds template, sets up controller, model
@@ -427,7 +375,7 @@ http://guides.emberjs.com/v1.13.0/templates/rendering-with-helpers/
 
 == Writing helpers ==
 ember generate helper format-currency
-
+```js
 # app/helpers/format-currency.js
 import Ember from "ember";
 
@@ -439,28 +387,37 @@ CurrencyHelper = Ember.Helper.helper(function([value]) { # destructuring of arra
   if (cents.toString().length === 1) { cents = '0' + cents; }
   return `${sign}${dollars}.${cents}`;
 });
+```
 
-# template
+```hbs
+# template.hbs
 Your total is {{format-currency model.totalDue}}.
+```
 
 - named arguments - second param to helper function is a js object (hash which allows dot access)
+```js
 Ember.Helper.helper(function(params, { option1, option2, option3 }) { # destructuring of options
 ...
 }
+```
 
 - stateful helpers
+```js
 CurrencyHelper Ember.Helper.extend({ # extend instead of helper
   compute(params, hash) {
     ...
   }
 });
+```
 
 - ember escapes values returned from helpers, return Ember.String.htmlSafe(`asfd`) to avoid escaping
 - use Handlebars.Utils.escapeExpression to escape manually
+```js
 BoldHelper = Ember.Helper.helper(function(params) {
   let value = Handlebars.Utils.escapeExpression(params[0]);
   return Ember.String.htmlSafe(`<b>${value}</b>`);
 });
+```
 
 - adding services
 http://guides.emberjs.com/v1.13.0/templates/writing-helpers/#toc_adding-services
