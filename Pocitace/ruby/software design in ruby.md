@@ -24,3 +24,5 @@ http://blog.steveklabnik.com/posts/2011-09-06-the-secret-to-rails-oo-design
 http://blog.steveklabnik.com/posts/2011-09-09-better-ruby-presenters
 http://robots.thoughtbot.com/post/14825364877/evaluating-alternative-decorator-implementations-in
 - method_missing, Delegator, SimpleDelegator, DelegateClass, or Forwardable
+https://fabiano.ai/clean-architecture-in-ruby-7eb3cd0fc145
+- entry point, use cases, entities, repository, decoupling from rails

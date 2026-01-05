@@ -16,6 +16,7 @@ https://github.com/TalentBox/sequel-rails
 http://fredwu.me/post/58910814911/gotchas-in-the-ruby-sequel-gem
 https://github.com/zdennis/activerecord-import/ - save AR records in batch
 http://www.amberbit.com/blog/2014/2/4/postgresql-awesomeness-for-rails-developers
+https://github.com/jasonfb/nondestructive_migrations
 ### desing patterns
 https://github.com/drapergem/draper - decorators/view-models for rails apps
 ### development helpers
