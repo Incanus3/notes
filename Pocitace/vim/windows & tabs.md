@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-30T14:41:09+01:00
-
-====== windows and tabs ======
-Created Saturday 30 November 2013
-
 === files ===
 :e[dit] {files} (:Ve - vsplit)
 :E - open explorer for directory of current file = :e %:h (:Sexplore, :Vexplore)

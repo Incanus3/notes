@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-05T20:58:49+01:00
-
-====== config files ======
-Created Tuesday 05 November 2013
-
 ===== amanda.conf =====
 org "weekly"            # your organization name for reports                                
 dumpuser "backup"       # the user to run dumps under                                       

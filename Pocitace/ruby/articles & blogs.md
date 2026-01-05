@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-08T15:54:10+02:00
-
-====== articles, blogs ======
-Created Sunday 08 September 2013
-
 http://www.rubyinside.com/21-ruby-tricks-902.html
 
 http://rubyreflector.com/ - perfektni zdroj informaci ohledne ruby - knihovny, atd.
@@ -37,7 +30,6 @@ http://www.confreaks.com/events/lonestarruby2013
 
 http://chrisholtz.com/blog/more-than-you-care-to-know-about-the-uniq-method/ - using Array#uniq with block (works like :key in lisp)
 http://shvets.github.io/blog/2013/09/28/executable-web-apps.html - easily write scripts that start web app, like yard server
-
 
 http://devblog.avdi.org/2010/04/08/refactoring-in-ruby/
 

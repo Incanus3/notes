@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-01T22:21:31+01:00
-
-====== constant lookup ======
-Created Friday 01 November 2013
-
 http://cirw.in/blog/constant-lookup
 '''
 modules = Module.nesting + (Module.nesting.first || Object).ancestors

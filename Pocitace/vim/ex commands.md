@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-30T14:39:49+01:00
-
-====== ex commands ======
-Created Saturday 30 November 2013
-
 * :e - edit file
 * :w - write changes
 * :q - quit

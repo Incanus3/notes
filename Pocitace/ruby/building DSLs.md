@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-08T15:21:14+02:00
-
-====== building DSLs ======
-Created Sunday 08 September 2013
-
 http://yonkeltron.com/blog/2010/05/13/creating-a-ruby-dsl/
 http://www.confreaks.com/videos/57-mwrc2009-jive-talkin-dsl-design-and-construction
 

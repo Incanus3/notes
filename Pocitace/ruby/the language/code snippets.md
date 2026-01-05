@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-01T22:19:28+01:00
-
-====== code snippets ======
-Created Friday 01 November 2013
-
 * checking index out of bounds
 > [1,2,3][5]
 => nil

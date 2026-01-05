@@ -1,10 +1,3 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-09-04T22:57:58+02:00
-
-====== useri a prava ======
-Created Wednesday 04 September 2013
-
 ==== tables with user and privileges information ====
  These mysql database tables contain grant information:
     user: Contains user accounts, global privileges, and other non-privilege columns.
