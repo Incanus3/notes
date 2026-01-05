@@ -2,10 +2,9 @@ http://yonkeltron.com/blog/2010/05/13/creating-a-ruby-dsl/
 http://www.confreaks.com/videos/57-mwrc2009-jive-talkin-dsl-design-and-construction
 
 http://ms-ati.github.io/docile/ - tool to write internal DSLs in ruby
-
-===== creating internal DSLs manually =====
+### creating internal DSLs manually
 * singleton pro konfiguraci
-'''
+```ruby
 module AccessControl
   extend self
 
@@ -31,10 +30,10 @@ module AccessControl
     definitions[level]
   end 
 end
-'''
+```
 
 * singleton pro definici extenzi
-'''
+```ruby
 Turbine::Application.extension(:start_command) do
   def start
     timer = Turbine::Timer.new
@@ -46,10 +45,9 @@ Turbine::Application.extension(:start_command) do
     end
   end
 end
-'''
+```
 
-
-'''
+```ruby
 module Turbine
   class Application
     def self.extensions
@@ -71,15 +69,13 @@ module Turbine
     end
   end
 end
-'''
-
-
-===== Parslet - creating external DSLs =====
+```
+### Parslet - creating external DSLs
 http://kschiess.github.io/parslet/ - tool to write parsers in ruby - define grammars with rules, annotate parts of input by symbols -> returns nested hash/array/string structure; define transformations on this structure
 
 === rules with annotation ===
  - as(name)
-'''
+```ruby
 class MiniP < Parslet::Parser
   # Single character rules
   rule(:lparen)     { str('(') >> space? }
@@ -112,11 +108,10 @@ pp MiniP.new.parse("puts(1 + 2 + 3, 45)")
     :op=>"+ "@7,
     :right=>{:left=>{:int=>"2"@9}, :op=>"+ "@11, :right=>{:int=>"3"@13}}},
    {:int=>"45"@16}]}
-'''
-
+```
 
 ===  interpretation ===
-'''
+```ruby
 class SimpleTransform < Parslet::Transform
   rule(funcall: 'puts', arglist: sequence(:args)) {
     "puts(#{args.inspect})"
@@ -126,4 +121,4 @@ end
 
 tree = {funcall: 'puts', arglist: [1,2,3]}
 SimpleTransform.new.apply(tree) # => "puts([1, 2, 3])"
-'''
+```
