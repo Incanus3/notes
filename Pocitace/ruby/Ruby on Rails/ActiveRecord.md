@@ -2,6 +2,8 @@ http://api.rubyonrails.org/classes/ActiveRecord/Aggregations/ClassMethods.html
 http://blog.plataformatec.com.br/2013/02/active-record-scopes-vs-class-methods/
 http://robots.thoughtbot.com/active-record-eager-loading-with-query-objects-and-decorators
 
+https://github.com/mceachen/closure_tree - make your ActiveRecord models support hierarchies
+
 https://github.com/salsify/goldiloader - just the right amount of Rails eager loading
 
 https://github.com/flyerhzm/bullet - watch your queries and notify you when you should add eager loading (N+1 queries), when you're using eager loading that isn't necessary and when you should use counter cache
