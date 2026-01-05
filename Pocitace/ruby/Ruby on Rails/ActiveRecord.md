@@ -1,5 +1,8 @@
 http://api.rubyonrails.org/classes/ActiveRecord/Aggregations/ClassMethods.html
 http://blog.plataformatec.com.br/2013/02/active-record-scopes-vs-class-methods/
+
+http://blog.codeship.com/speed-up-activerecord
+
 http://robots.thoughtbot.com/active-record-eager-loading-with-query-objects-and-decorators
 
 https://github.com/mceachen/closure_tree - make your ActiveRecord models support hierarchies
