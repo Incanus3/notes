@@ -1,5 +1,15 @@
 http://api.rubyonrails.org/classes/ActiveRecord/Aggregations/ClassMethods.html
 
+== Arel ==
+http://robots.thoughtbot.com/using-arel-to-compose-sql-queries
+http://pivotallabs.com/using-arel-to-build-complex-sql-expressions
+https://www.youtube.com/watch?v=ShPAxNcLm3o
+- RailsConf 2014 - Advanced aRel: When ActiveRecord Just Isn't Enough
+https://github.com/camertron/arel-helpers
+- Useful tools to help construct database queries with ActiveRecord and Arel
+http://www.scuttle.io/ - A SQL and Arel Editor
+http://rdoc.info/github/rails/arel
+- lists classes and methods, usually w/o comments
 ===== columns =====
 * Model.column_names
 * Model.columns_hash

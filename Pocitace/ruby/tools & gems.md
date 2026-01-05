@@ -29,14 +29,13 @@ http://confreaks.com/videos/475-rubyconf2010-the-grapes-of-rapid
 https://github.com/intridea/grape-entity
 https://github.com/apotonick/roar
 http://jaimeandres.github.io/grapevine/
+https://github.com/sparklemotion/mechanize - ruby library that makes automated web interaction easy
 ### mailing
 https://github.com/ryanb/letter_opener - Preview email in the browser instead of sending it. This means you do not need to set up email delivery in your development environment, and you no longer need to worry about accidentally sending a test email to someone else’s address.
 ### testing
 https://github.com/bmabey/email-spec - rails mailer RSpec (, Cucumber, MiniTest) matchers
 * UserMailer.send_wellcome(params).should reply_to(addr), deliver_to, deliver_from, bcc_to, cc_to
 	* have_subject, include_email_with_subject, have_body_text, have_header
-
-http://pivotal.github.io/jasmine/ - RSpec-like testing framework for javascript
 
 https://github.com/jnicklas/capybara#drivers - capybara-webkit - headless, can execute JS, faster; poltergeist - uses PhantomJS, 'truly headless', will detect javascript errors, may be even faster
 
