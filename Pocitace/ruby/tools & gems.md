@@ -2,20 +2,21 @@ https://www.ruby-toolbox.com/
 
 https://github.com/tpope/gem-browse - use gem open to open gem with root set correctly, gem clone also works, gem browse shows homepage
 
-https://github.com/tarcieri/http - very simple dsl for making http requests
-
 http://krainboltgreene.github.io/hexpress/ - constructing regular expressions in human readable form
 
 http://www.ruby-doc.org/stdlib-2.0/libdoc/English/rdoc/English.html - rozumna jmena pro konstanty $!, $@, $;, ...
 
 http://www.ruby-doc.org/stdlib-2.0/libdoc/pstore/rdoc/PStore.html , YAML::Store
 
-https://github.com/tmm1/perftools.rb - performance banchmarks for ruby apps - where the most execution time goes, method calls, bottlenecks
+https://github.com/tmm1/perftools.rb - performance benchmarks for ruby apps - where the most execution time goes, method calls, bottlenecks
 * fantastic discovery tool - e.g. when you just inherited a big software
 
 https://codeclimate.com/ - automated ruby code review - code quality metrics
 
 http://godrb.com/ - god is an easy to configure, easy to extend monitoring framework written in Ruby.
+### data structures
+https://github.com/intridea/hashie
+- hashie is a simple collection of useful Hash extensions
 ### configuration
 https://github.com/bkeepers/dotenv
 - load environment variables from .env file (before aplication start)
@@ -26,6 +27,14 @@ https://github.com/rails/thor
 https://github.com/cowboyd/mvcli - framework for creating cli apps with rails-like architecture - templates, routes, ...
 
 https://github.com/flori/term-ansicolor - probably better
+### http
+https://github.com/tarcieri/http - very simple dsl for making http requests
+https://github.com/lostisland/faraday
+- Faraday is an HTTP client lib that provides a common interface over many
+  adapters (such as Net::HTTP) and embraces the concept of Rack middleware when
+  processing the request/response cycle.  It also includes a Rack adapter for
+  hitting loaded Rack applications through Rack::Test, and a Test adapter for
+  stubbing requests by hand.
 ### web
 https://github.com/intridea/grape - An opinionated micro-framework for creating REST-like APIs in Ruby. http://intridea.github.io/grape
 http://confreaks.com/videos/475-rubyconf2010-the-grapes-of-rapid
