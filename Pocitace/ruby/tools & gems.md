@@ -69,6 +69,9 @@ https://github.com/site-prism/site_prism - Page Object Model DSL for Capybara
 ### commerce
 https://spreecommerce.org - open source eCommerce platform giving you full control and customizability
 - https://github.com/spree/spree
+### hobby
+https://github.com/rubiety/jazzity - web app for exploring jazz theory
+https://deveiate.org/code/linguistics/ - framework for building linguistic utilities
 ### must-have list (pretty outdated)
 - devise, simple_form (initializer), cancancan, capistrano(rvm, bundler, rails),
   sass-rails, bootstrap, hb, wice_grid, kaminari, kaminari-boostrap, mysql2,
