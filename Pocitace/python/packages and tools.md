@@ -9,6 +9,10 @@ https://docs.python.org/3/library/functional.html
   - reduce
 - operator — Standard operators as functions
   - usefull for mapping, reducing, filtering, etc.
+https://realpython.com/python-itertools/ - itertools in python 3
+### development
+https://github.com/gruns/icecream - nice debug prints
+https://birdseye.readthedocs.io/en/latest/ - graphical python debugger
 ### testing
 https://expects.readthedocs.io/
 - assertion library - should be able to replace assert for unittest, mamba, etc.

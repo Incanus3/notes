@@ -1,2 +1,3 @@
 - https://www.youtube.com/@AICodeKing/videos
 - https://github.com/decodingai-magazine
+- https://bloomberg.github.io/foml/ - foundations of machine learning
