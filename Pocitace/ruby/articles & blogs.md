@@ -21,6 +21,7 @@ http://chadfowler.com/
 http://timelessrepo.com/
 http://jeffkreeftmeijer.com/archive/
 http://blog.rubybestpractices.com/posts/judofyr/sexp-for-rubyists.html - dole aplikace analyzujici kod
+http://teotti.com/git-precommit-hooks-helping-local-ruby-gems-development/
 
 http://devblog.avdi.org/2013/08/26/confident-ruby-is-finished/
 http://devblog.avdi.org/2013/07/05/new-book-and-a-huge-birthday-sale/

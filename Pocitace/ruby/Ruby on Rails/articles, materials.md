@@ -16,6 +16,10 @@ http://guides.rubyonrails.org/security.html#logging - filter logging of secure p
 
 http://guides.rubyonrails.org/active_record_querying.html - eager loading
 
+http://cbra.info/
+http://teotti.com/component-based-rails-architecture-primer/
+http://teotti.com/gemfiles-hierarchy-in-ruby-on-rails-component-based-architecture/
+
 https://www.petekeen.net/mastering-modern-payments
 http://blog.sensible.io/2013/08/17/strong-parameters-by-example.html
 http://matthewlehner.net/rails-api-testing-guidelines/
