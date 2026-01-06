@@ -6,6 +6,8 @@ https://github.com/thoughtbot
 
 https://github.com/tpope/gem-browse - use gem open to open gem with root set correctly, gem clone also works, gem browse shows homepage
 
+http://www.rubypigeon.com/posts/a-review-of-immutability-in-ruby/
+
 http://www.ruby-doc.org/stdlib-2.0/libdoc/English/rdoc/English.html - rozumna jmena pro konstanty $!, $@, $;, ...
 
 http://www.ruby-doc.org/stdlib-2.0/libdoc/pstore/rdoc/PStore.html , YAML::Store
