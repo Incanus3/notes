@@ -8,3 +8,4 @@ http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
 - ifconfig, route
 - /etc/sysctl.conf - enable packet forwarding to make the system act as a router
 - ping, traceroute, tracepath, netstat, tcpdump
+- mitmproxy -b 0.0.0.0 -p 8001 -R http://127.0.0.1:8000
