@@ -12,7 +12,6 @@ https://docs.python.org/3/library/functional.html
 ### testing
 https://expects.readthedocs.io/
 - assertion library - should be able to replace assert for unittest, mamba, etc.
-
 ### django
 https://github.com/django-extensions/django-extensions
 
@@ -33,3 +32,9 @@ https://github.com/vbabiy/djangorestframework-camel-case
 
 https://github.com/carltongibson/django-filter
 https://github.com/maraujop/django-crispy-forms
+
+### cryptography
+https://cryptography.io
+http://blog.brainattica.com/rsa-with-cryptography-python-library-2/
+
+http://stackoverflow.com/questions/6345786/python-reading-a-pkcs12-certificate-with-pyopenssl-crypto
