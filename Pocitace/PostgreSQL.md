@@ -71,3 +71,11 @@ FROM pg_catalog.pg_class
 WHERE relname = 'mytable';
 
 \set ECHO_HIDDEN on - show queries run by \ commands
+
+#### oprava db clusteru
+pod postgres userem:
+/usr/lib/postgresql/12/bin/pg_ctl status  -D /etc/postgresql/12/main
+/usr/lib/postgresql/12/bin/pg_ctl start   -D /etc/postgresql/12/main
+/usr/lib/postgresql/12/bin/pg_ctl promote -D /etc/postgresql/12/main
+/usr/lib/postgresql/12/bin/pg_rewind -D /var/lib/postgresql/12/main/ --source-server="host='10.0.33.20' port=5432 user=rewind_user password='Yu6jeihoh{shah,' dbname=postgres"
+touch /var/lib/postgresql/12/main/standby.signal
