@@ -16,7 +16,9 @@ https://github.com/impulse-os/impulseos-live - would be really nice, but doesn't
 ~/.config/hypr
 ~/.config/quickshell
 ~/.config/illogical-impulse
-
-
+### useful packages
+- kde-gtk-config
+- nwg-look
+- nwg-displays
 ### TODO
 - reinstall `hyprlauncher` once icu is updated to 78 in repo
