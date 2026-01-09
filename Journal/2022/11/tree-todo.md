@@ -1,4 +1,0 @@
-- odstranit z chybove hlasky (po submitu reportu) exception type (pod carou)
-- rovnou posilat a expandovat deti na ceste k vybranemu prvku
-- deselekci zatim nechat a resit az v ramci validaci
-- dotazeni vybrane cesty/podstromu pro hodnotu z cache zatim neresit
