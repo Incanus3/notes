@@ -1,15 +1,3 @@
-- [x] procistit vytvareni model rootu
-- [x] doresit `DatabaseEaObjectQueryTest`
-- [x] mergnout
-- [x] naklikat hodiny
-- [x] dotahnout cistku `findAll`u a mergnout
-- [x] pridat OAuth username postprocessing
-- [x] vyresit problem po prepisu two-stepu na podminene inputy
-- [x] zrefaktorovat EaObjectBuilder
-- [ ] doresit nulabilitu v EA zaznamech
-- [ ] napsat Kuthanove
-
-### Nulabilita v EA
 #### T_OBJECT
 alias: nullable
 note: nullable
