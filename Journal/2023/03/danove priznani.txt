@@ -1,9 +1,0 @@
-- neuplatneni slevy partnerem
-- skolkovne
-- platby vzp
-- penzijko
-- metlife
-- vypis z zivnost. rejstriku
-- registrace k dani z prijmu
-- cssz - prehled zaloh a plateb
-- prichozi platby
