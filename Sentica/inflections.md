@@ -1,5 +1,3 @@
-== inflection CR notes ==
-
 - I'm not sure if it's a good idea to have the "canonical" `InflectedTerm` work with InflectionCode
   (if I think correctly that InflectionCode is the serialized inflection metadata representation)
   - ideally there should be some more meaningful canonical representation of Inflection, and InflectionCode should only be the serialized form used for storing them

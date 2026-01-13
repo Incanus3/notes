@@ -1,0 +1,7 @@
+- backend-apps:files, primarne endpointy
+- backend-apps:jsonApi - QStoreLoadingRouter a Handler
+- ea:core queries
+- ea:db queries
+- ea:db - EaObjectRepository - netestovat naprimo, ale zkrze kod, ktery to vola
+- backend-apps:rendering - TreeController
+- backend-apps:security - InMemoryNominationService - nejspis by stacilo vzit test, ktery hituje DB implementaci a udelat mu alternativni kontext
