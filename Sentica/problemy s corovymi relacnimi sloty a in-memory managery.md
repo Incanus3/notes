@@ -1,0 +1,6 @@
+- TransientEntity(List)Slot nesubclassuje Entity(List)Slot, protoze nema relatedEntityRegistry, coz RelationSlot (predek E(L)S) vyzaduje
+  - neni tudiz relational a nelze na nem plne testovat shape reflection, konkretne nastaveni SlotDeclaration.targetRegistry (coz se pouziva presne na jednom miste - v RegistryController.getSlots(), ale tam je to dulezite)
+- ManagerBackedEntitySlot je problematicky v tom, ze loaduje v kazdem getu a savuje v kazdem setu
+  - save by se dal nejspis vyresit
+  - get je nutny proto, ze jinak nemame sanci videt zmeny, ktere se staly z druhe strany
+    - problem je v tom, ze slot se typicky pouziva v kombinaci s InMemoryManagerem, ktery pokazde vraci tutez instanci, pokud se neni tedy jednou slot accessuje, udrzuje si pak uz navzdy starou hodnotu
