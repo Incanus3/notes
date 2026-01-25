@@ -66,3 +66,5 @@ https://www.baeldung.com/spring-security-integration-tests
 https://docs.gradle.org/current/userguide/declaring_dependencies.html
 https://docs.gradle.org/current/userguide/composite_builds.html#defining_composite_builds
 --include-build ../crnk-framework bootRun --scan
+
+### other libs

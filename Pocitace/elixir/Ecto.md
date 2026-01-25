@@ -1,4 +1,3 @@
-### Elixir
 #### schema (json) validation using ecto
 
 ```elixir

@@ -1,9 +1,4 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2013-11-30T03:11:12+01:00
-
-====== plugins ======
-Created Saturday 30 November 2013
+https://codecompanion.olimorris.dev/ - AI coding, vim style
 
 https://github.com/tpope/vim-pathogen
 https://github.com/tpope/vim-rails
