@@ -1,6 +1,6 @@
 ### Starting new project
 ```
-mix archive.install hex phx_new 1.8.0-rc.3
+mix archive.install hex phx_new 1.8.0
 mix help phx.new
 mix phx.new gitlab_graphs
 cd gitlab_graphs/
@@ -14,3 +14,28 @@ mix setup
 mix test
 iex -S mix phx.server
 ```
+### Materials
+#### Docs
+- https://hexdocs.pm/phoenix/overview.html
+- https://hexdocs.pm/phoenix_live_view/welcome.html
+#### Articles
+- https://dev.to/lubien/the-lazy-programmers-intro-to-liveview-chapter-1-1487
+- https://www.viget.com/articles/how-to-redirect-from-the-phoenix-router/
+- https://fly.io/phoenix-files/dynamic-forms-with-streams/
+- https://binarynoggin.com/blog/dynamic-form-inputs-in-elixir-liveview/
+#### Videos
+- https://www.youtube.com/@CodeAndStuff/playlists
+- https://www.youtube.com/watch?v=rvwShn-c-_M&ab_channel=GoodToHear - Pragmatic Forms with Phoenix Live View
+### Libraries
+- https://hexdocs.pm/ecto/Ecto.html
+- https://ash-hq.org
+- https://surface-ui.org
+- https://daisyui.com/
+	- https://www.moendigital.com/blog/how-add-daisyui-elixir-phoenix-project-and-why-you-should/
+### Interesting projects for code exploration
+- https://github.com/livebook-dev/livebook
+- https://github.com/chrismccord/todo_trek
+- https://github.com/fly-apps/live_beats
+	- https://fly.io/blog/livebeats/
+- https://github.com/rauversion/rauversion-phx
+- https://github.com/BanchanArt/banchan
