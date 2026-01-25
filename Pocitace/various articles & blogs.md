@@ -1,3 +1,2 @@
-- `exa --tree`
 - https://samwho.dev
 - https://www.lesswrong.com/posts/xg3hXCYQPJkwHyik2/the-best-textbooks-on-every-subjecttil

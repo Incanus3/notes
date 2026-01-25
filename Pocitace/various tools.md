@@ -1,0 +1,1 @@
+https://mailpit.axllent.org/ - email & SMTP testing tool with API for developers

@@ -1,3 +1,4 @@
+- [ ] split this into several notes
 ### general
 https://www.baeldung.com/kotlin/delegated-properties
 https://youtrack.jetbrains.com/issue/KT-6653
@@ -10,6 +11,7 @@ https://www.toptal.com/java/a-guide-to-everyday-mockito
 https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html
 https://github.com/mockito/mockito/wiki/Mockito-vs-EasyMock
 https://github.com/powermock/powermock
+https://softwaremill.com/kotest-the-kotlin-testing-framework-you-will-love/#section-custom-matchers
 ### dbs
 https://hibernate.org/
 https://flywaydb.org/documentation/
@@ -56,7 +58,7 @@ https://www.doanduyhai.com/blog/?p=95
 https://www.doanduyhai.com/blog/?p=222
 https://stackoverflow.com/questions/21038706/persistenceunit-vs-persistencecontext/21038785
 #### testing in spring
-https://docs.spring.io/spring-framework/docs/current/reference/html/
+https://docs.spring.io/spring-framework/reference/testing/annotations/integration-junit-jupiter.html
 https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html
 https://spring.getdocs.org/en-US/spring-framework-docs/docs/testing/integration-testing/webtestclient.html
 https://reflectoring.io/spring-boot-testconfiguration/
@@ -65,6 +67,7 @@ https://www.baeldung.com/spring-security-integration-tests
 ### gradle
 https://docs.gradle.org/current/userguide/declaring_dependencies.html
 https://docs.gradle.org/current/userguide/composite_builds.html#defining_composite_builds
---include-build ../crnk-framework bootRun --scan
-
+- `--include-build ../crnk-framework bootRun --scan`
+- `gradlew dependencyInsight --dependency com.h2database:h2 --configuration testRuntimeClasspath`
 ### other libs
+- https://jsonlogic.com
