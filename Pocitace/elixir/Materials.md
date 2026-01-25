@@ -4,10 +4,14 @@
 - https://pragprog.com/titles/jkelixir/advanced-functional-programming-with-elixir/
 - https://www.packtpub.com/en-us/product/build-your-own-web-framework-in-elixir-9781801815901
 - https://arxiv.org/pdf/2306.06391.pdf - The Design Principles of the Elixir Type System 
-### Web
+### Videos
+- https://www.youtube.com/playlist?list=PLbV6TI03ZWYVQEC_Txq_cV0Uy_s16b0d3
+	- elixir crash course
+### Courses
 - https://elixirschool.com/
 - https://exercism.org/tracks/elixir
 - https://app.codecrafters.io/tracks/elixir - paid
+### Articles & blogs
 - https://www.theerlangelist.com - Saša Jurić's blog, including great series on macros
 - https://shyr.io/blog/composable-custom-guards-elixir
 - https://aaronrenner.io/2023/07/22/elixir-adapter-pattern.html

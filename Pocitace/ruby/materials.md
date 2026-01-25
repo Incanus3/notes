@@ -1,3 +1,6 @@
+### Books
+- https://pragprog.com/titles/eruby2/eloquent-ruby-second-edition/
+### Articles & blogs
 http://www.rubyinside.com/21-ruby-tricks-902.html
 
 http://rubyreflector.com/ - perfektni zdroj informaci ohledne ruby - knihovny, atd.
