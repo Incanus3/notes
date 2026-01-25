@@ -1,20 +1,9 @@
-### Starting new project
-```
-mix archive.install hex phx_new 1.8.0
-mix help phx.new
-mix phx.new gitlab_graphs
-cd gitlab_graphs/
-cp ../elizar/run_postgres.sh .
-vim run_postgres.sh # edit name
-./run_postgres.sh 
-mix phx.gen.auth Accounts User users --hashing-lib argon2
-mix phx.gen.live Test Resource resources name:string age:integer
-# add printed routes to router.ex
-mix setup
-mix test
-iex -S mix phx.server
-```
 ### Materials
+#### Books
+- https://pragprog.com/titles/phoenix14/programming-phoenix-1-4/
+	- bohuzel jen pro verzi 1.4 - zastarale
+- https://pragprog.com/titles/liveview/programming-phoenix-liveview/
+- https://pragprog.com/titles/ldash/ash-framework/
 #### Docs
 - https://hexdocs.pm/phoenix/overview.html
 - https://hexdocs.pm/phoenix_live_view/welcome.html
@@ -39,3 +28,19 @@ iex -S mix phx.server
 	- https://fly.io/blog/livebeats/
 - https://github.com/rauversion/rauversion-phx
 - https://github.com/BanchanArt/banchan
+### Starting new project
+```
+mix archive.install hex phx_new 1.8.0
+mix help phx.new
+mix phx.new gitlab_graphs
+cd gitlab_graphs/
+cp ../elizar/run_postgres.sh .
+vim run_postgres.sh # edit name
+./run_postgres.sh 
+mix phx.gen.auth Accounts User users --hashing-lib argon2
+mix phx.gen.live Test Resource resources name:string age:integer
+# add printed routes to router.ex
+mix setup
+mix test
+iex -S mix phx.server
+```

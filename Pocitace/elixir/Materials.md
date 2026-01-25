@@ -1,9 +1,9 @@
 ### Books
-- Elixir in Action - https://livebook.manning.com/book/elixir-in-action-third-edition/
-- Programming Phoenix - bohuzel jen pro verzi 1.4 - zastarale
-- Programming Phoenix LiveView
-- Build your own web framework in Elixir
-- The Design Principles of the Elixir Type System - https://arxiv.org/pdf/2306.06391.pdf
+- https://livebook.manning.com/book/elixir-in-action-third-edition/
+- https://pragprog.com/titles/d-akelixir/elixir-patterns/
+- https://pragprog.com/titles/jkelixir/advanced-functional-programming-with-elixir/
+- https://www.packtpub.com/en-us/product/build-your-own-web-framework-in-elixir-9781801815901
+- https://arxiv.org/pdf/2306.06391.pdf - The Design Principles of the Elixir Type System 
 ### Web
 - https://elixirschool.com/
 - https://exercism.org/tracks/elixir
