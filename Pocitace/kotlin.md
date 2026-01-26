@@ -1,16 +1,4 @@
-- [ ] split this into several notes
-### general
-https://www.baeldung.com/kotlin/delegated-properties
-https://youtrack.jetbrains.com/issue/KT-6653
 ### testing
-https://mockk.io/
-https://site.mockito.org/
-https://joel-costigliola.github.io/assertj/
-https://phauer.com/2018/best-practices-unit-testing-kotlin/
-https://www.toptal.com/java/a-guide-to-everyday-mockito
-https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html
-https://github.com/mockito/mockito/wiki/Mockito-vs-EasyMock
-https://github.com/powermock/powermock
 https://softwaremill.com/kotest-the-kotlin-testing-framework-you-will-love/#section-custom-matchers
 ### dbs
 https://hibernate.org/
