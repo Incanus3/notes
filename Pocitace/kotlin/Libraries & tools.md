@@ -7,6 +7,7 @@ https://github.com/mockito/mockito/wiki/Mockito-vs-EasyMock
 ### DBs
 https://hibernate.org/
 https://flywaydb.org/
+https://www.jooq.org/
 ### gradle
 https://docs.gradle.org/current/userguide/declaring_dependencies.html
 https://docs.gradle.org/current/userguide/composite_builds.html#defining_composite_builds
