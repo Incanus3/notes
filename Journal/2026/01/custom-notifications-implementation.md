@@ -366,12 +366,8 @@ The implementation should follow this dependency order:
 
 ### Address Wildcard Matching
 
-The existing [`incorporates`](../core/models/src/main/kotlin/cz/sentica/qwazar/domain/address/AddressExtensions.kt:148) function provides the wildcard matching capability needed for subscriptions. This is already used in [`NotificationSettingStore`](../backend-apps/notifications/src/main/kotlin/cz/sentica/qwazar/notifications/stores/NotificationSettingStore.kt:57) for similar filtering.
+- for in-memory matching (if needed), the existing [`incorporates`](../core/models/src/main/kotlin/cz/sentica/qwazar/domain/address/AddressExtensions.kt:148) function provides the needed functionality. for in-database filtering, use an approach similar to `DatabaseAuditTraceStore.withResourceAddress()`
 
 ### Template Registration
 
 Custom notification templates still need to be registered in [`NotificationTemplateConfiguration`](../backend-apps/integration/src/main/kotlin/cz/sentica/qwazar/integration/configuration/NotificationTemplateConfiguration.kt). The `CustomEventNotification.templateName` must reference a template that has been registered there.
-
-### Performance Consideration
-
-Subscription matching is done in-memory after filtering by event type in the database. For high-volume scenarios, consider adding database-level address prefix filtering.
