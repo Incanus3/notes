@@ -15,3 +15,4 @@
 - https://artificialanalysis.ai - various model stats and benchmarks
 - https://www.daytona.io - run AI code in cloud sandbox
 - https://sprites.dev/ - similar, but stateful
+- https://github.com/different-ai/openwork - turn your opencode workflows into usable experiences for non-technical users
