@@ -5,6 +5,7 @@ https://ii.clsty.link/en/
 https://ii.clsty.link/en/ii-qs/03config/
 https://ii.clsty.link/en/ii-qs/01setup/#post-installation
 https://nwg-piotr.github.io/nwg-shell/ - probably will not use by itself, but has a ton of useful apps
+https://github.com/criticalart/calos - pre-configured Arch Linux + Hyprland starter setup
 https://github.com/uiriansan/SilentSDDM
 https://wiki.archlinux.org/title/Hyprland
 https://wiki.archlinux.org/title/KDE_Wallet#Using_the_KDE_Wallet_to_store_ssh_key_passphrases

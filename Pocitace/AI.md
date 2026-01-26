@@ -23,3 +23,4 @@
 - https://www.vibekanban.com/ - manage agent tasks as a kanban board
 - https://github.com/AutoMaker-Org/automaker - similar
 - https://github.com/different-ai/openwork - turn your opencode workflows into usable experiences for non-technical users
+- https://github.com/numman-ali/openskills - synchronize skills btw backends

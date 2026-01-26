@@ -8,4 +8,4 @@ https://dokploy.com/
 - manage containerized deployments across multiple servers with ease
 - https://www.chrisgregori.dev/opinion/how-I-stopped-paying-38-month-per-database
 https://temporal.io/
-- 
+- temporal Workflows automatically capture state at every step, and in the event of failure, can pick up exactly where they left off
