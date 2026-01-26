@@ -101,15 +101,17 @@ class DatabaseCustomNotificationRecipientList(
     var name: String,
     var description: String? = null,
     
-    // Store as JSON array of email addresses
-    @Column(columnDefinition = "text")
-    var toAddresses: String = "[]",  // JSON array
+	@DbArray
+    @Column
+    var toAddresses: List<String>,
     
-    @Column(columnDefinition = "text")
-    var ccAddresses: String = "[]",  // JSON array
+	@DbArray
+    @Column
+    var ccAddresses: List<String> = emptyList(),
     
-    @Column(columnDefinition = "text")
-    var bccAddresses: String = "[]", // JSON array
+	@DbArray
+    @Column
+    var bccAddresses: List<String> = emptyList(),
 ) : Model() {
     fun toEmailRecipient(): EmailRecipient
 }
@@ -123,11 +125,9 @@ Pattern follows [`DatabaseNotificationSetting`](../backend-apps/notifications/sr
 
 Standard Ebean repository following existing patterns.
 
-#### 2.3 Create store interface and implementation
+#### 2.3 Create store interface and make the repository implement it
 
-**Location:** `backend-apps/notifications/src/main/kotlin/cz/sentica/qwazar/notifications/stores/CustomNotificationRecipientListStore.kt`
-
-Pattern follows [`NotificationSettingStore`](../backend-apps/notifications/src/main/kotlin/cz/sentica/qwazar/notifications/stores/NotificationSettingStore.kt).
+Pattern follows [`NotificationSettingStore`](../backend-apps/events/src/main/kotlin/cz/sentica/events/notifications/stores/DatabaseEventStore.kt), but without the generic type param on the store inteface.
 
 #### 2.4 Create Artifact wrapper for recipient lists
 
