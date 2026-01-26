@@ -179,11 +179,11 @@ class DatabaseCustomNotificationSubscription(
     @Id val id: String = UUID.randomUUID().toString(),
     
     // Event matching
-    var eventType: String,  // EventType.name
-    var resourceAddressWildcard: String,  // Address serialized as string
+    @Convert(converter = AddressConverter::class)
+    var resourceAddressWildcard: Address,
     
     // Reference to CustomEventNotification (by ID, looked up in registry)
-    var notificationId: String,
+    var notificationId: CustomEventNotificationId,
     
     // Reference to recipient list
     @ManyToOne
@@ -200,36 +200,13 @@ class DatabaseCustomNotificationSubscription(
 
 **Location:** `backend-apps/notifications/src/main/kotlin/cz/sentica/qwazar/notifications/repositories/CustomNotificationSubscriptionRepository.kt`
 
-Important method:
-```kotlin
-fun findByEventType(eventType: EventType): List<DatabaseCustomNotificationSubscription>
-```
+#### 3.3 Create store interface and make the repository implement it
 
-#### 3.3 Create store interface and implementation
-
-**Location:** `backend-apps/notifications/src/main/kotlin/cz/sentica/qwazar/notifications/stores/CustomNotificationSubscriptionStore.kt`
-
-Key method following the pattern in [`NotificationSettingStore.getImmediateFor()`](../backend-apps/notifications/src/main/kotlin/cz/sentica/qwazar/notifications/stores/NotificationSettingStore.kt:53-58):
-
-```kotlin
-fun getMatchingSubscriptions(event: Event): List<DatabaseCustomNotificationSubscription> {
-    return repository
-        .findByEventType(event.type)
-        .filter { it.enabled }
-        .filter { 
-            Address.parse(it.resourceAddressWildcard) incorporates event.resourceAddress 
-        }
-}
-```
+- similar to 2.3
 
 #### 3.4 Create Artifact wrapper for subscriptions
 
 **Location:** `backend-apps/admin/src/main/kotlin/cz/sentica/qwazar/admin/customNotifications/subscriptions/SubscriptionArtifact.kt`
-
-This artifact needs special handling for:
-- `notificationId` - Select from registered `CustomEventNotification`s (dropdown populated from registry)
-- `recipientList` - Select from existing recipient lists (relationship to another artifact)
-- `resourceAddressWildcard` - Address input with wildcard support
 
 #### 3.5 Create Manager, Registry, and ViewSet for subscriptions
 
@@ -243,6 +220,10 @@ Files needed:
 - `SubscriptionCreateRenderer.kt`
 - `SubscriptionDetailRenderer.kt`
 - `SubscriptionSecurityRules.kt`
+
+This artifact needs special handling for:
+- `notificationId` - Select from registered `CustomEventNotification`s (dropdown populated from registry)
+- `recipientList` - Select from existing recipient lists (relationship to another artifact)
 
 ---
 
@@ -330,12 +311,7 @@ Test CRUD operations and subscription matching logic (especially address wildcar
 
 Test end-to-end flow: event → subscription matching → notification sending.
 
-#### 6.4 UI tests (optional)
-
-Test CRUD operations for recipient lists and subscriptions via the admin UI.
-
 ---
-
 ## File Structure Summary
 
 ```text
@@ -347,16 +323,13 @@ backend-apps/notifications/src/main/kotlin/cz/sentica/qwazar/notifications/
 ├── repositories/
 │   ├── CustomNotificationRecipientListRepository.kt
 │   └── CustomNotificationSubscriptionRepository.kt
-├── stores/
-│   ├── CustomNotificationRecipientListStore.kt
-│   └── CustomNotificationSubscriptionStore.kt
 ├── services/
 │   ├── CustomEventNotificationRegistry.kt
 │   └── SendCustomEventNotificationSubscriber.kt
 └── configuration/
     └── CustomNotificationConfiguration.kt
 
-backend-apps/admin/src/main/kotlin/cz/sentica/qwazar/admin/customNotifications/
+backend-apps/admin/src/main/kotlin/cz/sentica/qwazar/admin/notifications/
 ├── recipientLists/
 │   ├── RecipientListArtifact.kt
 │   ├── RecipientListManager.kt
