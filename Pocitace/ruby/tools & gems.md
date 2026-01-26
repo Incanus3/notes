@@ -56,6 +56,7 @@ https://github.com/intridea/grape-entity
 https://github.com/apotonick/roar
 http://jaimeandres.github.io/grapevine/
 https://github.com/sparklemotion/mechanize - ruby library that makes automated web interaction easy
+- https://www.phlex.fun/ - pure ruby views (templates)
 ### mailing
 https://github.com/ryanb/letter_opener - Preview email in the browser instead of sending it. This means you do not need to set up email delivery in your development environment, and you no longer need to worry about accidentally sending a test email to someone else’s address.
 ### testing

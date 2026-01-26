@@ -6,6 +6,7 @@
 - https://bloomberg.github.io/foml/ - foundations of machine learning
 ### Articles & blogs
 - https://github.com/decodingai-magazine
+- https://simonwillison.net/2025/Dec/31/the-year-in-llms/
 ### Tools
 - https://www.warp.dev/ - AI terminal
 - https://refact.ai - IDE plugin

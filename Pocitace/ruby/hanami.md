@@ -1,0 +1,2 @@
+https://hanakai.org/
+https://github.com/hanakai-rb/awesome-hanakai

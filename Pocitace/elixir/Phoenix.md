@@ -13,8 +13,11 @@
 - https://fly.io/phoenix-files/dynamic-forms-with-streams/
 - https://binarynoggin.com/blog/dynamic-form-inputs-in-elixir-liveview/
 #### Videos
+- https://www.youtube.com/playlist?list=PLbV6TI03ZWYXKCJePfD8G34hyWdW_WLFk
+	- Phoenix crash course
 - https://www.youtube.com/@CodeAndStuff/playlists
-- https://www.youtube.com/watch?v=rvwShn-c-_M&ab_channel=GoodToHear - Pragmatic Forms with Phoenix Live View
+- https://www.youtube.com/watch?v=rvwShn-c-_M&ab_channel=GoodToHear
+	- Pragmatic Forms with Phoenix Live View
 ### Libraries
 - https://hexdocs.pm/ecto/Ecto.html
 - https://ash-hq.org
