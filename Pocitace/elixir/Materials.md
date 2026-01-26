@@ -7,6 +7,7 @@
 ### Videos
 - https://www.youtube.com/playlist?list=PLbV6TI03ZWYVQEC_Txq_cV0Uy_s16b0d3
 	- elixir crash course
+- https://www.youtube.com/@CodeAndStuff
 ### Courses
 - https://elixirschool.com/
 - https://exercism.org/tracks/elixir
