@@ -20,6 +20,7 @@
 	- no prompt enhancement or project indexing
 	- not as cheap as augment for SOTA models
 	- https://github.com/Kilo-Org/kilocode/issues/2538 - workaround to set font size in JetBrains kilo extension
+	- to work around JB bug where you can't copy external providers' tokens into the inputs, enter some recognizable shit there (xxxxx), then edit ~/.kilocode/secrets.json and replace it by the actual token
 - https://refact.ai - IDE plugin
 	- similar, but augment worked much better for me
 - https://tidewave.ai/ - the coding agent for full-stack web app development 
