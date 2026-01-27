@@ -1,6 +1,7 @@
 ### Discussion topics
 - what tech stuff is he excited about, why?
 - what's their stance about AIs, why?
+	- if positive, which tools do you use? why?
 ### Practical task
 - take a fun task - sudoku implementation, colony management game, whatever
 	- these have the advantage of being very flexible - you can implement them as a CLI / TUI / 2d canvas / desktop GUI app / webapp (BE rendered or BE data + FE ui)
