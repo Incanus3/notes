@@ -5,6 +5,7 @@
 - https://www.youtube.com/watch?v=68BS5GCRcBo
 - https://bloomberg.github.io/foml/ - foundations of machine learning
 ### Articles & blogs
+- https://steipete.me/
 - https://github.com/decodingai-magazine
 - https://simonwillison.net/2025/Dec/31/the-year-in-llms/
 - https://www.aihero.dev/a-complete-guide-to-agents-md

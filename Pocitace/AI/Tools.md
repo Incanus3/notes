@@ -1,7 +1,7 @@
 ### AI chat
 - https://t3.chat/ - a really good alternative to ChatGPT
 	- choose any model
-	- $8/mo
+	- $8/month
 ### Coding agents
 - https://opencode.ai/ - CLI (command & interactive) & web interface
 	- integrates with most model providers and backends (both cloud and local)
