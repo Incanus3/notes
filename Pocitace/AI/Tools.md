@@ -53,3 +53,4 @@
 ### Other stuff
 - https://docs.sillytavern.app/ - locally installed user interface that allows you to interact with text generation LLMs, image generation engines, and TTS voice models
 - https://github.com/steipete - there used to be LOTS of really cool projects here, but seems like his account has been taken over
+	- [[steipete (Peter Steinberger) · GitHub.html]]
