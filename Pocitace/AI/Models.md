@@ -1,0 +1,4 @@
+- Claude - Sonnet a Opus 4.5 - velmi dobry, ale taky velmi drahy, zvlast vzhledem k tomu, jak jsou ukecany
+	- platit je z vlastnich tokenu se hrube nevyplati, augment je ale nabizi za slusnou cenu (vubec nechapu, ze se uzivi)
+- GPT-5.2-Codex - zatim jsem moc nezkousel, melo by byt velmi dobry, o neco levnejsi nez Sonnet a ne tak ukecany
+- Gemini 3 - moc jsem nezkousel, melo by byt relativne chytry, ale taky extremne zabihavy a halucinujici
