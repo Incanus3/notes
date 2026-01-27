@@ -11,6 +11,8 @@
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
 ### Courses
 - https://agenticjumpstart.com/ - payed
+### Other resources
+- https://openrouter.ai/rankings
 ### Tools
 - https://opencode.ai/ - AI cli, tui & web interface, integrates with most model providers and backends (both cloud and local)
 - https://www.warp.dev/ - AI terminal
