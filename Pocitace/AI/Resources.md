@@ -2,6 +2,7 @@
 - https://www.youtube.com/@t3dotgg/videos
 - https://www.youtube.com/@AICodeKing/videos
 - https://www.youtube.com/@aiexplained-official
+- https://www.youtube.com/@rasmic/videos
 - https://www.youtube.com/watch?v=68BS5GCRcBo
 - https://bloomberg.github.io/foml/ - foundations of machine learning
 ### Articles & blogs
