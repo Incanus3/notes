@@ -1,18 +1,3 @@
-### Videos
-- https://www.youtube.com/@AICodeKing/videos
-- https://www.youtube.com/@aiexplained-official
-- https://bloomberg.github.io/foml/ - foundations of machine learning
-### Articles & blogs
-- https://github.com/decodingai-magazine
-- https://simonwillison.net/2025/Dec/31/the-year-in-llms/
-- https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04
-	- a crazy multi-agent orchestration idea + tooling
-### Books
-- https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
-### Courses
-- https://agenticjumpstart.com/ - payed
-### Other resources
-- https://openrouter.ai/rankings
 ### Tools
 - https://opencode.ai/ - AI cli, tui & web interface, integrates with most model providers and backends (both cloud and local)
 - https://www.warp.dev/ - AI terminal
@@ -25,4 +10,8 @@
 - https://www.vibekanban.com/ - manage agent tasks as a kanban board
 - https://github.com/AutoMaker-Org/automaker - similar
 - https://github.com/different-ai/openwork - turn your opencode workflows into usable experiences for non-technical users
+- https://btca.dev/ - better context for your agents
+	- ask questions about your libs
+	- works directly with their code
 - https://github.com/numman-ali/openskills - synchronize skills btw backends
+- https://docs.sillytavern.app/ - locally installed user interface that allows you to interact with text generation LLMs, image generation engines, and TTS voice models
