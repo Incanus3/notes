@@ -14,7 +14,7 @@
 - https://agenticjumpstart.com/ - payed
 ### Other resources
 - https://artificialanalysis.ai/
-	- velmi dukladny porovnani modelu podle vsemoznych 
+	- velmi dukladny porovnani modelu podle vsemoznych vlastnosti
 - https://openrouter.ai/models?fmt=cards&order=most-popular&categories=programming
 	- most popular models with details
 - https://openrouter.ai/rankings
