@@ -49,7 +49,7 @@
 - https://www.daytona.io - run AI code in cloud sandbox
 - https://sprites.dev/ - similar, but stateful
 - https://www.coderabbit.ai/ - AI code review
-- https://www.greptile.com/ - taktez, mozna o neco lepsi, ale taky drazsi
+- https://www.greptile.com/ - similar, maybe a bit better, but also more expensive
 ### Other stuff
 - https://docs.sillytavern.app/ - locally installed user interface that allows you to interact with text generation LLMs, image generation engines, and TTS voice models
 - https://github.com/steipete - there used to be LOTS of really cool projects here, but seems like his account has been taken over
