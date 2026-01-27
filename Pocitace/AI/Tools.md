@@ -6,6 +6,15 @@
 - https://www.augmentcode.com - IDE plugin + CLI (command & interactive)
 	- good prompt enhancement and project indexing
 	- pretty good price for SOTA models (much cheaper Claude)
+	- doesn't work with latest IDEA
+- https://kilo.ai/ - very versatile
+	- lots of front-ends - CLI, IDE plugins, cloud agents, app builder, slack, code review
+	- provides most models, either through own subscription, or bring your key
+	- pricing (if subsription bought from them) is almost the same as if used directly by provider
+	- VS Code seems to be the primary plugin target, JetBrains plugin has a few issues, but is definitely usable
+	- plugin shows A LOT of usage information (unlike most alternatives)
+	- no prompt enhancement or project indexing
+	- not as cheap as augment for SOTA models
 - https://refact.ai - IDE plugin
 	- similar, but augment worked much better for me
 - https://tidewave.ai/ - the coding agent for full-stack web app development 
@@ -17,6 +26,10 @@
 	- similar, nicer UI, but seems more suited for one-off jobs than for interactive work
 	- doesn't support as many backends, but is adding new ones gradually
 - https://github.com/different-ai/openwork - turn your opencode workflows into usable experiences for non-technical users
+- https://claude.com/product/claude-code - CLI and IDE plugin directly from Claude
+	- haven't tried much but at least CLI should be good enough (pretty popular)
+	- pretty good price, but only Claude models
+- https://openai.com/codex/ - OpenAI coding agents - CLI, web, IDE (cursor, JetBrains, VS Code), Warp
 #### Extensions
 - https://btca.dev/ - better context for your agents
 	- ask questions about your libs
