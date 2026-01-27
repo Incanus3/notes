@@ -1,3 +1,7 @@
+### AI chat
+- https://t3.chat/ - a really good alternative to ChatGPT
+	- choose any model
+	- $8/mo
 ### Coding agents
 - https://opencode.ai/ - CLI (command & interactive) & web interface
 	- integrates with most model providers and backends (both cloud and local)
@@ -20,6 +24,9 @@
 - https://tidewave.ai/ - the coding agent for full-stack web app development 
 	- very interesting integrations - can introspect most parts of your app
 	- doesn't support java/kotlin yet - supports JS, python, ruby, elixir
+- https://cursor.com/home - the AI IDE
+	- probably the most popular AI-first IDE
+	- built on top of VS code (sadly pretty broken in wayland)
 - https://www.vibekanban.com/ - manage agent tasks as a kanban board
 	- supports a lot of backends, including opencode, which supports most providers
 - https://github.com/AutoMaker-Org/automaker
@@ -27,9 +34,11 @@
 	- doesn't support as many backends, but is adding new ones gradually
 - https://github.com/different-ai/openwork - turn your opencode workflows into usable experiences for non-technical users
 - https://claude.com/product/claude-code - CLI and IDE plugin directly from Claude
-	- haven't tried much but at least CLI should be good enough (pretty popular)
-	- pretty good price, but only Claude models
+	- haven't tried, but at least CLI should be good enough (pretty popular)
+	- pretty good price, generous token limits, but only Claude models
 - https://openai.com/codex/ - OpenAI coding agents - CLI, web, IDE (cursor, JetBrains, VS Code), Warp
+	- haven't tried, should be usable
+	- only OpenAI models, don't know about token limits
 #### Extensions
 - https://btca.dev/ - better context for your agents
 	- ask questions about your libs

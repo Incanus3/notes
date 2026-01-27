@@ -1,9 +1,17 @@
-- Claude - Sonnet a Opus 4.5 - velmi dobry, ale taky velmi drahy, zvlast vzhledem k tomu, jak jsou ukecany
+- Claude - Sonnet a Opus 4.5
+	- velmi dobry, ale taky velmi drahy, zvlast vzhledem k tomu, jak jsou ukecany
 	- platit je z vlastnich tokenu se hrube nevyplati, augment je ale nabizi za slusnou cenu (vubec nechapu, ze se uzivi)
-- GPT-5.2-Codex - zatim jsem moc nezkousel, melo by byt velmi dobry, o neco levnejsi nez Sonnet a ne tak ukecany
-- MiniMax M2.1 - velmi levnej a dost slusnej - ne tak chytrej jak Claude, ale za tu cenu...
-- GLM 4.7 - podobne, mozna o trochu horsi
-- Gemini 3 - moc jsem nezkousel, melo by byt relativne chytry, ale taky extremne zabihavy a halucinujici
-- DeepSeek V3.2 - zatim jsem moc nezkousel, nemuselo by byt spatny, ale ma relativne vysoky hallucination index
-- Devstral 2 - nezkousel jsem na "velky programovani", ale je extremne levnej a super na auto-complete
-- Grok Code Fast 1 - naprosto priserny, navic je to Musk
+- GPT-5.2-Codex
+	- zatim jsem moc nezkousel, melo by byt velmi dobry, o neco levnejsi nez Sonnet a ne tak ukecany
+- MiniMax M2.1
+	- velmi levnej a dost slusnej - ne tak chytrej jak Claude, ale za tu cenu...
+- GLM 4.7
+	- podobne, mozna o trochu horsi
+- Gemini 3
+	- moc jsem nezkousel, melo by byt relativne chytry, ale taky extremne zabihavy a halucinujici
+- DeepSeek V3.2
+	- zatim jsem moc nezkousel, nemuselo by byt spatny, ale ma relativne vysoky hallucination index
+- Devstral 2
+	- nezkousel jsem na "velky programovani", ale je extremne levnej a super na auto-complete
+- Grok Code Fast 1
+	- naprosto priserny, navic je to Musk
