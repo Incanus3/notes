@@ -1,16 +1,12 @@
 # Custom Notifications Implementation Plan
-
 This document outlines the implementation plan for the custom mail notifications feature based on the high-level design in [`docs/Custom Notifications.md`](../docs/Custom%20Notifications.md).
-
 ## Overview
-
 The feature enables sending custom email notifications to editable lists of users when specific events occur. The system consists of:
 
 1. **CustomEventNotification** - Defines what notification to send (template + params extraction)
 2. **CustomNotificationRecipientList** - Defines who receives the notification (stored in DB, managed via UI)
 3. **CustomNotificationSubscription** - Links custom notifications to recipient lists, also allowing to set the resource address wildcard (stored in DB, managed via UI)
 4. **SendCustomEventNotificationSubscriber** - EventSubscriber that processes events and sends notifications
-
 ## Architecture
 
 ```mermaid
