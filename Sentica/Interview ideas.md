@@ -1,3 +1,7 @@
+### Discussion topics
+- what tech stuff is he excited about, why?
+- what's their stance about AIs, why?
+### Practical task
 - take a fun task - sudoku implementation, colony management game, whatever
 	- these have the advantage of being very flexible - you can implement them as a CLI / TUI / 2d canvas / desktop GUI app / webapp (BE rendered or BE data + FE ui)
 - add some "real" stuff to it, ideally one that our product needs
@@ -8,10 +12,11 @@
 	- background jobs with observability and error handling / retries
 	- TODO: find some more stuff
 - let the candidate choose the tech stack
-	- it doesn't need to be our stack - he can always learn that
-	- if he chooses his:
-		- he'll be comfortable, not hindered by lang and tools he doesn't know
+	- it doesn't need to be our stack - they can always learn that
+	- if they chooses his:
+		- they'll be comfortable, not hindered by lang and tools they don't know
 		- we might learn some interesting stuff
-		- it gives us something to talk about and see how he thinks
-			- why did he chose which part
+		- it gives us something to talk about and see how they think
+			- why did they chose which part
 			- what are its advantages and its shortcomings
+			- what would you choose if you wanted to make it the most fun and what would you choose if you wanted to make it most practical?
