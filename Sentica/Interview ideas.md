@@ -3,7 +3,8 @@
 - add some "real" stuff to it, ideally one that our product needs
 	- swappable storage
 	- make it client+server
-	- multiplayer
+	- multiplayer - auth & sessions
+	- security - only some users can do some stuff
 	- background jobs with observability and error handling / retries
 	- TODO: find some more stuff
 - let the candidate choose the tech stack
