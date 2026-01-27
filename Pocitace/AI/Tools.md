@@ -19,6 +19,7 @@
 	- plugin shows A LOT of usage information (unlike most alternatives)
 	- no prompt enhancement or project indexing
 	- not as cheap as augment for SOTA models
+	- https://github.com/Kilo-Org/kilocode/issues/2538 - workaround to set font size in JetBrains kilo extension
 - https://refact.ai - IDE plugin
 	- similar, but augment worked much better for me
 - https://tidewave.ai/ - the coding agent for full-stack web app development 
@@ -51,3 +52,4 @@
 - https://www.greptile.com/ - taktez, mozna o neco lepsi, ale taky drazsi
 ### Other stuff
 - https://docs.sillytavern.app/ - locally installed user interface that allows you to interact with text generation LLMs, image generation engines, and TTS voice models
+- https://github.com/steipete - there used to be LOTS of really cool projects here, but seems like his account has been taken over

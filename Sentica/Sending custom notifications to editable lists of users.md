@@ -1,13 +1,3 @@
-https://github.com/Kilo-Org/kilocode/issues/2538
-- workaround to set font size in JetBrains kilo extension
-#### Token usage
-- pred planem - 8.21
-- po planovani - 7.43
-- po fazi 2.3 - 6.33
-- po fazi 3.1 - 5.22
-- po fazi 3.2 - 4.80
-- po fazi 5.1 - 0.32
-## Sending custom notifications to editable lists of users
 ### What the flow looks like
 - an `Event` happens
 - there are some registered `CustomNotification`s

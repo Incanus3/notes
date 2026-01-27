@@ -1,5 +1,3 @@
-### Debug problemu s vypoctem nextOccurrence
-
 - mam nejaky startAt, napr. 7.1. 12:00
 - mam nejakou periodu, napr. 7 days
 - `truncateUnit` = `DAYS` (vsechny mensi jednotky jsou v periode nulovy)

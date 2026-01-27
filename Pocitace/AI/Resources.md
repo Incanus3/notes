@@ -6,11 +6,12 @@
 - https://bloomberg.github.io/foml/ - foundations of machine learning
 ### Articles & blogs
 - https://steipete.me/
+- https://simonwillison.net/
 - https://github.com/decodingai-magazine
-- https://simonwillison.net/2025/Dec/31/the-year-in-llms/
 - https://www.aihero.dev/a-complete-guide-to-agents-md
 - https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04
 	- a crazy multi-agent orchestration idea + tooling
+- https://cajundiscordian.medium.com/is-lamda-sentient-an-interview-ea64d916d917
 ### Books
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
 ### Courses
