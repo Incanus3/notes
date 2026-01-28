@@ -7,6 +7,7 @@ http://rubyreflector.com/ - perfektni zdroj informaci ohledne ruby - knihovny, a
 
 http://www.mikeperham.com/ - zajimavy blog
 http://www.paperplanes.de/tags/ruby.html - dalsi uzitecne clanky
+https://zverok.substack.com/archive
 
 http://blog.madebydna.com/all/code/2011/06/24/eigenclasses-demystified.html
 https://github.com/ryanlecompte/method_locator - zajimavy priklad pouziti

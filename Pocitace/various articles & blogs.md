@@ -1,2 +1,3 @@
 - https://samwho.dev
+- https://pikdum.dev/posts/thistle-tea/
 - https://www.lesswrong.com/posts/xg3hXCYQPJkwHyik2/the-best-textbooks-on-every-subjecttil
