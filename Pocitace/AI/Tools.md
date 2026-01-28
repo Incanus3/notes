@@ -16,7 +16,7 @@
 - https://kilo.ai/ - very versatile
 	- lots of front-ends - CLI, IDE plugins, cloud agents, app builder, slack, code review
 	- provides most models, either through own subscription, or bring your key
-	- pricing (if subsription bought from them) is almost the same as if used directly by provider
+	- pricing (if subsription bought from them) is almost the same as if used directly by provider (which is not great for SOTA models)
 	- VS Code seems to be the primary plugin target, JetBrains plugin has a few issues, but is definitely usable
 	- plugin shows A LOT of usage information (unlike most alternatives)
 	- no prompt enhancement or project indexing
