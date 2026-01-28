@@ -11,6 +11,8 @@
 	- good prompt enhancement and project indexing
 	- pretty good price for SOTA models (much cheaper Claude)
 	- doesn't work with latest IDEA
+	- auggie CLI (as opposed to the IDE plugin) also supports subagents
+		- https://docs.augmentcode.com/cli/subagents
 - https://kilo.ai/ - very versatile
 	- lots of front-ends - CLI, IDE plugins, cloud agents, app builder, slack, code review
 	- provides most models, either through own subscription, or bring your key
