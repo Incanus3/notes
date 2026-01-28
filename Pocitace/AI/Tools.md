@@ -41,6 +41,8 @@
 - https://openai.com/codex/ - OpenAI coding agents - CLI, web, IDE (cursor, JetBrains, VS Code), Warp
 	- haven't tried, should be usable
 	- only OpenAI models, don't know about token limits
+
+NOTE: to use tui agents effectively on windows, you need a terminal which can manage these highly interactive tuis, e.g. updating a line that'
 #### Extensions
 - https://btca.dev/ - better context for your agents
 	- ask questions about your libs
