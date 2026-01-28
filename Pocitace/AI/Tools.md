@@ -57,6 +57,5 @@ NOTE: to use tui agents effectively on windows, you need a terminal which can ma
 - https://www.coderabbit.ai/ - AI code review
 - https://www.greptile.com/ - similar, maybe a bit better, but also more expensive
 ### Other stuff
+- https://github.com/steipete - LOTS of really cool projects here
 - https://docs.sillytavern.app/ - locally installed user interface that allows you to interact with text generation LLMs, image generation engines, and TTS voice models
-- https://github.com/steipete - there used to be LOTS of really cool projects here, but seems like his account has been taken over
-	- [[steipete (Peter Steinberger) · GitHub.html]]
