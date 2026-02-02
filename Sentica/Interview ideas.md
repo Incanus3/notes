@@ -2,7 +2,7 @@
 - what tech stuff is he excited about, why?
 - what's their stance about AIs, why?
 	- if positive, which tools do you use? why?
-### Practical task
+### Practical coding task
 - take a fun task - sudoku implementation, colony management game, whatever
 	- these have the advantage of being very flexible - you can implement them as a CLI / TUI / 2d canvas / desktop GUI app / webapp (BE rendered or BE data + FE ui)
 - add some "real" stuff to it, ideally one that our product needs
@@ -21,4 +21,5 @@
 			- why did they chose which part
 			- what are its advantages and its shortcomings
 			- what would you choose if you wanted to make it the most fun and what would you choose if you wanted to make it most practical?
-![[Pasted image 20260202133614.png]]
+#### Code reading / debugging
+- show them a page in the app (or introduce a bug), let them find out, which piece of code renders the page, how the data (or other stuff) gets there (from the source, up the layers)
