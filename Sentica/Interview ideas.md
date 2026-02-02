@@ -21,3 +21,4 @@
 			- why did they chose which part
 			- what are its advantages and its shortcomings
 			- what would you choose if you wanted to make it the most fun and what would you choose if you wanted to make it most practical?
+![[Pasted image 20260202133614.png]]
