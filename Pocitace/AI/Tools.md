@@ -36,6 +36,8 @@
 - https://github.com/AutoMaker-Org/automaker
 	- similar, nicer UI, but seems more suited for one-off jobs than for interactive work
 	- doesn't support as many backends, but is adding new ones gradually
+- https://www.conductor.build/
+	- similar, nice UI, mac only
 - https://github.com/different-ai/openwork - turn your opencode workflows into usable experiences for non-technical users
 - https://claude.com/product/claude-code - CLI and IDE plugin directly from Claude
 	- haven't tried, but at least CLI should be good enough (pretty popular)
