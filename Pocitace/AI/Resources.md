@@ -1,5 +1,6 @@
 ### Videos
 - https://www.youtube.com/@t3dotgg/videos
+- https://www.youtube.com/@AndrejKarpathy
 - https://www.youtube.com/@AICodeKing/videos
 - https://www.youtube.com/@aiexplained-official
 - https://www.youtube.com/@rasmic/videos
