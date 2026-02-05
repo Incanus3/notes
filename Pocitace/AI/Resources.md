@@ -3,7 +3,6 @@
 - https://www.youtube.com/@AndrejKarpathy
 - https://www.youtube.com/@AICodeKing
 - https://www.youtube.com/@aiexplained-official
-- https://www.youtube.com/@rasmic
 - https://www.youtube.com/watch?v=68BS5GCRcBo
 - https://bloomberg.github.io/foml/ - foundations of machine learning
 ### Articles & blogs
