@@ -60,9 +60,17 @@ NOTE: to use tui agents effectively on windows, you need a terminal which can ma
 - https://www.greptile.com/ - similar, maybe a bit better, but also more expensive
 ### Other stuff
 - https://skills.sh/ - a big skill library
+	- https://skills.sh/obra/superpowers/brainstorming
+	- https://skills.sh/obra/superpowers/writing-plans
+	- https://skills.sh/obra/superpowers/executing-plans
+	- https://skills.sh/obra/superpowers/using-git-worktrees
+	- https://skills.sh/obra/superpowers/requesting-code-review
+	- https://skills.sh/obra/episodic-memory/remembering-conversations
+	
 	- https://skills.sh/obra/superpowers/systematic-debugging
 	- https://skills.sh/obra/superpowers/test-driven-development
-	- https://skills.sh/obra/superpowers/writing-plans
+	- https://skills.sh/obra/superpowers/subagent-driven-development
+	- https://skills.sh/obra/superpowers/dispatching-parallel-agents
 - https://shumerprompt.com/ - a big prompt library
 - https://github.com/steipete - LOTS of really cool projects here
 - https://docs.sillytavern.app/ - locally installed user interface that allows you to interact with text generation LLMs, image generation engines, and TTS voice models
