@@ -7,9 +7,15 @@
 - https://bloomberg.github.io/foml/ - foundations of machine learning
 ### Articles & blogs
 - https://steipete.me/
+- https://shumer.dev/blog
 - https://simonwillison.net/
+- https://every.to/newsletter
+- https://steve-yegge.medium.com/
 - https://github.com/decodingai-magazine
+
 - https://www.aihero.dev/a-complete-guide-to-agents-md
+- https://x.com/flavioAd/status/2019474660866290061
+- https://x.com/KarelDoostrlnck/status/2019477361557926281
 - https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04
 	- a crazy multi-agent orchestration idea + tooling
 - https://cajundiscordian.medium.com/is-lamda-sentient-an-interview-ea64d916d917
