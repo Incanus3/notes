@@ -10,6 +10,7 @@
 	- https://www.chrisgregori.dev/opinion/how-I-stopped-paying-38-month-per-database
 - https://temporal.io/
 	- temporal Workflows automatically capture state at every step, and in the event of failure, can pick up exactly where they left off
+- https://www.dolthub.com/ - version-controlled database
 - https://ui.shadcn.com/
 	- a set of beautifully designed components that you can customize, extend, and build on
 	- supports a lot of FE frameworks + laravel
