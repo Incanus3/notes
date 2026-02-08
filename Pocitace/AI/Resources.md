@@ -18,6 +18,11 @@
 - https://x.com/KarelDoostrlnck/status/2019477361557926281
 - https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04
 	- a crazy multi-agent orchestration idea + tooling
+- https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b
+	- zajimavy vzorecek pro sanci sw na preziti
+	- taky dost zajimava myslenka jak udelat dobry UX toolu pro agenty:
+		"What I did was make their hallucinations real, over and over, by implementing whatever
+		I saw the agents trying to do with Beads, until nearly every guess by an agent is now correct."
 - https://cajundiscordian.medium.com/is-lamda-sentient-an-interview-ea64d916d917
 ### Books
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
