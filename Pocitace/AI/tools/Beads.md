@@ -1,5 +1,8 @@
 - https://github.com/steveyegge/beads - a memory upgrade for your coding agent
+- https://skills.sh/steveyegge/beads/beads - skill to use beads
 - https://github.com/steveyegge/beads/blob/main/claude-plugin/skills/beads/resources/CLI_REFERENCE.md
 	- see sibling files for other docs
 - https://github.com/steveyegge/beads/blob/main/docs/COMMUNITY_TOOLS.md
-- https://skills.sh/steveyegge/beads/beads - skill to use beads
+	- https://github.com/assimelha/bdui - nice and simple TUI viewer with different view modes
+	- https://github.com/zjrosen/perles - a more advanced view & management TUI + multi-agent orchestration control plane
+	- https://github.com/ChrisEdwards/abacus - another nice TUI
