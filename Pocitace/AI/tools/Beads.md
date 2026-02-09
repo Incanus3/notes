@@ -1,0 +1,5 @@
+- https://github.com/steveyegge/beads - a memory upgrade for your coding agent
+- https://github.com/steveyegge/beads/blob/main/claude-plugin/skills/beads/resources/CLI_REFERENCE.md
+	- see sibling files for other docs
+- https://github.com/steveyegge/beads/blob/main/docs/COMMUNITY_TOOLS.md
+- https://skills.sh/steveyegge/beads/beads - skill to use beads
