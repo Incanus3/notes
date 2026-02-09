@@ -6,11 +6,14 @@
 
 ### How to get started
 ```sh
+# set up a new repo
 cd <project_dir>
 jj git init --colocate
 jj git remote add origin <repo_url>
 jj bookmark set -r zzz main
 jj bookmark track main
+
+# start using ralph and beads
 yay -S ralph-tui beads-bin
 bd init
 bd doctor --fix
@@ -18,7 +21,9 @@ jj commit -m "initialized beads"
 ralph-tui setup
 jj commit -m "initialized ralph-tui"
 # make sure you have configured opencode/claude/codex and selected the model you're gonna use
-ralph-tui create-prd --chat
+ralph-tui create-prd --chat # when asked to create beads, say yes
+# you can tell it to start immediately, or use
+ralph-tui run/resume/status later
 ```
 
 #### BD TUI (optional)
