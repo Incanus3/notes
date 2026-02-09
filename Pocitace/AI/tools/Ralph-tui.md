@@ -21,9 +21,10 @@ jj commit -m "initialized beads"
 ralph-tui setup
 jj commit -m "initialized ralph-tui"
 # make sure you have configured opencode/claude/codex and selected the model you're gonna use
-ralph-tui create-prd --chat # when asked to create beads, say yes
+ralph-tui create-prd --chat # in the end, when asked to create beads, say yes
 # you can tell it to start immediately, or use
 ralph-tui run/resume/status later
+# you can also use db or bdui to manage beads directly
 ```
 
 #### BD TUI (optional)
@@ -34,7 +35,6 @@ git clone https://github.com/assimelha/bdui.git
 cd bdui/
 bun install
 bun run build
-./bdui
 cp bdui ~/.local/bin/
 # make sure you have ~/.local/bin in path
 ```
