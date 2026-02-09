@@ -12,6 +12,12 @@ jj git init --colocate
 jj git remote add origin <repo_url>
 jj bookmark set -r zzz main
 jj bookmark track main
+# make sure to add
+.ralph-tui/iterations
+.ralph-tui/session-meta.json
+.ralph-tui/session.json
+.ralph-tui/ralph.lock
+# to .gitignore
 
 # start using ralph and beads
 yay -S ralph-tui beads-bin
