@@ -58,6 +58,8 @@ NOTE: to use tui agents effectively on windows, you need a terminal which can ma
 	- https://skills.sh/obra/superpowers - these are reeeally good
 	- https://skills.sh/obra/superpowers-skills/getting-started-with-skills
 	- https://skills.sh/obra/episodic-memory/remembering-conversations
+- https://ralph-tui.com/ - AI agent loop orchestrator
+	- https://skills.sh/subsy/ralph-tui
 ### Cloud services
 - https://www.daytona.io - run AI code in cloud sandbox
 - https://sprites.dev/ - similar, but stateful
