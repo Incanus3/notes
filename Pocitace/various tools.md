@@ -14,3 +14,4 @@
 - https://ui.shadcn.com/
 	- a set of beautifully designed components that you can customize, extend, and build on
 	- supports a lot of FE frameworks + laravel
+- https://dnsimple.com/ - DNS registration and hosting
