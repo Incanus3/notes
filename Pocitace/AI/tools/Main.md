@@ -65,6 +65,9 @@ NOTE: to use tui agents effectively on windows, you need a terminal which can ma
 - https://github.com/darrenhinde/OpenAgentsControl
 - https://www.openportal.space/
 - https://github.com/mtymek/opencode-obsidian
+- https://github.com/mohak34/opencode-notifier
+- https://github.com/code-yeongyu/oh-my-opencode
+	- https://github.com/code-yeongyu/oh-my-opencode
 ### Cloud services
 - https://www.daytona.io - run AI code in cloud sandbox
 - https://sprites.dev/ - similar, but stateful
