@@ -5,8 +5,9 @@
 	- zatim jsem moc nezkousel, melo by byt velmi dobry, o neco levnejsi nez Sonnet a ne tak ukecany
 - MiniMax M2.1
 	- velmi levnej a dost slusnej - ne tak chytrej jak Claude, ale za tu cenu...
-- GLM 4.7
-	- podobne, mozna o trochu horsi
+- GLM 5
+	- velmi slusny, o neco drazsi
+	- rekl bych, ze nekde na pul cesty mezi opusem a sonnetem, ale asi za 1/4 ceny sonnetu
 - Gemini 3
 	- moc jsem nezkousel, melo by byt relativne chytry, ale taky extremne zabihavy a halucinujici
 - DeepSeek V3.2
