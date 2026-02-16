@@ -69,3 +69,4 @@ NOTE: to use tui agents effectively on windows, you need a terminal which can ma
 ### Other stuff
 - https://github.com/steipete - LOTS of really cool projects here
 - https://docs.sillytavern.app/ - locally installed user interface that allows you to interact with text generation LLMs, image generation engines, and TTS voice models
+- https://shumerprompt.com/prompts/clean-code-rules-prompt-554351c6-3bcb-4c20-9c77-f831b4aa6b0a
