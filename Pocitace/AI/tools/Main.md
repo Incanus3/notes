@@ -53,6 +53,7 @@ NOTE: to use tui agents effectively on windows, you need a terminal which can ma
 	- ask questions about your libs
 	- works directly with their code
 - https://shumerprompt.com/ - a big prompt library
+- https://github.com/asgeirtj/system_prompts_leaks
 - https://github.com/numman-ali/openskills - synchronize skills btw backends
 - https://skills.sh/ - a big skill library
 	- https://skills.sh/steveyegge/beads - beads
