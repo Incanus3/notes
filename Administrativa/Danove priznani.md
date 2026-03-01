@@ -16,9 +16,9 @@
  - [x] Registrace k dani z příjmu (every year)
 
 🏥 OSSZ & VZP (Social Security & Health Insurance)
- - [ ] OSSZ — přehled záloh a plateb OSVČ (every year)
- - [ ] OSSZ — stav pohledávek OSVČ (appeared in 2025 filing)
- - [ ] VZP — vyúčtování pojistného (appeared in 2024 filing; not every year)
+ - [x] OSSZ — přehled záloh a plateb OSVČ (every year)
+ - [x] OSSZ — stav pohledávek OSVČ (appeared in 2025 filing)
+ - [x] VZP — vyúčtování pojistného (appeared in 2024 filing; not every year)
 	- postou uz nechodi a v portalu jsem zadnou moznost exportu plateb nenasel
 
 💰 Příjmy z podnikání (Business Income — if applicable)
