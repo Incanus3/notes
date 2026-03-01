@@ -2,8 +2,8 @@
 - [ ] Potvrzení o zdanitelných příjmech — from your employer (every year)
 
 👶 Děti (Children — David & Tomáš)
- - [ ] Rodný list — David (every year)
- - [ ] Rodný list — Tomáš (every year)
+ - [x] Rodný list — David (every year)
+ - [x] Rodný list — Tomáš (every year)
  - [ ] Potvrzení o neuplatnění slevy na dani na děti partnerem (every year)
  - [ ] Potvrzení o platbách (před)školního vzdělávání (školkovné) — appeared in 2022 and 2024 filings; depends on whether children are still in preschool
 
