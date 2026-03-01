@@ -1,0 +1,5 @@
+- https://claude.com/download
+- https://chatgpt.com/explore/plus
+- https://openwork.software/
+- https://www.accomplish.ai/
+- https://www.kuse.ai/
