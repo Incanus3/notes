@@ -1,5 +1,6 @@
 - https://claude.com/download
+- https://gemini.google.com/app
 - https://chatgpt.com/explore/plus
-- https://openwork.software/
 - https://www.accomplish.ai/
+- https://openwork.software/
 - https://www.kuse.ai/
