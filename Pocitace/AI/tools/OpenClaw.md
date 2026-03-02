@@ -1,0 +1,2 @@
+- https://kilo.ai/kiloclaw
+- https://github.com/builderz-labs/mission-control
