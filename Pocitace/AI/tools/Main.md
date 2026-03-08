@@ -8,6 +8,7 @@
 - https://sprites.dev/ - similar, but stateful
 - https://www.coderabbit.ai/ - AI code review
 - https://www.greptile.com/ - similar, maybe a bit better, but also more expensive
+- https://app.devin.ai/review - in addition to giving review notes, it shows your PR in a much more review-able way - groups related changes, shows context
 ### Other stuff
 - https://github.com/steipete - LOTS of really cool projects here
 - https://docs.sillytavern.app/ - locally installed user interface that allows you to interact with text generation LLMs, image generation engines, and TTS voice models
