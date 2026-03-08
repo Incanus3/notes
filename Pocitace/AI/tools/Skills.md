@@ -3,7 +3,7 @@
 	- https://skills.sh/obra/superpowers - these are reeeally good
 	- https://skills.sh/obra/superpowers-skills/getting-started-with-skills
 	- https://skills.sh/obra/episodic-memory/remembering-conversations
-
+- https://github.com/wshobson/agents - Intelligent automation and multi-agent orchestration for Claude Code
 ### Currently used skills
 ```sh
 > npx skills ls -h
