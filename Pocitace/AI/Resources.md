@@ -14,6 +14,7 @@
 - https://github.com/decodingai-magazine
 
 - https://www.aihero.dev/a-complete-guide-to-agents-md
+- https://developers.openai.com/api/docs/guides/prompt-guidance/
 - https://x.com/flavioAd/status/2019474660866290061
 - https://x.com/KarelDoostrlnck/status/2019477361557926281
 - https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04
