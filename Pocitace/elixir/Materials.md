@@ -29,3 +29,4 @@
 - https://hexdocs.pm/explorer/Explorer.html - Explorer brings series (one-dimensional) and dataframes (two-dimensional) for fast data exploration to Elixir
 - https://hexdocs.pm/ex_unit/main/ExUnit.html
 - https://github.com/lpil/mix-test.watch
+- https://github.com/dannote/ghostty_ex - terminal integration for elixir, including LiveView
