@@ -3,7 +3,7 @@
 - https://pragprog.com/titles/d-akelixir/elixir-patterns/
 - https://pragprog.com/titles/jkelixir/advanced-functional-programming-with-elixir/
 - https://www.packtpub.com/en-us/product/build-your-own-web-framework-in-elixir-9781801815901
-- https://arxiv.org/pdf/2306.06391.pdf - The Design Principles of the Elixir Type System 
+- https://arxiv.org/pdf/2306.06391.pdf - The Design Principles of the Elixir Type System
 ### Videos
 - https://www.youtube.com/playlist?list=PLbV6TI03ZWYVQEC_Txq_cV0Uy_s16b0d3
 	- elixir crash course
@@ -20,13 +20,3 @@
 ### LiveBooks
 - https://notes.club
 - https://github.com/DockYard-Academy/curriculum
-## Libraries and modules
-- https://hexdocs.pm/elixir/main/enum-cheat.html
-- https://hexdocs.pm/gen_stage/GenStage.html - Stages are data-exchange steps that send and/or receive data from other stages
-- https://hexdocs.pm/flow/Flow.html - computational flows with stages
-	- [`Flow`](https://hexdocs.pm/flow/Flow.html#content) allows developers to express computations on collections, similar to the [`Enum`](https://hexdocs.pm/elixir/Enum.html) and [`Stream`](https://hexdocs.pm/elixir/Stream.html) modules, although computations will be executed in parallel using multiple [`GenStage`](https://hexdocs.pm/gen_stage/1.2.1/GenStage.html)s.
-- https://hex.pm/orgs/dashbit - Jose's company, many interesting libs including broadway, flow and the nimble toolkit
-- https://hexdocs.pm/explorer/Explorer.html - Explorer brings series (one-dimensional) and dataframes (two-dimensional) for fast data exploration to Elixir
-- https://hexdocs.pm/ex_unit/main/ExUnit.html
-- https://github.com/lpil/mix-test.watch
-- https://github.com/dannote/ghostty_ex - terminal emulator library for the BEAM, with OTP integration and precompiled NIF binaries
