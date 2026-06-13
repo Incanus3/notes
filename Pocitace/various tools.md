@@ -16,3 +16,4 @@
 	- supports a lot of FE frameworks + laravel
 - https://dnsimple.com/ - DNS registration and hosting
 - https://render.com - cloud platform for deploying apps, agents, workflows, databases, cron jobs, and background services
+- https://depot.dev/products/ci - CI product for fast builds and deployments
