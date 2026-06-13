@@ -12,6 +12,7 @@
   - EaObjectEntityQueryEvaluator funguje tak, ze vyjde z manager.query (coz je nizkourovnova Query) a podle "definice" zadane (vysokourovnove) query na ni nabaluje, nakonec ji vyhodnoti a mapne na artefakty
   - pro kombinovatelnost searche s queries je tohle sikovne, protoze pokud se upravi search strategies tak, aby braly a vracely (nizkourovnove) queries, tak lze proste nejdriv prohnat manager.query skrze search strategy (pripadne i nekolik) a pote predat evaluatoru
   - soucasne pokud by EntityQuery ci evaluator umel krome listu vracet nizkourovnovu Query (coz by v pripade EA nemelo byt slozite), bude mozno chainovat i v opacnem poradi
+- https://github.com/garrytan/gstack - opinionated Claude Code tool stack / workflow setup, useful as an inspiration point for AI-assisted development setups
   - problem je, jak tohle zobecnit, protoze non-EA evaluatory s (nizkourovnovymi) queries nepracuji
   - searche by navic nemely byt jen pred ci za, mely by byt na urovni jinych filteru, tedy melo by je byt mozne kombinovat do stromu spolu s dalsimi filtery
 - pro nase potreby tedy potrebujeme strukturu ("high-level query", "entity query", apod.), ktera

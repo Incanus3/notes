@@ -1,0 +1,1 @@
+- https://github.com/slowmist/openclaw-security-practice-guide - security practice guide for OpenClaw, likely useful for workflow hardening and safe agent operation

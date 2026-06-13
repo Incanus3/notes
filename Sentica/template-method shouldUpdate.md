@@ -5,7 +5,7 @@ the current paths are:
 - QSTLB (basic, overridable condition) -> DslQSTLB (calls super, but adds more logic) -> concrete subclass
 	- would like to override the condition defined in QSTLB, but keep the additional logic from DslQSTLB
 
-the problem here is that .shouldUpdate() currently severs as both
+the problem here is that .shouldUpdate() currently serves as both
 - the template method that subclasses can override to customize the base condition
 - the method that contains all the base logic that shouldn't be overridden
 	- there is no additional base logic in QSTLB, that's why this wasn't a problem until now

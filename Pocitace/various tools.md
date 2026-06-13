@@ -17,3 +17,6 @@
 - https://dnsimple.com/ - DNS registration and hosting
 - https://render.com - cloud platform for deploying apps, agents, workflows, databases, cron jobs, and background services
 - https://depot.dev/products/ci - CI product for fast builds and deployments
+- https://pierre.computer/ - design/development site with adjacent tools like diffs.com and trees.software
+- https://diffs.com/ - adjacent tool/site from pierre.computer
+- https://trees.software/ - adjacent tool/site from pierre.computer

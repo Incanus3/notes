@@ -16,3 +16,6 @@
 - https://tamux.app/ - AI agent runtime with durable memory, approvals, sandboxing, and execution-path visibility
 - https://www.assistant-ui.com/ - UI framework for AI assistant experiences
 - https://www.rwx.com/ - platform for building AI-powered browser and computer-use workflows
+- https://entire.io/ - developer platform that captures AI agent sessions alongside git commits
+- https://trigger.dev/ - platform for building and deploying AI workflows and agents in TypeScript
+- https://www.openfang.sh/ - agent operating system with sandboxed execution, memory, channels, and security systems
