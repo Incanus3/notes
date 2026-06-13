@@ -16,4 +16,3 @@
 	- supports a lot of FE frameworks + laravel
 - https://dnsimple.com/ - DNS registration and hosting
 - https://render.com - cloud platform for deploying apps, agents, workflows, databases, cron jobs, and background services
-- https://tamux.app/ - fully agentic daemon runtime with durable memory, approvals, sandboxing, and execution-path visibility
