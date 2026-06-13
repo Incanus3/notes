@@ -26,6 +26,9 @@
 		I saw the agents trying to do with Beads, until nearly every guess by an agent is now correct."
 - https://cajundiscordian.medium.com/is-lamda-sentient-an-interview-ea64d916d917
 - https://senkorasic.com/articles/ai-coding - AI coding article with links to more resources
+- https://www.decodingai.com/p/agentic-ai-engineering-guide-6-mistakes - guide to common mistakes in agentic AI engineering and how to avoid them
+- https://doneyli.substack.com/p/i-built-my-own-observability-for - article about building observability for Claude Code / AI coding workflows
+- https://substack.com/@charliehills/note/c-237534376 - curated list of Claude Code resources
 ### Books
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
 ### Courses

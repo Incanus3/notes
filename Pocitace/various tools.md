@@ -16,3 +16,4 @@
 	- supports a lot of FE frameworks + laravel
 - https://dnsimple.com/ - DNS registration and hosting
 - https://render.com - cloud platform for deploying apps, agents, workflows, databases, cron jobs, and background services
+- https://github.com/dannote/ghostty_ex - BEAM terminal emulator library wrapping libghostty-vt with OTP integration
