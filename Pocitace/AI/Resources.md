@@ -29,6 +29,7 @@
 - https://www.decodingai.com/p/agentic-ai-engineering-guide-6-mistakes - guide to common mistakes in agentic AI engineering and how to avoid them
 - https://doneyli.substack.com/p/i-built-my-own-observability-for - article about building observability for Claude Code / AI coding workflows
 - https://substack.com/@charliehills/note/c-237534376 - curated list of Claude Code resources
+- https://sumantthakur.substack.com/p/rag-vs-graphrag-vs-vectorless-rag - article on retrieval as an architecture decision: RAG, GraphRAG, and vectorless RAG in production systems
 ### Books
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
 ### Courses
