@@ -30,6 +30,7 @@
 - https://doneyli.substack.com/p/i-built-my-own-observability-for - article about building observability for Claude Code / AI coding workflows
 - https://substack.com/@charliehills/note/c-237534376 - curated list of Claude Code resources
 - https://sumantthakur.substack.com/p/rag-vs-graphrag-vs-vectorless-rag - article on retrieval as an architecture decision: RAG, GraphRAG, and vectorless RAG in production systems
+- https://github.com/slowmist/openclaw-security-practice-guide - security practice guide for OpenClaw / AI assistant workflows
 ### Books
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
 ### Courses

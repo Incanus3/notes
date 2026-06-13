@@ -20,4 +20,3 @@
 - https://trigger.dev/ - platform for building and deploying AI workflows and agents in TypeScript
 - https://www.openfang.sh/ - agent operating system with sandboxed execution, memory, channels, and security systems
 - https://github.com/garrytan/gstack - opinionated Claude Code tool stack / workflow setup, useful as an inspiration point for AI-assisted development setups
-- https://github.com/slowmist/openclaw-security-practice-guide - security practice guide for OpenClaw / AI assistant workflows
