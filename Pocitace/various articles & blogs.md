@@ -1,3 +1,5 @@
 - https://samwho.dev
 - https://pikdum.dev/posts/thistle-tea/
 - https://www.lesswrong.com/posts/xg3hXCYQPJkwHyik2/the-best-textbooks-on-every-subjecttil
+- https://senkorasic.com/articles/rethinking-code-reviews - advice on making PRs easier to review, including smaller PRs and more meaningful commit stories
+- https://martinfowler.com/fragments/2026-02-09.html - Martin Fowler fragment about code review / engineering thinking

@@ -25,6 +25,7 @@
 		"What I did was make their hallucinations real, over and over, by implementing whatever
 		I saw the agents trying to do with Beads, until nearly every guess by an agent is now correct."
 - https://cajundiscordian.medium.com/is-lamda-sentient-an-interview-ea64d916d917
+- https://senkorasic.com/articles/ai-coding - AI coding article with links to more resources
 ### Books
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
 ### Courses
