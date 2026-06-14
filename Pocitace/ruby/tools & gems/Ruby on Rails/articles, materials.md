@@ -33,7 +33,7 @@ http://bibwild.wordpress.com/2012/03/15/activerecord-concurrency-currently-good-
 
 https://github.com/rails/rails/blob/3-2-stable/activemodel/lib/active_model/secure_password.rb
 http://api.rubyonrails.org/classes/ActiveModel/Validations/HelperMethods.html#method-i-validates_confirmation_of
-- adds <attr name>_confirmation parameter to Model.create, update that is
+- adds `<attr name>_confirmation` parameter to Model.create, update that is
   checked against attribute during save
 http://api.rubyonrails.org/classes/ActiveModel/Validations/ClassMethods.html - obecne (flexibilni) validatory
 
