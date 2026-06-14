@@ -1,4 +1,6 @@
-### SentiNel workflow ideas
+# Qwazar automation ideas
+
+## SentiNel workflow ideas
 #### **Daily Qwazar dev digest**  
 • Commits today, grouped by author/module/ticket prefix.  
 • Open MRs changed today.  
