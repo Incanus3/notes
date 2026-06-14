@@ -17,25 +17,29 @@
   - `config.filter_parameters << :password`
 - http://guides.rubyonrails.org/active_record_querying.html - guide section on eager loading and query behavior
 
-### Architecture / patterns
+### Component architecture / app organization
 - http://cbra.info/ - component-based Rails architecture site
 - http://teotti.com/component-based-rails-architecture-primer/ - primer on component-based Rails architecture
 - http://teotti.com/gemfiles-hierarchy-in-ruby-on-rails-component-based-architecture/ - article on organizing Gemfiles for component-based Rails apps
+
+### Presentation / form objects
 - http://blog.sensible.io/2013/08/17/strong-parameters-by-example.html - practical strong-parameters examples for Rails
-- http://blog.steveklabnik.com/posts/2011-09-06-the-secret-to-rails-oo-design - Rails OO design article by Steve Klabnik
-- http://blog.steveklabnik.com/posts/2011-09-09-better-ruby-presenters - article on better Ruby presenters
-- http://words.steveklabnik.com/ - Steve Klabnik’s blog and writing archive
-- http://kpumuk.info/ruby-on-rails/simplifying-your-ruby-on-rails-code/ - article about simplifying Rails code
 - http://blog.carbonfive.com/2014/01/07/presenters-to-widgets-with-activemodelconversion/ - article about presenters/widgets and non-persisted form objects
 - http://quickleft.com/blog/using-faux-activerecord-models-in-rails-3 - article about using non-ActiveRecord objects with `form_for`
-- http://cmme.org/tdumitrescu/blog/2014/01/careful-what-you-memoize/ - article about consequences of memoizing at class level
+- http://kpumuk.info/ruby-on-rails/simplifying-your-ruby-on-rails-code/ - article about simplifying Rails code
+
+### OO design / architecture thinking
+- http://blog.steveklabnik.com/posts/2011-09-06-the-secret-to-rails-oo-design - Rails OO design article by Steve Klabnik
+- http://blog.steveklabnik.com/posts/2011-09-09-better-ruby-presenters - article on better Ruby presenters
+- http://blog.arkency.com/2013/05/is-it-cute-or-ugly/ - Arkency post on a Rails design question
+- http://blog.arkency.com/2013/07/ruby-and-aop-decouple-your-code-even-more/ - Arkency article on Ruby/AOP and decoupling
+
+### Rails model / validation / framework mechanics
 - https://github.com/rails/rails/blob/3-2-stable/activemodel/lib/active_model/secure_password.rb - Rails source example for secure password implementation
 - http://api.rubyonrails.org/classes/ActiveModel/Validations/HelperMethods.html#method-i-validates_confirmation_of - documentation for confirmation validation helper
   - adds `<attr>_confirmation` parameter to `Model.create` / `update` and checks it during save
 - http://api.rubyonrails.org/classes/ActiveModel/Validations/ClassMethods.html - Rails guide/API reference for validations
 - http://bibwild.wordpress.com/2012/03/15/activerecord-concurrency-currently-good-news-and-bad/ - article about ActiveRecord concurrency behavior
-- http://blog.arkency.com/2013/05/is-it-cute-or-ugly/ - Arkency post on a Rails design question
-- http://blog.arkency.com/2013/07/ruby-and-aop-decouple-your-code-even-more/ - Arkency article on Ruby/AOP and decoupling
 
 ### Testing
 - http://matthewlehner.net/rails-api-testing-guidelines/ - guidelines for testing Rails APIs
