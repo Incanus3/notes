@@ -43,7 +43,6 @@
 ### CLI
 - http://whatisthor.com/ - framework for building command-line interfaces, used by Bundler and Rails
 - https://github.com/rails/thor (last update 05/2026) - Thor CLI toolkit source repository
-- https://github.com/cowboyd/mvcli (last update 05/2014) - framework for creating CLI apps with Rails-like architecture: templates, routes, etc.
 - https://github.com/flori/term-ansicolor (last update 03/2026) - ANSI color/control-sequence library for Ruby terminal output; probably better
 
 ### HTTP
@@ -79,11 +78,9 @@
 - https://github.com/heartcombo/simple_form (last update 04/2026) - Rails form builder with concise DSL and generated markup wrappers
 - https://github.com/CanCanCommunity/cancancan (last update 01/2025) - authorization library for Ruby/Rails with a declarative ability DSL
 - https://github.com/kaminari/kaminari (last update 02/2026) - scope- and engine-based pagination library for Rails and other Ruby frameworks
-- https://github.com/wice/wice_grid (last update 07/2009) - Rails data-grid/table helper with filtering, sorting, and pagination
 
 ### Deployment
 - https://github.com/capistrano/capistrano (last update 05/2026) - remote server automation and deployment tool for Ruby applications
-- https://github.com/rvm/rvm-capistrano (last update 09/2016) - Capistrano integration for deploying with RVM-managed Ruby versions
 - https://github.com/capistrano/bundler (last update 11/2025) - Capistrano plugin for Bundler integration during deploys
 - https://github.com/capistrano/rails (last update 12/2024) - Capistrano plugin for Rails-specific deploy tasks such as assets and migrations
 
