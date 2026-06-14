@@ -31,6 +31,7 @@
 - https://substack.com/@charliehills/note/c-237534376 - curated list of Claude Code resources
 - https://sumantthakur.substack.com/p/rag-vs-graphrag-vs-vectorless-rag - article on retrieval as an architecture decision: RAG, GraphRAG, and vectorless RAG in production systems
 - https://github.com/slowmist/openclaw-security-practice-guide - security practice guide for OpenClaw / AI assistant workflows
+- https://kenhuangus.substack.com/p/recursive-self-improvement-a-technical - technical deep dive on recursive self-improvement loops in AI systems, using Anthropic’s “When AI builds itself” framing and Claude Code vs. Hermes Agent examples
 ### Books
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
 ### Courses
