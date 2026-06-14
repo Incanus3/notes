@@ -20,6 +20,13 @@
 ### Quality, metrics, and monitoring
 - https://codeclimate.com/ - automated code review and code quality metrics
 - http://godrb.com/ - easy-to-configure and extensible process monitoring framework written in Ruby
+- https://github.com/ctran/annotate_models - adds schema comments to Rails models and fixtures
+
+### Debugging
+- https://github.com/BetterErrors/better_errors - better Rails/Rack error page with source context and interactive inspection
+- https://github.com/banister/binding_of_caller - exposes caller bindings for debugging, commonly used by better_errors
+- https://github.com/rweng/pry-rails - Rails console integration for Pry, replacing IRB with Pry in Rails console
+- https://github.com/pry/pry-doc - Pry plugin that adds MRI C source and Ruby core documentation lookup
 
 ### Performance and profiling
 - https://github.com/tmm1/perftools.rb - performance benchmarks for Ruby apps; shows where execution time goes, method calls, bottlenecks
@@ -28,6 +35,7 @@
 - http://samsaffron.com/archive/2013/03/19/flame-graphs-in-ruby-miniprofiler - article on using flame graphs in Ruby MiniProfiler
 - https://github.com/tmm1/rbtrace - tracing/debugging tool for live Ruby processes, roughly “strace for Ruby”
 - http://youtu.be/cOaVIeX6qGg - video resource related to Ruby performance/profiling
+- https://github.com/MiniProfiler/rack-mini-profiler - Rack middleware for profiling requests, SQL, memory, and page rendering in Ruby web apps
 
 ### Configuration
 - https://github.com/bkeepers/dotenv - load environment variables from `.env` before application start
@@ -61,6 +69,34 @@
 - https://github.com/jnicklas/capybara#drivers - Capybara driver list; capybara-webkit is headless and JS-capable, Poltergeist uses PhantomJS and detects JS errors
 - https://github.com/bblimke/webmock - stubbing and expectations for HTTP requests, e.g. when communicating with external APIs
 - https://github.com/site-prism/site_prism - Page Object Model DSL for Capybara
+- https://github.com/thoughtbot/shoulda-matchers - RSpec/Minitest matchers for common Rails validations, associations, and controller behavior
+- https://github.com/thoughtbot/factory_bot_rails - Rails integration for factory_bot test data factories
+- https://github.com/minitest/minitest - Ruby testing framework bundled with Ruby and commonly used in Rails projects
+- https://github.com/rspec/rspec-rails - RSpec testing framework integration for Rails
+
+### Rails application gems
+- https://github.com/heartcombo/devise - flexible authentication solution for Rails based on Warden
+- https://github.com/heartcombo/simple_form - Rails form builder with concise DSL and generated markup wrappers
+- https://github.com/CanCanCommunity/cancancan - authorization library for Ruby/Rails with a declarative ability DSL
+- https://github.com/kaminari/kaminari - scope- and engine-based pagination library for Rails and other Ruby frameworks
+- https://github.com/wice/wice_grid - Rails data-grid/table helper with filtering, sorting, and pagination
+
+### Deployment
+- https://github.com/capistrano/capistrano - remote server automation and deployment tool for Ruby applications
+- https://github.com/rvm/rvm-capistrano - Capistrano integration for deploying with RVM-managed Ruby versions
+- https://github.com/capistrano/bundler - Capistrano plugin for Bundler integration during deploys
+- https://github.com/capistrano/rails - Capistrano plugin for Rails-specific deploy tasks such as assets and migrations
+
+### Database adapters
+- https://github.com/brianmario/mysql2 - fast MySQL client library for Ruby
+
+### Frontend / assets
+- https://github.com/rails/sass-rails - Sass adapter for the Rails asset pipeline
+- https://github.com/rails/jquery-rails - jQuery and jquery-ujs adapter for Rails
+- https://github.com/jquery-ui-rails/jquery-ui-rails - jQuery UI packaged for the Rails asset pipeline
+- https://github.com/rubyjs/therubyracer - embedded V8 JavaScript runtime for Ruby, historically used by Rails asset compilation
+- https://github.com/twbs/bootstrap-rubygem - Bootstrap packaged as a Ruby gem for Rails/Sprockets
+- https://github.com/willbryant/kaminari-bootstrap - Bootstrap-compatible pagination views/templates for Kaminari
 
 ### Commerce
 - https://spreecommerce.org - open-source eCommerce platform giving you full control and customizability
@@ -70,7 +106,5 @@
 - https://github.com/rubiety/jazzity - web app for exploring jazz theory
 - https://deveiate.org/code/linguistics/ - framework for building linguistic utilities
 
-### Outdated must-have list
-- devise, simple_form (initializer), cancancan, capistrano(rvm, bundler, rails), sass-rails, bootstrap, hb, wice_grid, kaminari, kaminari-boostrap, mysql2, therubyracer, jquery-rails, jquery-ui-rails
-- development - annotate, better_errors, binding_of_caller, pry-rails, pry-doc, rakc-mini-profiler, letter_opener
-- test - shoulda-matchers, factory_girl_rails, minitest/rspec, capybara
+### Unresolved from outdated must-have list
+- `hb` - unclear old shorthand; keep unresolved until identified
