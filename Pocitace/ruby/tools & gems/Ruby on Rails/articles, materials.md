@@ -41,6 +41,8 @@
 - http://matthewlehner.net/rails-api-testing-guidelines/ - guidelines for testing Rails APIs
 - http://blog.arkency.com/2013/07/coffeescript-tests-for-rails-apps/ - Arkency article about CoffeeScript tests in Rails apps
 - http://blog.arkency.com/2013/09/testing-client-side-views-in-rails-apps/ - Arkency article about testing client-side Rails views
+
+### Rails articles / reference
 - http://railscasts.com/?type=free - free RailsCasts episodes
 - http://railscasts.com/?tag_id=39 - RailsCasts tag for Rails code walkthrough episodes
 - http://richonrails.com/articles - archive of Rails articles and tutorials
