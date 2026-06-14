@@ -20,3 +20,4 @@
 - https://pierre.computer/ - design/development site with adjacent tools like diffs.com and trees.software
 - https://diffs.com/ - adjacent tool/site from pierre.computer
 - https://trees.software/ - adjacent tool/site from pierre.computer
+- https://coolify.io/ - open-source self-hostable alternative to Vercel/Heroku/Netlify/Railway for deploying apps, databases, and one-click services on your own server

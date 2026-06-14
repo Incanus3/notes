@@ -20,3 +20,13 @@
 - https://trigger.dev/ - platform for building and deploying AI workflows and agents in TypeScript
 - https://www.openfang.sh/ - agent operating system with sandboxed execution, memory, channels, and security systems
 - https://github.com/garrytan/gstack - opinionated Claude Code tool stack / workflow setup, useful as an inspiration point for AI-assisted development setups
+- https://jean.build/ - opinionated AI agent development workspace combining git worktrees, chat sessions, terminals, and GitHub/Linear integrations
+- https://crabbox.sh/ - remote development runner that syncs a local dirty checkout to a leased remote box and streams agent runs back
+- https://clawpatch.ai/ - automated code review tool that maps repositories into semantic work units and persists AI findings for audit/follow-up
+- https://composio.dev/ - integration platform for AI agents with delegated auth, sandboxed environments, and tool calls across 1,000+ apps
+- https://www.litellm.ai/ - LLM gateway / OpenAI-compatible proxy for routing, auth, load balancing, and spend tracking across many model providers
+- https://macroscope.com/ - AI code review tool focused on finding and suggesting fixes for critical bugs in PRs
+- https://www.agentmail.to/ - API-first email inbox service for AI agents to create inboxes, send/receive mail, and manage communications programmatically
+- https://deepswe.datacurve.ai/ - DeepSWE coding-agent benchmark leaderboard with model pass rates, average cost, runtime, and output-token stats
+- https://github.com/Fission-AI/OpenSpec - spec-driven development toolkit for AI coding assistants
+- https://github.com/Tracer-Cloud/opensre - open-source framework and evaluation environment for building AI SRE agents connected to observability/ops tools

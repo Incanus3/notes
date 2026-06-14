@@ -32,6 +32,12 @@
 - https://sumantthakur.substack.com/p/rag-vs-graphrag-vs-vectorless-rag - article on retrieval as an architecture decision: RAG, GraphRAG, and vectorless RAG in production systems
 - https://github.com/slowmist/openclaw-security-practice-guide - security practice guide for OpenClaw / AI assistant workflows
 - https://kenhuangus.substack.com/p/recursive-self-improvement-a-technical - technical deep dive on recursive self-improvement loops in AI systems, using Anthropic’s “When AI builds itself” framing and Claude Code vs. Hermes Agent examples
+- https://build-your-own-openclaw.kiyo-n-zane.com/ - tutorial/project for building an OpenClaw-like agent with tools, skills, memory, chat, and internet access
+- https://x.com/GergelyOrosz/status/2059688730659524730 - Gergely Orosz thread/video notes on OpenCode creator Dax’s skepticism about AI productivity hype
+- https://x.com/akshay_pachaar/status/2054564519280804028 - link to a Hermes Agent masterclass covering self-evolving skills, memory, GEPA optimization, and multi-agent setup
+- https://x.com/TheAhmadOsman/status/2057590224729911346 - link to “LLMs 101: A Practical Guide (2026 Edition)” explaining tokens, transformers, attention, KV cache, and LLM runtime basics
+- https://generativeprogrammer.com/p/12-agentic-harness-patterns-from - article extracting reusable agentic application design patterns from Claude Code’s harness
+- https://sumantthakur.substack.com/p/you-need-an-ai-gateway-dont-pick - article on choosing an AI gateway to handle multi-agent rate limits, routing, observability, and provider tradeoffs
 ### Books
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
 ### Courses

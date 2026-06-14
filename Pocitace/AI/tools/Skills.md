@@ -36,3 +36,6 @@ verification-before-completion ~/.agents/skills/verification-before-completion
 writing-plans ~/.agents/skills/writing-plans
   Agents: Augment, Claude Code, Codex, Kilo Code, OpenCode +1 mor
 ```
+- https://github.com/mattpocock/skills - Matt Pocock’s practical engineering agent skills, also published on skills.sh
+- https://github.com/openclaw/agent-skills/ - canonical shared skills repo for OpenClaw/coding-agent workflows such as review closeout and validation
+- https://github.com/virgiliojr94/book-to-skill - tool for turning technical books, docs, or source collections into reusable agent skills
