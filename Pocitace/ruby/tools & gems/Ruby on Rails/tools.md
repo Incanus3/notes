@@ -40,7 +40,6 @@
 - https://github.com/sferik/rails_admin (last update 09/2025) - Rails engine for admin CRUD interfaces.
 
 ### Code quality / metrics
-- https://github.com/railsbp/rails_best_practices (last update unknown) - static analyzer for Rails best-practice suggestions.
 - https://github.com/troessner/reek (last update 06/2026) - code smell detector for Ruby.
 
 ### Authentication
