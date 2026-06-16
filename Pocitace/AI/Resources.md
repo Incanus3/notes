@@ -12,6 +12,7 @@
 - https://every.to/newsletter
 - https://steve-yegge.medium.com/
 - https://github.com/decodingai-magazine
+- https://github.com/rohitg00/ai-engineering-from-scratch (last update 06/2026) - free open-source AI engineering curriculum with 503 lessons across math, ML, LLMs, tools, agents, and production systems.
 
 - https://www.aihero.dev/a-complete-guide-to-agents-md
 - https://developers.openai.com/api/docs/guides/prompt-guidance/
