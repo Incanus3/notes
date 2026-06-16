@@ -38,6 +38,7 @@
 - https://x.com/TheAhmadOsman/status/2057590224729911346 - link to “LLMs 101: A Practical Guide (2026 Edition)” explaining tokens, transformers, attention, KV cache, and LLM runtime basics
 - https://generativeprogrammer.com/p/12-agentic-harness-patterns-from - article extracting reusable agentic application design patterns from Claude Code’s harness
 - https://sumantthakur.substack.com/p/you-need-an-ai-gateway-dont-pick - article on choosing an AI gateway to handle multi-agent rate limits, routing, observability, and provider tradeoffs
+- https://x.com/eng_khairallah1/status/2065764993425907903 - thread/video link about building AI agents with Claude Code and shifting from prompting to reusable loops.
 ### Books
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
 ### Courses
