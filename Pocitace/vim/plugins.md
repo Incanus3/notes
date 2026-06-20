@@ -1,77 +1,75 @@
-https://codecompanion.olimorris.dev/ - AI coding, vim style
+### AI / coding assistance
+- https://codecompanion.olimorris.dev/ - AI coding assistant for Vim/Neovim, designed to feel native to the editor.
 
-https://github.com/tpope/vim-pathogen
-https://github.com/tpope/vim-rails
-* :Rfind
-* gf works for many things - require, class names, associations, controller name in routes,
-  partial name, named route (to action)
-* :Runittest, Rfunctionaltest, ...
-  * :RVunittest - with vsplit
-  * :RTunittest - in new tab
+### Plugin management
+- https://github.com/tpope/vim-pathogen (last update 08/2022) - simple runtimepath/plugin loader for Vim plugins.
 
-https://github.com/tpope/vim-bundler
-* :Bundle, :Bopen (:Bsplit,:Btabedit,...)
-* highlight in Gemfile, gf in Gemfile.lock
-* tags include gems path
-https://github.com/nelstrom/vim-textobj-rubyblock.git - text object for ruby block
-* e.g. vir - select body of ruby block / method / class
-  * var - select including begin,end
-  * repeate var to select outer block, vir to select inner block
-* cir - edit this body, ...
-* vim - inner method
-* viM - inner class
-* :h vim-ruby
-* :h ruby-text-objects
+### Ruby / Rails
+- https://github.com/tpope/vim-rails (last update 02/2025) - Rails-aware navigation, commands, and file handling.
+  - `:Rfind`
+  - `gf` works for many Rails things: `require`, class names, associations, controller names in routes, partial names, named routes.
+  - `:Runittest`, `:Rfunctionaltest`, ...
+    - `:RVunittest` - open with vertical split.
+    - `:RTunittest` - open in a new tab.
+- https://github.com/tpope/vim-bundler (last update 03/2026) - Bundler/Gemfile integration for Vim.
+  - `:Bundle`, `:Bopen` (`:Bsplit`, `:Btabedit`, ...).
+  - Highlights Gemfiles; `gf` works in `Gemfile.lock`.
+  - Tags include gem paths.
+- https://github.com/nelstrom/vim-textobj-rubyblock (last update 08/2018) - text objects for Ruby blocks/classes/methods.
+  - `vir` - select body of Ruby block / method / class.
+  - `var` - select including `begin`/`end`.
+  - Repeat `var` to select an outer block, `vir` to select an inner block.
+  - `cir` - edit block body.
+  - `vim` - inner method.
+  - `viM` - inner class.
+  - See `:h vim-ruby` and `:h ruby-text-objects`.
 
-http://net.tutsplus.com/sessions/vim-essential-plugins/
+### Navigation / text objects
+- https://github.com/Lokaltog/vim-easymotion (last update 02/2024) - marks motion targets with letters for quick jumps.
+  - Example: `w` jumps over word beginnings; `\w` marks each beginning with a distinct letter so you can jump directly there.
+  - `\j` marks lines downward.
+- https://github.com/tpope/vim-surround (last update 06/2024) - change, delete, and add surrounding characters.
+  - `cs"'` - change `"` to `'`.
+  - `ds"` - delete surrounding `"`.
+  - `S"` - surround visual selection with `"`.
 
-https://github.com/Lokaltog/vim-easymotion - use \<motion> instead of just <motion> to mark each position with a letter for quick jump
-* e.g. w jumps over beginnings of words, \w marks each beginning with a distinct letter, so you can jump right there
-	* \j - mark lines downwards, etc.
+### Editing helpers
+- https://github.com/tpope/vim-repeat (last update 07/2024) - makes plugin changes repeatable with `.`.
+- https://github.com/tpope/vim-commentary (last update 10/2024) - comment/uncomment lines and motions.
+  - `gcc` - comment line.
+  - `gc<motion>` - comment motion target, e.g. `gc3j` comments three lines including the current one.
+  - `gc` in visual mode - comment selection.
+- https://github.com/Raimondi/delimitMate (last update 08/2024) - auto-closes delimiters like `()`, `{}`, and quotes.
 
-https://github.com/tpope/vim-surround - change surrounding characters
-* cs"' - change " to '
-* ds" - delete "
-* learn visual mode to use the rest
-* S" - surround selection by "
+### Files / project tree / shell helpers
+- https://github.com/scrooloose/nerdtree (last update 09/2025) - directory tree sidebar.
+  - `:NERDTree`; press `?` in the tree view for help.
+- https://github.com/tpope/vim-eunuch (last update 12/2024) - Vim sugar for common shell/file commands.
+  - `:Remove`, `:Move`, `:Chmod`, `:Find`, `:Locate`, `:SudoWrite`, `:W`.
 
-https://github.com/scrooloose/nerdtree - directory structure tree
-* :NERDTree, pres ? in the tree view to get help
+### Git
+- https://github.com/tpope/vim-fugitive (last update 03/2026) - Git integration inside Vim.
+  - `:Gstatus`
+    - `C-n` / `C-p` - move to next/previous file in listing.
+    - `-` - stage/unstage file; works in visual mode too.
+    - `p` - `git add --patch` for file.
+    - `Enter` - open file.
+    - `C` - commit.
+  - `:Gdiff` - vimdiff against index/stage.
+    - `:Gwrite` in working copy or `:Gread` in index - stage this file / overwrite stage.
+    - `:Gwrite` in index or `:Gread` in working copy - checkout this file / overwrite working copy from stage.
+    - `:diffget` (`do`) in index - stage change under cursor.
+    - `:diffget` in index while visually selecting lines - stage only those lines.
+    - `:diffput` in working copy - stage change under cursor.
 
-https://github.com/tpope/vim-repeat - enable repeating of plugin changes with . (otherwise only last 'atomic' change is repeated)
+### Snippets / display / syntax
+- https://github.com/garbas/vim-snipmate (last update 05/2025) - snippet expansion; type snippet name and press `<Tab>`.
+- https://github.com/jeffkreeftmeijer/vim-numbertoggle (last update 07/2021) - toggles between absolute and relative line numbers.
+- https://github.com/vim-scripts/zim-syntax (last update 12/2011) - syntax highlighting for old Zim wiki files.
+  - `C-t C-z` - create Zim header.
 
-https://github.com/tpope/vim-commentary - toggle code comment
-* gcc - comment line
-* gc<motion> - comment motion target, e.g. gc3j - comment 3 lines incuding this one
-* gc in visual mode - comment selection
+### Review later / probably stale
+- http://net.tutsplus.com/sessions/vim-essential-plugins/ - old Vim essential plugins article; review before relying on it.
 
-https://github.com/garbas/vim-snipmate - code snippets - type name of snippet and <tab>
-
-https://github.com/tpope/vim-fugitive - git
-* :Gstatus
-  * C-n / C-p - move to next/previous file in listing
-  * - - stage/unstage file (works in visual mode too)
-  * p - git add --patch file
-  * enter - open file
-  * C - do a commit
-* :Gdiff - vimdiff against index (stage)
-  * :Gwrite in working copy (right window) or :Gread in index (left window)
-    - git add % (this file) - overwrite stage
-  * :Gwrite in index or :Gread in working copy - git checkout - overwrite working copy by stage
-  * :diffget (do) in index - stage change under cursor
-  * :diffget in index while visually selected some lines - stage only those lines
-  * :diffput in working copy - stage change under cursor
-
-https://github.com/jeffkreeftmeijer/vim-numbertoggle
-
-https://github.com/Raimondi/delimitMate - close delimiters - (), {}, "", ...
-
-https://github.com/vim-scripts/zim-syntax - highlight zim files
-* C-t C-z - create zim header
-
-https://github.com/tpope/vim-eunuch - vim sugar for common shell commands
-* :Remove, :Move, :Chmod, :Find, :Locate, :SudoWrite, :W
-
-* scripting vim in ruby
-  * https://github.com/lukaszkorecki/vim-GitHubDashBoard
-  * https://github.com/sjbach/lusty
+### Cleanup note
+Old Vim scripting-in-Ruby links were removed as stale: `lukaszkorecki/vim-GitHubDashBoard` (last update 08/2011) and `sjbach/lusty` (last update 07/2018).
