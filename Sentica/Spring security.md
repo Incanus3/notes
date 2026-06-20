@@ -1,12 +1,21 @@
 > Historical Sentica/Qwazar investigation notes for Spring Boot 2.7 / Spring Security 5.7 authentication configuration, especially custom authentication manager/provider behavior and LDAP. Do not treat this as current Spring Security 6 guidance.
 
 ### Useful links
+
+#### General
 - https://docs.spring.io/spring-security/reference/5.7.11/index.html - Spring Security 5.7.11 reference documentation.
 - https://docs.spring.io/spring-security/reference/5.7.11/servlet/authentication/architecture.html - Spring Security 5.7.11 servlet authentication architecture.
 - https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter - official migration article for configuring Spring Security without `WebSecurityConfigurerAdapter`.
 - https://www.baeldung.com/spring-deprecated-websecurityconfigureradapter - Baeldung article on the deprecated `WebSecurityConfigurerAdapter`.
 - https://www.baeldung.com/kotlin/spring-security-dsl - Baeldung article on the Kotlin Spring Security DSL.
 - https://github.com/spring-projects/spring-security-samples - official Spring Security samples.
+
+#### LDAP
+- https://docs.spring.io/spring-security/reference/5.7.11/servlet/authentication/passwords/ldap.html - Spring Security 5.7.11 LDAP authentication documentation.
+- https://www.zytrax.com/books/ldap/ - LDAP reference/book.
+- https://www.openidentityplatform.org/opendj - OpenDJ LDAP directory server.
+- https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Documentation - OpenDJ documentation.
+- https://directory.apache.org/studio/ - Apache Directory Studio LDAP browser/client.
 
 ### Versions used at the time
 - spring-boot-starter-security -> 2.7.16
@@ -132,9 +141,3 @@ viz `(Abstract)DaoAuthenticationConfigurer`)
   - `AutowiredWebSecurityConfigurersIgnoreParents.getWebSecurityConfigurers()` najde v kontextu vsechny beany typu `WebSecurityConfigurer` (coz je i `WSCAdapter`)
 	  - vola se z `WebSecurityConfiguration.setFilterChainProxySecurityConfigurer()`, coz je `@Autowired` setter
 
-### LDAP
-- https://docs.spring.io/spring-security/reference/5.7.11/servlet/authentication/passwords/ldap.html - Spring Security 5.7.11 LDAP authentication documentation.
-- https://www.zytrax.com/books/ldap/ - LDAP reference/book.
-- https://www.openidentityplatform.org/opendj - OpenDJ LDAP directory server.
-- https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Documentation - OpenDJ documentation.
-- https://directory.apache.org/studio/ - Apache Directory Studio LDAP browser/client.
