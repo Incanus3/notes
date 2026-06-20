@@ -16,17 +16,17 @@
   - Highlights Gemfiles; `gf` works in `Gemfile.lock`.
   - Tags include gem paths.
 
-### Navigation / text objects
+### Navigation
 - https://github.com/Lokaltog/vim-easymotion (last update 02/2024) - marks motion targets with letters for quick jumps.
   - Example: `w` jumps over word beginnings; `\w` marks each beginning with a distinct letter so you can jump directly there.
   - `\j` marks lines downward.
+
+### Editing helpers
+- https://github.com/tpope/vim-repeat (last update 07/2024) - makes plugin changes repeatable with `.`.
 - https://github.com/tpope/vim-surround (last update 06/2024) - change, delete, and add surrounding characters.
   - `cs"'` - change `"` to `'`.
   - `ds"` - delete surrounding `"`.
   - `S"` - surround visual selection with `"`.
-
-### Editing helpers
-- https://github.com/tpope/vim-repeat (last update 07/2024) - makes plugin changes repeatable with `.`.
 - https://github.com/tpope/vim-commentary (last update 10/2024) - comment/uncomment lines and motions.
   - `gcc` - comment line.
   - `gc<motion>` - comment motion target, e.g. `gc3j` comments three lines including the current one.
