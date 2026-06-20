@@ -1,13 +1,14 @@
-### uzitecne odkazy
+> Historical Sentica/Qwazar investigation notes for Spring Boot 2.7 / Spring Security 5.7 authentication configuration, especially custom authentication manager/provider behavior and LDAP. Do not treat this as current Spring Security 6 guidance.
 
-https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/index.html
-https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/servlet/authentication/architecture.html
-https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter
-https://www.baeldung.com/spring-deprecated-websecurityconfigureradapter
-https://www.baeldung.com/kotlin/spring-security-dsl
-https://github.com/spring-projects/spring-security-samples
+### Useful links
+- https://docs.spring.io/spring-security/reference/5.7.11/index.html - Spring Security 5.7.11 reference documentation.
+- https://docs.spring.io/spring-security/reference/5.7.11/servlet/authentication/architecture.html - Spring Security 5.7.11 servlet authentication architecture.
+- https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter - official migration article for configuring Spring Security without `WebSecurityConfigurerAdapter`.
+- https://www.baeldung.com/spring-deprecated-websecurityconfigureradapter - Baeldung article on the deprecated `WebSecurityConfigurerAdapter`.
+- https://www.baeldung.com/kotlin/spring-security-dsl - Baeldung article on the Kotlin Spring Security DSL.
+- https://github.com/spring-projects/spring-security-samples - official Spring Security samples.
 
-### aktualne pouzivame
+### Versions used at the time
 - spring-boot-starter-security -> 2.7.16
 - spring-security-core:5.7.11
 - spring-security-config:5.7.11
@@ -16,7 +17,7 @@ https://github.com/spring-projects/spring-security-samples
 - spring-security-ldap -> 5.7.11
 - spring-ldap-core:2.4.1
 
-### entity, se kterymi spring security pracuje
+### Core Spring Security concepts
 * `PasswordEncoder` interface
 	* konkretni implementace, napr. `BCryptPasswordEncoder`
 	* `DelegatingPasswordEncoder` - umoznuje ukladani hesel v ruznych formatech, soucasti ulozeni je prefix s nazvem formatu
@@ -27,12 +28,12 @@ https://github.com/spring-projects/spring-security-samples
 * `AuthenticationManager` - the API that defines how Spring Security’s Filters perform authentication
 	* `ProviderManager` - the most common implementation of `AuthenticationManager`
 * `AuthenticationProvider` - used by `ProviderManager` to perform a specific type of authentication
-	* [`ProviderManager`](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/authentication/ProviderManager.html) is the most commonly used implementation of [`AuthenticationManager`](https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/servlet/authentication/architecture.html#servlet-authentication-authenticationmanager). `ProviderManager` delegates to a `List` of [`AuthenticationProvider`s](https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/servlet/authentication/architecture.html#servlet-authentication-authenticationprovider). Each `AuthenticationProvider` has an opportunity to indicate that authentication should be successful, fail, or indicate it cannot make a decision and allow a downstream `AuthenticationProvider` to decide.
+	* [`ProviderManager`](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/authentication/ProviderManager.html) is the most commonly used implementation of [`AuthenticationManager`](https://docs.spring.io/spring-security/reference/5.7.11/servlet/authentication/architecture.html#servlet-authentication-authenticationmanager). `ProviderManager` delegates to a `List` of [`AuthenticationProvider`s](https://docs.spring.io/spring-security/reference/5.7.11/servlet/authentication/architecture.html#servlet-authentication-authenticationprovider). Each `AuthenticationProvider` has an opportunity to indicate that authentication should be successful, fail, or indicate it cannot make a decision and allow a downstream `AuthenticationProvider` to decide.
 	 * `ProviderManager` also allows configuring an optional parent `AuthenticationManager` which is consulted in the event that no `AuthenticationProvider` can perform authentication.
 * Request Credentials with `AuthenticationEntryPoint` - used for requesting credentials from a client (i.e. redirecting to a log in page, sending a WWW-Authenticate response, etc.)
 * `AbstractAuthenticationProcessingFilter` - a base Filter used for authentication. This also gives a good idea of the high level flow of authentication and how pieces work together
 
-### relevantni konfiguracni classy
+### Relevant configuration classes
 * `AuthenticationConfiguration`
 	* poskytuje `@Bean`y pro `AuthenticationManagerBuilder`, `GlobalAuthenticationConfigurerAdapter`, `InitializeUserDetailsBeanManagerConfigurer`, `InitializeAuthenticationProviderBeanManagerConfigurer`
 	* poskytuje public `getAuthetenticationManager()` getter, ktery nam ale v nasi konfiguraci nejspis k nicemu neni, protoze v tu chvili uz musi byt dobuildovano, teoreticky by ale mohlo jit pouzit v konfiguraci `SimpleAuth`oveho filteru
@@ -46,7 +47,8 @@ https://github.com/spring-projects/spring-security-samples
 	* extenduje `WebMvcConfigurationSupport`, ktery poskytuje spoustu WebMvc-related `@Bean`u
 	* narazil jsem na nej v souvislosti s tim, ze pokud se v `HttpSecurity` konfiguraci `authorizeRequests {}` vola `authorize()` se stringovymi patterny, tak to pada, protoze se z nich snazi vytvorit `MVC` matchery, coz vyzaduje `mvcHandlerMappingIntrospector` `@Bean`, ktery je prave poskytovany touhle classou, ktera v tu chvili ale nejspis jeste neni zprocessovana
 
-- v jakem poradi se vyhodnocuji?
+### Build / evaluation order
+- V jakem poradi se vyhodnocuji?
 	- `HttpSecurityConfiguration` (a `WebSecurityConfigurerAdapter`) maji privatni field na `AuthenticationConfiguration`, ktery se nastavuje v `@Autowired` setteru
 	- `@EnableWebSecurity` importuje `HttpSecurityConfiguration`, `WebSecurityConfiguration` (a taky `SpringWebMvcImportSelector` a `OAuth2ImportSelector`) a pridava `@EnableGlobalAuthentication`
 		- tuhle anotaci mame na `SecurityConfigurationBase`
@@ -55,7 +57,7 @@ https://github.com/spring-projects/spring-security-samples
 		- `@EnableGlobalMethodSecurity` pridava `@EnableGlobalAuthentication`
 			- tuhle anotaci mame v projektu na `MethodSecurityConfiguration`, otazka je, zda-li je stale potreba, protoze method security se podle me nepouziva
 
-### poznamky
+### AuthenticationManager notes
 * `HttpSecurity`:
 	* pokud neni `AuthenticationManager` nastaven explicitne, tak se v `beforeConfigure()` vytvari volanim `getAuthenticationRegistry().build()`, kde `getAuthenticationRegistry()` vraci `AuthenticationManagerBuilder` (ziskany pomoci `getSharedObject()`)
  * `AuthenticationManagerBuilder` by mel byt poskytovan `AuthenticationConfiguration` classou, jeho vytvoreni ve skutecnosti neni extremne slozity
@@ -131,8 +133,8 @@ viz `(Abstract)DaoAuthenticationConfigurer`)
 	  - vola se z `WebSecurityConfiguration.setFilterChainProxySecurityConfigurer()`, coz je `@Autowired` setter
 
 ### LDAP
-- https://docs.spring.io/spring-security/reference/5.7-SNAPSHOT/servlet/authentication/passwords/ldap.html
-- https://www.zytrax.com/books/ldap/
-- https://www.openidentityplatform.org/opendj
-- https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Documentation
-- https://directory.apache.org/studio/
+- https://docs.spring.io/spring-security/reference/5.7.11/servlet/authentication/passwords/ldap.html - Spring Security 5.7.11 LDAP authentication documentation.
+- https://www.zytrax.com/books/ldap/ - LDAP reference/book.
+- https://www.openidentityplatform.org/opendj - OpenDJ LDAP directory server.
+- https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Documentation - OpenDJ documentation.
+- https://directory.apache.org/studio/ - Apache Directory Studio LDAP browser/client.
