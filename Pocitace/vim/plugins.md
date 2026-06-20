@@ -15,14 +15,6 @@
   - `:Bundle`, `:Bopen` (`:Bsplit`, `:Btabedit`, ...).
   - Highlights Gemfiles; `gf` works in `Gemfile.lock`.
   - Tags include gem paths.
-- https://github.com/nelstrom/vim-textobj-rubyblock (last update 08/2018) - text objects for Ruby blocks/classes/methods.
-  - `vir` - select body of Ruby block / method / class.
-  - `var` - select including `begin`/`end`.
-  - Repeat `var` to select an outer block, `vir` to select an inner block.
-  - `cir` - edit block body.
-  - `vim` - inner method.
-  - `viM` - inner class.
-  - See `:h vim-ruby` and `:h ruby-text-objects`.
 
 ### Navigation / text objects
 - https://github.com/Lokaltog/vim-easymotion (last update 02/2024) - marks motion targets with letters for quick jumps.
@@ -65,11 +57,9 @@
 ### Snippets / display / syntax
 - https://github.com/garbas/vim-snipmate (last update 05/2025) - snippet expansion; type snippet name and press `<Tab>`.
 - https://github.com/jeffkreeftmeijer/vim-numbertoggle (last update 07/2021) - toggles between absolute and relative line numbers.
-- https://github.com/vim-scripts/zim-syntax (last update 12/2011) - syntax highlighting for old Zim wiki files.
-  - `C-t C-z` - create Zim header.
 
 ### Review later / probably stale
 - http://net.tutsplus.com/sessions/vim-essential-plugins/ - old Vim essential plugins article; review before relying on it.
 
 ### Cleanup note
-Old Vim scripting-in-Ruby links were removed as stale: `lukaszkorecki/vim-GitHubDashBoard` (last update 08/2011) and `sjbach/lusty` (last update 07/2018).
+Removed stale GitHub project links last updated before 2020: `nelstrom/vim-textobj-rubyblock` (08/2018), `vim-scripts/zim-syntax` (12/2011), `lukaszkorecki/vim-GitHubDashBoard` (08/2011), and `sjbach/lusty` (07/2018).
