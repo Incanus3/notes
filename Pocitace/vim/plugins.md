@@ -54,12 +54,11 @@
     - `:diffget` in index while visually selecting lines - stage only those lines.
     - `:diffput` in working copy - stage change under cursor.
 
-### Snippets / display / syntax
+### Snippets
 - https://github.com/garbas/vim-snipmate (last update 05/2025) - snippet expansion; type snippet name and press `<Tab>`.
+
+### Display
 - https://github.com/jeffkreeftmeijer/vim-numbertoggle (last update 07/2021) - toggles between absolute and relative line numbers.
 
 ### Review later / probably stale
 - http://net.tutsplus.com/sessions/vim-essential-plugins/ - old Vim essential plugins article; review before relying on it.
-
-### Cleanup note
-Removed stale GitHub project links last updated before 2020: `nelstrom/vim-textobj-rubyblock` (08/2018), `vim-scripts/zim-syntax` (12/2011), `lukaszkorecki/vim-GitHubDashBoard` (08/2011), and `sjbach/lusty` (07/2018).
