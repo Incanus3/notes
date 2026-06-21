@@ -23,16 +23,22 @@
 - https://alexpasmantier.github.io/television/ - fuzzy finder TUI with customizable sources.
 - https://yazi-rs.github.io - terminal file manager.
 
-## Listing / viewing / monitoring
+## Listing / viewing
 
 - https://eza.rocks - great alternative to `ls`.
 - https://github.com/sharkdp/bat (last update 06/2026) - `cat` with wings.
 - https://github.com/eth-p/bat-extras (last update 02/2025) - scripts that integrate `bat` with other command-line tools.
+
+## Monitoring / disk usage
+
 - https://github.com/dalance/procs (last update 06/2026) - better `ps`.
 - https://github.com/aristocratos/btop (last update 06/2026) - better `htop`.
 - https://github.com/imsnif/bandwhich (last update 06/2026) - bandwidth usage monitor.
 - https://github.com/dundee/gdu (last update 06/2026) - fast disk usage analyzer.
 - https://github.com/bootandy/dust (last update 02/2026) - disk usage analyzer with recursive graph.
+
+## Reference / misc
+
 - https://tldr.sh - simplified man pages.
 - https://github.com/garabik/grc (last update 08/2024) - generic colouriser.
 
