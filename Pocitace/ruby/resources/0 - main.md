@@ -37,7 +37,3 @@
 - http://shvets.github.io/blog/2013/09/28/executable-web-apps.html - article about writing scripts that start web apps, such as `yard server`.
 - http://devblog.avdi.org/2010/04/08/refactoring-in-ruby/ - Avdi Grimm article about refactoring in Ruby.
 - http://dev.mikamai.com/post/74159739828/6-tips-for-full-stack-open-source-rubygems-development - article with tips for full-stack open-source RubyGems development.
-
-## Pair programming / mentoring
-
-- http://www.pairprogramwith.me/ - pair programming / mentoring resource; currently unavailable (404).
