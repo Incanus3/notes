@@ -1,58 +1,70 @@
-### Videos
-- https://www.youtube.com/@t3dotgg
-- https://www.youtube.com/@AndrejKarpathy
-- https://www.youtube.com/@AICodeKing
-- https://www.youtube.com/@aiexplained-official
-- https://www.youtube.com/watch?v=68BS5GCRcBo
-- https://bloomberg.github.io/foml/ - foundations of machine learning
-### Articles & blogs
-- https://steipete.me/
-- https://shumer.dev/blog
-- https://simonwillison.net/
-- https://every.to/newsletter
-- https://steve-yegge.medium.com/
-- https://github.com/decodingai-magazine
-- https://github.com/rohitg00/ai-engineering-from-scratch (last update 06/2026) - free open-source AI engineering curriculum with 503 lessons across math, ML, LLMs, tools, agents, and production systems.
+# AI resources
 
-- https://www.aihero.dev/a-complete-guide-to-agents-md
-- https://developers.openai.com/api/docs/guides/prompt-guidance/
-- https://x.com/flavioAd/status/2019474660866290061
-- https://x.com/KarelDoostrlnck/status/2019477361557926281
-- https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04
-	- a crazy multi-agent orchestration idea + tooling
-- https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b
-	- zajimavy vzorecek pro sanci sw na preziti
-	- taky dost zajimava myslenka jak udelat dobry UX toolu pro agenty:
-		"What I did was make their hallucinations real, over and over, by implementing whatever
-		I saw the agents trying to do with Beads, until nearly every guess by an agent is now correct."
-- https://cajundiscordian.medium.com/is-lamda-sentient-an-interview-ea64d916d917
-- https://senkorasic.com/articles/ai-coding - AI coding article with links to more resources
-- https://www.decodingai.com/p/agentic-ai-engineering-guide-6-mistakes - guide to common mistakes in agentic AI engineering and how to avoid them
-- https://doneyli.substack.com/p/i-built-my-own-observability-for - article about building observability for Claude Code / AI coding workflows
-- https://substack.com/@charliehills/note/c-237534376 - curated list of Claude Code resources
-- https://sumantthakur.substack.com/p/rag-vs-graphrag-vs-vectorless-rag - article on retrieval as an architecture decision: RAG, GraphRAG, and vectorless RAG in production systems
-- https://github.com/slowmist/openclaw-security-practice-guide - security practice guide for OpenClaw / AI assistant workflows
-- https://kenhuangus.substack.com/p/recursive-self-improvement-a-technical - technical deep dive on recursive self-improvement loops in AI systems, using Anthropic’s “When AI builds itself” framing and Claude Code vs. Hermes Agent examples
-- https://build-your-own-openclaw.kiyo-n-zane.com/ - tutorial/project for building an OpenClaw-like agent with tools, skills, memory, chat, and internet access
-- https://x.com/GergelyOrosz/status/2059688730659524730 - Gergely Orosz thread/video notes on OpenCode creator Dax’s skepticism about AI productivity hype
-- https://x.com/akshay_pachaar/status/2054564519280804028 - link to a Hermes Agent masterclass covering self-evolving skills, memory, GEPA optimization, and multi-agent setup
-- https://x.com/TheAhmadOsman/status/2057590224729911346 - link to “LLMs 101: A Practical Guide (2026 Edition)” explaining tokens, transformers, attention, KV cache, and LLM runtime basics
-- https://generativeprogrammer.com/p/12-agentic-harness-patterns-from - article extracting reusable agentic application design patterns from Claude Code’s harness
+## Videos / channels
+
+- https://www.youtube.com/@t3dotgg - T3 / Theo channel with AI and software development videos.
+- https://www.youtube.com/@AndrejKarpathy - Andrej Karpathy's channel with AI, ML, and LLM explanations.
+- https://www.youtube.com/@AICodeKing - AI coding-focused YouTube channel.
+- https://www.youtube.com/@aiexplained-official - AI Explained channel.
+- https://www.youtube.com/watch?v=68BS5GCRcBo - AI-related video to review.
+- https://bloomberg.github.io/foml/ - Foundations of Machine Learning course/materials.
+
+## Blogs / newsletters / people
+
+- https://steipete.me/ - Peter Steinberger's blog, often covering AI tooling and engineering.
+- https://shumer.dev/blog - Matt Shumer's blog about AI and agents.
+- https://simonwillison.net/ - Simon Willison's writing about LLMs, tools, and software engineering.
+- https://every.to/newsletter - Every newsletter with AI/product/business writing.
+- https://steve-yegge.medium.com/ - Steve Yegge's Medium posts, including AI agent/tooling essays.
+- https://github.com/decodingai-magazine - Decoding AI GitHub organization with AI engineering content.
+
+## Courses / books / curricula
+
+- https://github.com/rohitg00/ai-engineering-from-scratch (last update 06/2026) - free open-source AI engineering curriculum with 503 lessons across math, ML, LLMs, tools, agents, and production systems.
+- https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/ - PragProg book *A Common-Sense Guide to AI Engineering*.
+- https://agenticjumpstart.com/ - paid agentic AI course.
+
+## Agents / coding / orchestration
+
+- https://www.aihero.dev/a-complete-guide-to-agents-md - guide to `AGENTS.md` files for AI coding agents.
+- https://developers.openai.com/api/docs/guides/prompt-guidance/ - OpenAI prompt guidance documentation.
+- https://senkorasic.com/articles/ai-coding - AI coding article with links to more resources.
+- https://doneyli.substack.com/p/i-built-my-own-observability-for - article about building observability for Claude Code / AI coding workflows.
+- https://substack.com/@charliehills/note/c-237534376 - curated list of Claude Code resources.
+- https://kenhuangus.substack.com/p/recursive-self-improvement-a-technical - technical deep dive on recursive self-improvement loops in AI systems, using Anthropic’s “When AI builds itself” framing and Claude Code vs. Hermes Agent examples.
+- https://build-your-own-openclaw.kiyo-n-zane.com/ - tutorial/project for building an OpenClaw-like agent with tools, skills, memory, chat, and internet access.
+- https://generativeprogrammer.com/p/12-agentic-harness-patterns-from - article extracting reusable agentic application design patterns from Claude Code’s harness.
 - https://openai.com/index/open-source-codex-orchestration-symphony/ - OpenAI article introducing Symphony, an open-source spec for orchestrating Codex agents from issue trackers such as Linear.
-- https://sumantthakur.substack.com/p/you-need-an-ai-gateway-dont-pick - article on choosing an AI gateway to handle multi-agent rate limits, routing, observability, and provider tradeoffs
+- https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04 - Steve Yegge essay about a wild multi-agent orchestration idea and tooling.
+- https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b - Steve Yegge essay with an interesting formula for software survival odds, plus a useful UX idea for agent tools:
+  - “What I did was make their hallucinations real, over and over, by implementing whatever I saw the agents trying to do with Beads, until nearly every guess by an agent is now correct.”
+- https://x.com/akshay_pachaar/status/2054564519280804028 - link to a Hermes Agent masterclass covering self-evolving skills, memory, GEPA optimization, and multi-agent setup.
 - https://x.com/eng_khairallah1/status/2065764993425907903 - thread/video link about building AI agents with Claude Code and shifting from prompting to reusable loops.
-### Books
-- https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/
-### Courses
-- https://agenticjumpstart.com/ - payed
-### Other resources
-- https://artificialanalysis.ai/
-	- velmi dukladny porovnani modelu podle vsemoznych vlastnosti
-- https://openrouter.ai/models?fmt=cards&order=most-popular&categories=programming
-	- most popular models with details
-- https://openrouter.ai/rankings
-	- model usage rankings (graphs)
-- https://openrouter.ai/chat?room=orc-1769070174-VAhvadxXn6nHuyXe6UAT
-	- zaznam z multi-module chat roomu pro srovnani modelu pri stejnem zadani
-	- na elixir vypada trochu lepsi MiniMax M2.1, na kotlin vypada lepsi GLM 4.7 (je to teda podle jednoho prikladu), MiMo-V2-Flash na elixir nic moc, kotlin vypada slusne
-	- zajimavy je, ze i mnozstvi reasoningu se jim razantne otoci - u elixiru MM reasonuje jako blazen, glm o dost min (byt furt dost), u kotlinu o dost vic reasonuje glm
+- https://x.com/GergelyOrosz/status/2059688730659524730 - Gergely Orosz thread/video notes on OpenCode creator Dax’s skepticism about AI productivity hype.
+
+## RAG / architecture
+
+- https://sumantthakur.substack.com/p/rag-vs-graphrag-vs-vectorless-rag - article on retrieval as an architecture decision: RAG, GraphRAG, and vectorless RAG in production systems.
+- https://sumantthakur.substack.com/p/you-need-an-ai-gateway-dont-pick - article on choosing an AI gateway to handle multi-agent rate limits, routing, observability, and provider tradeoffs.
+
+## Security
+
+- https://github.com/slowmist/openclaw-security-practice-guide (last update 04/2026) - security practice guide for OpenClaw / AI assistant workflows.
+
+## Model comparison / playgrounds
+
+- https://artificialanalysis.ai/ - very thorough model comparison across many properties.
+- https://openrouter.ai/models?fmt=cards&order=most-popular&categories=programming - most popular programming models with details.
+- https://openrouter.ai/rankings - model usage rankings with graphs.
+- https://openrouter.ai/chat?room=orc-1769070174-VAhvadxXn6nHuyXe6UAT - record from a multi-model chat room for comparing models on the same prompt.
+  - For Elixir, MiniMax M2.1 looks slightly better; for Kotlin, GLM 4.7 looks better, though this is based on one example.
+  - MiMo-V2-Flash was not great for Elixir, but looked decent for Kotlin.
+  - Interesting observation: the amount of reasoning flips dramatically between models. For Elixir, MiniMax reasons like crazy while GLM reasons much less, though still a lot. For Kotlin, GLM reasons much more.
+
+## Misc / review later
+
+- https://x.com/flavioAd/status/2019474660866290061 - X thread to review.
+- https://x.com/KarelDoostrlnck/status/2019477361557926281 - X thread to review.
+- https://cajundiscordian.medium.com/is-lamda-sentient-an-interview-ea64d916d917 - LaMDA sentience interview article.
+- https://www.decodingai.com/p/agentic-ai-engineering-guide-6-mistakes - guide to common mistakes in agentic AI engineering and how to avoid them.
+- https://x.com/TheAhmadOsman/status/2057590224729911346 - link to “LLMs 101: A Practical Guide (2026 Edition)” explaining tokens, transformers, attention, KV cache, and LLM runtime basics.
