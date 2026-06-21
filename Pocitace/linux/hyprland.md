@@ -33,6 +33,10 @@
 
 - https://github.com/impulse-os/impulseos-live (last update 10/2024) - would be really nice, but doesn't seem to work.
 
+## KDE Wallet
+
+- https://wiki.archlinux.org/title/KDE_Wallet#Using_the_KDE_Wallet_to_store_ssh_key_passphrases - using KDE Wallet to store SSH key passphrases.
+
 ## Config files
 
 - `~/.config/hypr`
