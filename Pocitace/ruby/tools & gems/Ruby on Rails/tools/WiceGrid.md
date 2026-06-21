@@ -1,53 +1,36 @@
-== GridViewHelper ==
-- definuje tabulku
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/helpers/wice_grid_view_helpers.rb#L83
-- instanciuje GridRenderer a nasledne v jeho kontextu vyhodnoti blok, se kterym volame grid helper
-  ve view
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/helpers/wice_grid_view_helpers.rb#L110
-- generuje html pro tabulku
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/helpers/wice_grid_view_helpers.rb#L217
-- iteruje pres columny rendereru a vola na ne #render_filter
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/helpers/wice_grid_view_helpers.rb#L358
+# WiceGrid
 
-== GridRenderer ==
-- definuje sloupec
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L296
-- vyber tridy sloupce
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L371
-- muze byt dale zmeneno v zavislosti na parametrech attribute, custom_filter a filter_type
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L421
-- instanciuje tridu sloupce
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L442
-- prida sloupec do ulozene hashe
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L451
+Source-code walkthrough of WiceGrid internals, based on the `rails3` branch.
 
-- sloupec tedy muze byt typu Columns::ViewColumn, nebo jiny vraceny volanim
-  Columns.get_view_column_processor, tedy definovany v
-https://github.com/leikind/wice_grid/tree/436f32b5ef62b3d8a8b526a84daa16f147925090/lib/wice/columns
+Project: https://github.com/leikind/wice_grid (last update 03/2026)
 
-- ViewColumn by mel byt superclass vsech ostatnich
-- definice ViewColumn
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/columns.rb#L95
-- definice render_filter deleguje na render_filter_internal, ktery je u ViewColumn stub, subclassy
-  musi implementovat
+## GridViewHelper
 
-- ViewColumnInteger#render_field_internal vola text_field_tag helper s optionami definovanymi zde
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/columns/column_integer.rb#L8
-- field se nezda mit zadnou specialni class, na kterou by byly poveseny js, ma ale id vracene
-  ViewColumn#form_parameter_name_id_and_query - definovano zde
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/columns.rb#L195, coz by melo pouze
-nahradit [] v parametrech
+- Defines the grid table.
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/helpers/wice_grid_view_helpers.rb#L83 - instantiates `GridRenderer` and evaluates the block passed to the grid helper in its context.
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/helpers/wice_grid_view_helpers.rb#L110 - generates HTML for the table.
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/helpers/wice_grid_view_helpers.rb#L358 - iterates over renderer columns and calls `#render_filter` on each.
 
-== javascripty ==
-- wice_grid_init navaze filtrovaci cudly (a enter ve filtrovacich fieldech) na
-  WiceGridProcessor.process()
-https://github.com/leikind/wice_grid/blob/rails3/vendor/assets/javascripts/wice_grid_init.js.coffee#L196
-- WiceGridProcessor.process() vola buildUrlWithParams(), ktera vychazi z @baseRequestForFilter, coz je
-  druhy parametr konstruktoru
-- wice_grid_init instanciuje WiceGridProcessor parametry z atributu processor-initialize-arguments
-  elementu .wg-data
+## GridRenderer
 
-- atributy se definuji zde
-https://github.com/leikind/wice_grid/blob/8db9abc6ab26a2e906b34939469ed04fa4fd17c5/lib/wice/helpers/wice_grid_view_helpers.rb#L476
-- base_link se bere odsud
-https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L539
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L296 - defines a column.
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L371 - selects the column class.
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L421 - may be further modified depending on `attribute`, `custom_filter`, and `filter_type` parameters.
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L442 - instantiates the column class.
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L451 - adds the column to a stored hash.
+
+A column can be of type `Columns::ViewColumn` or another type returned by `Columns.get_view_column_processor`, defined in:
+
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/columns.rb#L95 - `ViewColumn` definition; should be the superclass of all other column types.
+- `render_filter` delegates to `render_filter_internal`, which is a stub in `ViewColumn`; subclasses must implement it.
+
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/columns/column_integer.rb#L8 - `ViewColumnInteger#render_field_internal` calls `text_field_tag` helper with options defined here.
+- The field doesn't appear to have any special class for JS hooks, but it has an ID returned by `ViewColumn#form_parameter_name_id_and_query`:
+  - https://github.com/leikind/wice_grid/blob/rails3/lib/wice/columns.rb#L195 - should just replace `[]` in parameters.
+
+## JavaScript
+
+- https://github.com/leikind/wice_grid/blob/rails3/vendor/assets/javascripts/wice_grid_init.js.coffee#L196 - `wice_grid_init` binds filter controls (and Enter in filter fields) to `WiceGridProcessor.process()`.
+- `WiceGridProcessor.process()` calls `buildUrlWithParams()`, which is based on `@baseRequestForFilter` — the second parameter of the constructor.
+- `wice_grid_init` instantiates `WiceGridProcessor` with parameters from the `processor-initialize-arguments` attribute of `.wg-data` elements.
+- https://github.com/leikind/wice_grid/blob/rails3/lib/wice/grid_renderer.rb#L539 - `base_link` is taken from here.
