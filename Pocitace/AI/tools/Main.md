@@ -30,3 +30,4 @@
 - https://deepswe.datacurve.ai/ - DeepSWE coding-agent benchmark leaderboard with model pass rates, average cost, runtime, and output-token stats
 - https://github.com/Fission-AI/OpenSpec - spec-driven development toolkit for AI coding assistants
 - https://github.com/Tracer-Cloud/opensre - open-source framework and evaluation environment for building AI SRE agents connected to observability/ops tools
+- https://agentrq.com/ - human-in-the-loop task manager and real-time control plane for AI agents, with MCP supervisor/workspace endpoints
