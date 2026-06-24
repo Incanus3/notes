@@ -27,6 +27,7 @@
 ## Agents / coding / orchestration
 
 - https://www.aihero.dev/a-complete-guide-to-agents-md - guide to `AGENTS.md` files for AI coding agents.
+- https://github.com/AI-Builder-Club/skills (last update 06/2026) - Claude Code plugin marketplace with skills for codebase harnesses and compounding agent loops / shared file-based memory. Related launch/context thread: https://x.com/jasonzhou1993/status/2067937943545897143
 - https://developers.openai.com/api/docs/guides/prompt-guidance/ - OpenAI prompt guidance documentation.
 - https://senkorasic.com/articles/ai-coding - AI coding article with links to more resources.
 - https://doneyli.substack.com/p/i-built-my-own-observability-for - article about building observability for Claude Code / AI coding workflows.
