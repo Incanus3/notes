@@ -21,3 +21,4 @@
 - https://diffs.com/ - adjacent tool/site from pierre.computer
 - https://trees.software/ - adjacent tool/site from pierre.computer
 - https://coolify.io/ - open-source self-hostable alternative to Vercel/Heroku/Netlify/Railway for deploying apps, databases, and one-click services on your own server
+- https://super-productivity.com/ - open-source, offline-first deep work task manager with tasks, time tracking, focus tools, calendar sync, and GitHub/Jira integrations
