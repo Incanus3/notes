@@ -65,6 +65,7 @@
 
 ## Misc / review later
 
+- https://substack.com/chat/7722979/post/ca032f10-9efd-457b-8aa3-6182caba8212 - Substack chat post titled “Opinion AI in Emerging AI”; saved for later review.
 - https://x.com/flavioAd/status/2019474660866290061 - X thread to review.
 - https://x.com/KarelDoostrlnck/status/2019477361557926281 - X thread to review.
 - https://cajundiscordian.medium.com/is-lamda-sentient-an-interview-ea64d916d917 - LaMDA sentience interview article.
