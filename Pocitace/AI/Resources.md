@@ -28,6 +28,7 @@
 
 - https://addyo.substack.com/p/loop-engineering - Addy Osmani article on loop engineering for coding agents: scheduled discovery/triage, worktrees, skills, connectors, sub-agents, memory, and cost/oversight tradeoffs.
 - https://addyosmani.com/blog/intent-debt/ - Addy Osmani article on intent debt: missing written goals, constraints, and rationale that AI agents cannot reliably infer from code.
+- https://beyond.addy.ie/ - Addy Osmani guide to moving beyond vibe coding toward production AI-assisted engineering with specs, verification, security, and human expertise.
 - https://blog.bytebytego.com/p/a-practical-guide-to-becoming-an - ByteByteGo/Shah Rahman practical guide to AI-native engineering: context engineering, spec-driven development, critical verification, problem decomposition, and security guardrails.
 - https://www.aihero.dev/a-complete-guide-to-agents-md - guide to `AGENTS.md` files for AI coding agents.
 - https://github.com/AI-Builder-Club/skills (last update 06/2026) - Claude Code plugin marketplace with skills for codebase harnesses and compounding agent loops / shared file-based memory. Related launch/context thread: https://x.com/jasonzhou1993/status/2067937943545897143
