@@ -27,6 +27,7 @@
 ## Agents / coding / orchestration
 
 - https://addyo.substack.com/p/loop-engineering - Addy Osmani article on loop engineering for coding agents: scheduled discovery/triage, worktrees, skills, connectors, sub-agents, memory, and cost/oversight tradeoffs.
+- https://drive.google.com/file/d/1qzKI4DKnyHRpXK1J3ATPqwaqLc0iNu-M/view - PDF backup of *Loop-Engineering-IEEE.pdf*, an IEEE article/book PDF on loop engineering.
 - https://addyosmani.com/blog/intent-debt/ - Addy Osmani article on intent debt: missing written goals, constraints, and rationale that AI agents cannot reliably infer from code.
 - https://beyond.addy.ie/ - Addy Osmani guide to moving beyond vibe coding toward production AI-assisted engineering with specs, verification, security, and human expertise.
 - https://blog.bytebytego.com/p/a-practical-guide-to-becoming-an - ByteByteGo/Shah Rahman practical guide to AI-native engineering: context engineering, spec-driven development, critical verification, problem decomposition, and security guardrails.
