@@ -46,6 +46,7 @@
   - “What I did was make their hallucinations real, over and over, by implementing whatever I saw the agents trying to do with Beads, until nearly every guess by an agent is now correct.”
 - https://x.com/akshay_pachaar/status/2054564519280804028 - link to a Hermes Agent masterclass covering self-evolving skills, memory, GEPA optimization, and multi-agent setup.
 - https://x.com/eng_khairallah1/status/2065764993425907903 - thread/video link about building AI agents with Claude Code and shifting from prompting to reusable loops.
+- https://x.com/akshay_pachaar/status/2069118430582866051 - Akshay Pachaar X post/video pointing to Boris Cherny’s “loop engineering” framing: stop one-off prompting agents and design repeatable agent loops instead.
 - https://x.com/0xCodez/status/2064374643729773029 - thread on loop engineering: a roadmap from manual prompting to reusable agent loops and loop-designer workflows.
 - https://x.com/GergelyOrosz/status/2059688730659524730 - Gergely Orosz thread/video notes on OpenCode creator Dax’s skepticism about AI productivity hype.
 
