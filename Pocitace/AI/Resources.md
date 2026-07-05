@@ -40,6 +40,7 @@
 - https://kenhuangus.substack.com/p/recursive-self-improvement-a-technical - technical deep dive on recursive self-improvement loops in AI systems, using Anthropic’s “When AI builds itself” framing and Claude Code vs. Hermes Agent examples.
 - https://build-your-own-openclaw.kiyo-n-zane.com/ - tutorial/project for building an OpenClaw-like agent with tools, skills, memory, chat, and internet access.
 - https://generativeprogrammer.com/p/12-agentic-harness-patterns-from - article extracting reusable agentic application design patterns from Claude Code’s harness.
+- https://kenhuangus.substack.com/p/claude-fable-5-what-changed-and-how - Ken Huang article on Claude Fable 5 changes: less prescriptive prompting, effort as the main cost/latency dial, verifier subagents, file-based memory, and building loops around the model.
 - https://openai.com/index/open-source-codex-orchestration-symphony/ - OpenAI article introducing Symphony, an open-source spec for orchestrating Codex agents from issue trackers such as Linear.
 - https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04 - Steve Yegge essay about a wild multi-agent orchestration idea and tooling.
 - https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b - Steve Yegge essay with an interesting formula for software survival odds, plus a useful UX idea for agent tools:
