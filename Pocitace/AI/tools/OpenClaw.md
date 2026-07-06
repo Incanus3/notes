@@ -1,4 +1,5 @@
 - https://kilo.ai/kiloclaw
+- https://github.com/EyrieCommander/eyrie - agentic factory and control room for the Claw family — orchestrates agent teams (commanders/captains/talons) with a real-time dashboard, works with ZeroClaw, OpenClaw, Hermes, PicoClaw
 - https://github.com/builderz-labs/mission-control
 
 ### Managed hosting / deployment
