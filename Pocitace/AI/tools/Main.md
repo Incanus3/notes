@@ -9,6 +9,8 @@
 - https://www.coderabbit.ai/ - AI code review
 - https://www.greptile.com/ - similar, maybe a bit better, but also more expensive
 - https://app.devin.ai/review - in addition to giving review notes, it shows your PR in a much more review-able way - groups related changes, shows context
+### Sandboxing / isolation
+- https://github.com/containers/bubblewrap - low-level unprivileged sandboxing tool (used by Flatpak), leverages Linux user namespaces for non-root container isolation — useful for sandboxing AI agents
 ### Other stuff
 - https://github.com/steipete - LOTS of really cool projects here
 - https://docs.sillytavern.app/ - locally installed user interface that allows you to interact with text generation LLMs, image generation engines, and TTS voice models
