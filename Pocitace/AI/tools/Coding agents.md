@@ -52,6 +52,9 @@
 - https://emdash.sh/ - open-source desktop dashboard for running multiple coding agents in parallel, each in its own Git worktree.
 	- Works with 25+ agent CLIs (Claude Code, Codex, Cursor, Amp, Gemini, etc.) with auto-detection.
 	- MCP server support, built-in file editor. Open source, 1M+ downloads.
+- https://superset.sh/ - orchestrate 100+ coding agents in parallel across isolated Git worktrees.
+	- Agent-agnostic: works with Claude Code, OpenCode, Cursor, or any CLI-based coding tool.
+	- Desktop app with port forwarding, IDE integration (VS Code, Cursor, Xcode, JetBrains), and MCP support.
 - https://github.com/darrenhinde/OpenAgentsControl (last update 03/2026) - plan-first AI agent framework with approval-based execution.
 
 ### Context / prompts / skills
