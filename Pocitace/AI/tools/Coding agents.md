@@ -49,6 +49,9 @@
 - https://github.com/different-ai/openwork (last update 06/2026) - turn opencode workflows into usable experiences for non-technical users.
 - https://ralph-tui.com/ - AI agent loop orchestrator.
 	- https://skills.sh/subsy/ralph-tui - Ralph TUI skill page.
+- https://emdash.sh/ - open-source desktop dashboard for running multiple coding agents in parallel, each in its own Git worktree.
+	- Works with 25+ agent CLIs (Claude Code, Codex, Cursor, Amp, Gemini, etc.) with auto-detection.
+	- MCP server support, built-in file editor. Open source, 1M+ downloads.
 - https://github.com/darrenhinde/OpenAgentsControl (last update 03/2026) - plan-first AI agent framework with approval-based execution.
 
 ### Context / prompts / skills
