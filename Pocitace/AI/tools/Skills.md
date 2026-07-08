@@ -39,3 +39,4 @@ writing-plans ~/.agents/skills/writing-plans
 - https://github.com/mattpocock/skills - Matt Pocock’s practical engineering agent skills, also published on skills.sh
 - https://github.com/openclaw/agent-skills/ - canonical shared skills repo for OpenClaw/coding-agent workflows such as review closeout and validation
 - https://github.com/virgiliojr94/book-to-skill - tool for turning technical books, docs, or source collections into reusable agent skills
+- https://github.com/addyosmani/agent-skills - Addy Osmani's production-grade engineering skills for AI coding agents; 24 skills covering the full dev lifecycle (spec → plan → build → test → review → ship) (last update 07/2026)
