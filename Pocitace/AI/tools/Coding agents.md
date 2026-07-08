@@ -33,6 +33,11 @@
 	- Haven't tried, should be usable.
 	- Only OpenAI models; token limits unclear.
 
+### Agent multiplexers / terminals
+- https://herdr.dev/ - agent multiplexer; one terminal for all your coding agents.
+	- Runs each agent in its own real terminal on a server, survives SSH disconnects.
+	- Supports Claude Code, OpenCode, Codex, and more. No Electron, no account, no telemetry.
+
 ### Agent task orchestration / UI
 - https://www.vibekanban.com/ - manage agent tasks as a Kanban board.
 	- Supports a lot of backends, including opencode, which supports most providers.
