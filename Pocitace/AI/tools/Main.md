@@ -9,6 +9,8 @@
 - https://www.coderabbit.ai/ - AI code review
 - https://www.greptile.com/ - similar, maybe a bit better, but also more expensive
 - https://app.devin.ai/review - in addition to giving review notes, it shows your PR in a much more review-able way - groups related changes, shows context
+### AI infrastructure / serving
+- https://www.solo.io/agentic - enterprise AI agent infrastructure for Kubernetes; agentgateway for context-aware routing/securing of LLM/agent traffic, kagent for agent lifecycle management
 ### Sandboxing / isolation
 - https://github.com/containers/bubblewrap - low-level unprivileged sandboxing tool (used by Flatpak), leverages Linux user namespaces for non-root container isolation — useful for sandboxing AI agents
 ### Other stuff
