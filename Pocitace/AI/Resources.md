@@ -35,6 +35,7 @@
 - https://blog.bytebytego.com/p/a-practical-guide-to-becoming-an - ByteByteGo/Shah Rahman practical guide to AI-native engineering: context engineering, spec-driven development, critical verification, problem decomposition, and security guardrails.
 - https://www.aihero.dev/a-complete-guide-to-agents-md - guide to `AGENTS.md` files for AI coding agents.
 - https://www.augmentcode.com/guides/agentic-design-patterns - agentic design patterns catalog: workflows vs agents, selection criteria, anti-patterns, and framework implementations across multiple taxonomies (Andrew Ng, Anthropic, community).
+- https://x.com/NainsiDwiv50980/status/2074081151397073156 - thread on Claude Code repo structure as the real bottleneck: context ladder (CLAUDE.md → rules → skills → agents), ASKED vs FORCED enforcement, path-gated rules, agent memory, and local CLAUDE.md in danger zones.
 - https://github.com/AI-Builder-Club/skills (last update 06/2026) - Claude Code plugin marketplace with skills for codebase harnesses and compounding agent loops / shared file-based memory. Related launch/context thread: https://x.com/jasonzhou1993/status/2067937943545897143
 - https://developers.openai.com/api/docs/guides/prompt-guidance/ - OpenAI prompt guidance documentation.
 - https://senkorasic.com/articles/ai-coding - AI coding article with links to more resources.
