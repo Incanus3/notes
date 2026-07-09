@@ -55,7 +55,7 @@
 - https://x.com/akshay_pachaar/status/2069118430582866051 - Akshay Pachaar X post/video pointing to Boris Cherny's "loop engineering" framing: stop one-off prompting agents and design repeatable agent loops instead.
 - https://x.com/0xCodez/status/2064374643729773029 - thread on loop engineering: a roadmap from manual prompting to reusable agent loops and loop-designer workflows.
 - https://x.com/GergelyOrosz/status/2059688730659524730 - Gergely Orosz thread/video notes on OpenCode creator Dax's skepticism about AI productivity hype.
-- https://youtu.be/A8mokin_YOs - Kilo Code v1.1 announcement video introducing new skills: /wayfinder (territory-mapping for large work), /research, /implement, /to-spec, /to-tickets.
+- https://youtu.be/A8mokin_YOs - video showcasing agent skills v1.1: /wayfinder (territory-mapping for large work), /research, /implement, /to-spec, /to-tickets.
 
 ## RAG / architecture
 
