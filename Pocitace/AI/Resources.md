@@ -41,20 +41,21 @@
 - https://senkorasic.com/articles/ai-coding - AI coding article with links to more resources.
 - https://doneyli.substack.com/p/i-built-my-own-observability-for - article about building observability for Claude Code / AI coding workflows.
 - https://substack.com/@charliehills/note/c-237534376 - curated list of Claude Code resources.
-- https://kenhuangus.substack.com/p/recursive-self-improvement-a-technical - technical deep dive on recursive self-improvement loops in AI systems, using Anthropic’s “When AI builds itself” framing and Claude Code vs. Hermes Agent examples.
+- https://kenhuangus.substack.com/p/recursive-self-improvement-a-technical - technical deep dive on recursive self-improvement loops in AI systems, using Anthropic's "When AI builds itself" framing and Claude Code vs. Hermes Agent examples.
 - https://build-your-own-openclaw.kiyo-n-zane.com/ - tutorial/project for building an OpenClaw-like agent with tools, skills, memory, chat, and internet access.
-- https://generativeprogrammer.com/p/12-agentic-harness-patterns-from - article extracting reusable agentic application design patterns from Claude Code’s harness.
+- https://generativeprogrammer.com/p/12-agentic-harness-patterns-from - article extracting reusable agentic application design patterns from Claude Code's harness.
 - https://kenhuangus.substack.com/p/claude-fable-5-what-changed-and-how - Ken Huang article on Claude Fable 5 changes: less prescriptive prompting, effort as the main cost/latency dial, verifier subagents, file-based memory, and building loops around the model.
 - https://kenhuangus.substack.com/p/claude-fable-5-part-2-loop-engineering - Ken Huang article on loop engineering with Claude Fable 5: trigger-executor-grader-memory-stop-rule loops, cost routing across models, and the "maker is never the grader" rule.
 - https://openai.com/index/open-source-codex-orchestration-symphony/ - OpenAI article introducing Symphony, an open-source spec for orchestrating Codex agents from issue trackers such as Linear.
 - https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04 - Steve Yegge essay about a wild multi-agent orchestration idea and tooling.
 - https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b - Steve Yegge essay with an interesting formula for software survival odds, plus a useful UX idea for agent tools:
-  - “What I did was make their hallucinations real, over and over, by implementing whatever I saw the agents trying to do with Beads, until nearly every guess by an agent is now correct.”
+  - "What I did was make their hallucinations real, over and over, by implementing whatever I saw the agents trying to do with Beads, until nearly every guess by an agent is now correct."
 - https://x.com/akshay_pachaar/status/2054564519280804028 - link to a Hermes Agent masterclass covering self-evolving skills, memory, GEPA optimization, and multi-agent setup.
 - https://x.com/eng_khairallah1/status/2065764993425907903 - thread/video link about building AI agents with Claude Code and shifting from prompting to reusable loops.
-- https://x.com/akshay_pachaar/status/2069118430582866051 - Akshay Pachaar X post/video pointing to Boris Cherny’s “loop engineering” framing: stop one-off prompting agents and design repeatable agent loops instead.
+- https://x.com/akshay_pachaar/status/2069118430582866051 - Akshay Pachaar X post/video pointing to Boris Cherny's "loop engineering" framing: stop one-off prompting agents and design repeatable agent loops instead.
 - https://x.com/0xCodez/status/2064374643729773029 - thread on loop engineering: a roadmap from manual prompting to reusable agent loops and loop-designer workflows.
-- https://x.com/GergelyOrosz/status/2059688730659524730 - Gergely Orosz thread/video notes on OpenCode creator Dax’s skepticism about AI productivity hype.
+- https://x.com/GergelyOrosz/status/2059688730659524730 - Gergely Orosz thread/video notes on OpenCode creator Dax's skepticism about AI productivity hype.
+- https://youtu.be/A8mokin_YOs - Kilo Code v1.1 announcement video introducing new skills: /wayfinder (territory-mapping for large work), /research, /implement, /to-spec, /to-tickets.
 
 ## RAG / architecture
 
@@ -77,9 +78,9 @@
 
 ## Misc / review later
 
-- https://substack.com/chat/7722979/post/ca032f10-9efd-457b-8aa3-6182caba8212 - Substack chat post titled “Opinion AI in Emerging AI”; saved for later review.
+- https://substack.com/chat/7722979/post/ca032f10-9efd-457b-8aa3-6182caba8212 - Substack chat post titled "Opinion AI in Emerging AI"; saved for later review.
 - https://x.com/flavioAd/status/2019474660866290061 - X thread to review.
 - https://x.com/KarelDoostrlnck/status/2019477361557926281 - X thread to review.
 - https://cajundiscordian.medium.com/is-lamda-sentient-an-interview-ea64d916d917 - LaMDA sentience interview article.
 - https://www.decodingai.com/p/agentic-ai-engineering-guide-6-mistakes - guide to common mistakes in agentic AI engineering and how to avoid them.
-- https://x.com/TheAhmadOsman/status/2057590224729911346 - link to “LLMs 101: A Practical Guide (2026 Edition)” explaining tokens, transformers, attention, KV cache, and LLM runtime basics.
+- https://x.com/TheAhmadOsman/status/2057590224729911346 - link to "LLMs 101: A Practical Guide (2026 Edition)" explaining tokens, transformers, attention, KV cache, and LLM runtime basics.
