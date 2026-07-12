@@ -27,6 +27,7 @@
 ## Agents / coding / orchestration
 
 - https://addyo.substack.com/p/loop-engineering - Addy Osmani article on loop engineering for coding agents: scheduled discovery/triage, worktrees, skills, connectors, sub-agents, memory, and cost/oversight tradeoffs.
+- https://x.com/ataiiam/status/2074501252268937703 - “Building a Moat: Self Learning Agents” thread on product moats from harvesting learning signals in users’ browser/application activity.
 - https://addyo.substack.com/p/agentic-autonomy-levels - Addy Osmani article proposing two axes for agentic autonomy: agency of a single agent and orchestration skill across many agents, with verification deciding what level is safe.
 - https://drive.google.com/file/d/1IR7CddF_2FyQo_PdfBNTaEA50EGiVt2r/view - PDF backup of *The New SDLC With Vibe Coding*, a 51-page paper by Addy Osmani, Shubham Saboo, and Sokratis Kartakis on moving from ad-hoc prompting to agentic engineering.
 - https://drive.google.com/file/d/1qzKI4DKnyHRpXK1J3ATPqwaqLc0iNu-M/view - PDF backup of *Loop Engineering*, an IEEE article/book PDF on loop engineering.
