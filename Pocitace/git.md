@@ -1,3 +1,6 @@
+===== GitButler =====
+- https://github.com/gitbutlerapp/gitbutler (last update 07/2026) - Git-based desktop and CLI client designed for AI-assisted workflows, with stacked/parallel branches, visual commit rewriting, an undo timeline, conflict handling, forge integration, and AI helpers for commits and PRs.
+
 ===== git config =====
 user.name=Jakub Kalab
 user.email=jakub.kalab@friendlysystems.cz
