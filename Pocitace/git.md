@@ -1,6 +1,37 @@
 ===== GitButler =====
 - https://github.com/gitbutlerapp/gitbutler (last update 07/2026) - Git-based desktop and CLI client designed for AI-assisted workflows, with stacked/parallel branches, visual commit rewriting, an undo timeline, conflict handling, forge integration, and AI helpers for commits and PRs.
 
+===== GitButler on Linux Wayland: diagnostic/fix prompt =====
+'''
+GitButler will not start on my Linux Wayland session. Please diagnose and fix it
+without modifying the packaged application or changing global system graphics settings.
+Context:
+- GitButler is likely a Tauri/WebKitGTK app.
+- On an NVIDIA + Wayland system, it may exit with:
+Gdk-Message: Error 71 (Protocol error) dispatching to Wayland display.
+- First reproduce the failure and inspect GitButler's stderr/logs.
+- Test this narrow workaround before making it persistent:
+__NV_DISABLE_EXPLICIT_SYNC=1 gitbutler-tauri
+- If GitButler stays running and its UI starts normally, persist only this setting
+through a per-user desktop-entry override:
+~/.local/share/applications/GitButler.desktop
+The override should use the same fields as the packaged GitButler.desktop entry, but
+set:
+Exec=env __NV_DISABLE_EXPLICIT_SYNC=1 gitbutler-tauri
+Then:
+1. Validate it with desktop-file-validate.
+2. Refresh the user desktop database with update-desktop-database.
+3. Launch it via the normal desktop-entry path (for example, gtk-launch GitButler)
+and verify that GitButler remains running and logs no Wayland protocol error.
+Do not use GDK_BACKEND=x11 unless the NVIDIA explicit-sync workaround fails: I want
+native Wayland and the faster DMA-BUF renderer preserved.
+If __NV_DISABLE_EXPLICIT_SYNC=1 starts the app but causes visual artifacts, test the
+fallback:
+WEBKIT_DISABLE_DMABUF_RENDERER=1 gitbutler-tauri
+Explain that it disables WebKitGTK's DMA-BUF renderer and may reduce UI rendering
+performance before persisting it instead.
+'''
+
 ===== git config =====
 user.name=Jakub Kalab
 user.email=jakub.kalab@friendlysystems.cz
