@@ -34,6 +34,7 @@
 	- Only OpenAI models; token limits unclear.
 
 ### Agent multiplexers / terminals
+- https://github.com/stablyai/orca (last update 07/2026) - open-source desktop/mobile AI development environment for running CLI coding agents in parallel, each in an isolated Git worktree; includes terminal splits, agent monitoring/steering, IDE-style editing, GitHub/Linear review, and SSH worktrees.
 - https://herdr.dev/ - agent multiplexer; one terminal for all your coding agents.
 	- Runs each agent in its own real terminal on a server, survives SSH disconnects.
 	- Supports Claude Code, OpenCode, Codex, and more. No Electron, no account, no telemetry.
