@@ -9,6 +9,7 @@
 - https://www.youtube.com/@AICodeKing - AI coding-focused YouTube channel.
 - https://www.youtube.com/@aiexplained-official - AI Explained channel.
 - https://www.youtube.com/watch?v=68BS5GCRcBo - AI-related video to review.
+- https://x.com/ajitcodes/status/2078313818627907773 - X thread pointing to a free 2-hour Andrej Karpathy lecture and guide for building a first AI loop.
 - https://bloomberg.github.io/foml/ - Foundations of Machine Learning course/materials.
 
 ### Blogs / newsletters / people
