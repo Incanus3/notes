@@ -53,6 +53,7 @@
 
 - https://x.com/AnatoliKopadze/status/2068328135611822149 - thread/article on AI loops: goals plus execution, verification, retained state, and hard stop conditions; contrasts Claude Code, GPT self-check patterns, and Mira Telegram automations, with practical cost/oversight cautions.
 - https://x.com/AnatoliKopadze/status/2078106556634124335 - thread/article about Anthropic engineers building a full app with a three-agent plan/build/judge loop, cycling until the app works.
+- https://x.com/0xRicker/status/2078148918173368411 - X thread on Karpathy's warning that agent loops can generate low-diversity garbage at scale without visibility and evaluation.
 - https://addyo.substack.com/p/loop-engineering - Addy Osmani article on loop engineering for coding agents: scheduled discovery/triage, worktrees, skills, connectors, sub-agents, memory, and cost/oversight tradeoffs.
 - https://x.com/ataiiam/status/2074501252268937703 - “Building a Moat: Self Learning Agents” thread on product moats from harvesting learning signals in users’ browser/application activity.
 - https://addyo.substack.com/p/agentic-autonomy-levels - Addy Osmani article proposing two axes for agentic autonomy: agency of a single agent and orchestration skill across many agents, with verification deciding what level is safe.
