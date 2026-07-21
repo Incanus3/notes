@@ -48,6 +48,7 @@
 - https://build-your-own-openclaw.kiyo-n-zane.com/ - tutorial/project for building an OpenClaw-like agent with tools, skills, memory, chat, and internet access.
 - https://generativeprogrammer.com/p/12-agentic-harness-patterns-from - article extracting reusable agentic application design patterns from Claude Code's harness.
 - https://youtu.be/A8mokin_YOs - video showcasing agent skills v1.1: /wayfinder (territory-mapping for large work), /research, /implement, /to-spec, /to-tickets.
+- https://x.com/0xCodez/status/2079234800766816633 - X thread pointing to a 1-hour course on graph engineering / agentic knowledge graphs, covering construction of agentic graphs, multi-agent architecture, and building agentic graphs with Google/Claude.
 
 ### Agent loops, learning & autonomy
 
