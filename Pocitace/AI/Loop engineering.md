@@ -42,6 +42,7 @@ The most important safety rule:
 | Source | Main contribution | How I use it here |
 |---|---|---|
 | [The Anthropic Playbook PDF](https://drive.google.com/file/d/1qzKI4DKnyHRpXK1J3ATPqwaqLc0iNu-M/view) | Five moves, six parts, failure modes, first-loop checklist | Conceptual backbone |
+| [Graph Engineering with Claude](https://x.com/0xRafy/status/2079542513317118268) | 11-step roadmap from loops toward graph-structured agent architecture with Claude | Pointer to compare graph orchestration vocabulary against loop/harness framing |
 | [Addy Osmani: Loop Engineering](https://addyosmani.com/blog/loop-engineering/) | Tool-independent shape of loops; automations, worktrees, skills, connectors, subagents, state | Practical vocabulary |
 | [Addy Osmani: Agent Harness Engineering](https://addyosmani.com/blog/agent-harness-engineering/) | Agent = model + harness; every mistake becomes a rule | Harness/loop boundary and ratchet discipline |
 | [Addy Osmani: The Factory Model](https://addyosmani.com/blog/factory-model/) | Engineers orchestrate systems that write code; specs become leverage | Why loop quality depends on intent quality |
