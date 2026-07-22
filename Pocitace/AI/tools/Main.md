@@ -36,3 +36,4 @@
 - https://github.com/Tracer-Cloud/opensre - open-source framework and evaluation environment for building AI SRE agents connected to observability/ops tools
 - https://agentrq.com/ - human-in-the-loop task manager and real-time control plane for AI agents, with MCP supervisor/workspace endpoints
 - https://www.mindstudio.ai/ - no-code AI agent builder platform for business workflow automation; visual builder, 200+ models, 1000+ integrations, no markup on model costs
+- https://x.com/Av1dlive/status/2079607748396994789 - builder guide for creating a company OS using Kimi K3
