@@ -46,6 +46,7 @@ The most important safety rule:
 | [Addy Osmani: Loop Engineering](https://addyosmani.com/blog/loop-engineering/) | Tool-independent shape of loops; automations, worktrees, skills, connectors, subagents, state | Practical vocabulary |
 | [Addy Osmani: Agent Harness Engineering](https://addyosmani.com/blog/agent-harness-engineering/) | Agent = model + harness; every mistake becomes a rule | Harness/loop boundary and ratchet discipline |
 | [Addy Osmani: The Factory Model](https://addyosmani.com/blog/factory-model/) | Engineers orchestrate systems that write code; specs become leverage | Why loop quality depends on intent quality |
+| [Software Factories, Light and Dark](https://addyo.substack.com/p/software-factories-light-and-dark) | Software factory = harnessed loops at scale; light vs dark factories; human review and comprehension risk | Factory-level framing and autonomy caution |
 | [Addy Osmani: Comprehension Debt](https://addyosmani.com/blog/comprehension-debt/) | AI output can outpace human understanding; tests are necessary but insufficient | Risk model |
 | [Addy Osmani: Intent Debt](https://addyosmani.com/blog/intent-debt/) | The "why" must be externalized or parallel agents repeatedly lose it | Skills/specs/ADRs as durable intent |
 | [Addy Osmani: Agentic Engineering](https://addyosmani.com/blog/agentic-engineering/) | Agentic engineering is disciplined delegation, not blind acceptance | Human oversight framing |
