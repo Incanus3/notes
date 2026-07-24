@@ -42,6 +42,8 @@
 
 ### Agent harnesses, skills & developer tooling
 
+- https://www.decodingai.com/p/building-a-coding-agent-from-scratch-system-design - first lesson in an open-source Python course on building a coding-agent harness: agent loop, LLM providers, LSP feedback, context/memory, skills, permissions, sandboxing, durable remote execution, evals, and observability.
+
 - https://github.com/AI-Builder-Club/skills (last update 06/2026) - Claude Code plugin marketplace with skills for codebase harnesses and compounding agent loops / shared file-based memory. Related launch/context thread: https://x.com/jasonzhou1993/status/2067937943545897143
 - https://doneyli.substack.com/p/i-built-my-own-observability-for - article about building observability for Claude Code / AI coding workflows.
 - https://substack.com/@charliehills/note/c-237534376 - curated list of Claude Code resources.
