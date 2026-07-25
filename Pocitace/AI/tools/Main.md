@@ -11,6 +11,7 @@
 - https://app.devin.ai/review - in addition to giving review notes, it shows your PR in a much more review-able way - groups related changes, shows context
 ### AI infrastructure / serving
 - https://www.solo.io/agentic - enterprise AI agent infrastructure for Kubernetes; agentgateway for context-aware routing/securing of LLM/agent traffic, kagent for agent lifecycle management
+- https://github.com/steipete/CLIProxyAPI (last update 07/2026) - self-hosted local proxy that exposes OAuth-authenticated Claude Code, Codex, Gemini, Grok, and Kimi CLI accounts through OpenAI-, Anthropic-, Gemini-, Codex-, and Grok-compatible APIs, with multi-account load balancing and tool/multimodal support.
 ### Sandboxing / isolation
 - https://github.com/containers/bubblewrap - low-level unprivileged sandboxing tool (used by Flatpak), leverages Linux user namespaces for non-root container isolation — useful for sandboxing AI agents
 ### Other stuff
