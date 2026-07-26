@@ -53,6 +53,7 @@
 - https://x.com/0xCodez/status/2079234800766816633 - X thread pointing to a 1-hour course on graph engineering / agentic knowledge graphs, covering construction of agentic graphs, multi-agent architecture, and building agentic graphs with Google/Claude.
 - https://x.com/AnatoliKopadze/status/2080668775796314331 - Anatoli Kopadze’s practical introduction to graph engineering: represent agent work as nodes with explicit input/output contracts and data dependencies, remove fake sequential edges, and use fan-out → reduce → synthesize workflows.
 - https://drive.google.com/file/d/1OdGtGSpD2KnR6vrqvFohj0n5gqhH03f5/view - Andrew Ng’s 12-page *Graph Engineering* playbook for multi-agent systems, covering reflection, tool use, planning, and role-based agent coordination.
+- https://drive.google.com/file/d/1JuefNEiXNeCc3IcQUdyFYXy0R9bAfHxn/view - synthesis of Karpathy’s autoresearch/AgentHub concepts and Anthropic workflow patterns, arguing that knowledge graphs provide scalable shared memory for graph-grounded multi-agent systems.
 
 ### Agent loops, learning & autonomy
 
