@@ -92,6 +92,7 @@
 
 ## Security
 
+- https://distributedapps.ai/agent-listing - AI Agent Security Directory, a listing intended to help discover and assess agent-security projects and services.
 - https://github.com/slowmist/openclaw-security-practice-guide (last update 04/2026) - security practice guide for OpenClaw / AI assistant workflows.
 
 ## Model comparison / playgrounds
