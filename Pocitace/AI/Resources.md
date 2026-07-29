@@ -92,6 +92,7 @@
 
 ## Security
 
+- https://engineering.block.xyz/blog/codecrucible-a-blueprint-for-llm-driven-sast - Block Engineering’s design blueprint for CodeCrucible, an LLM-driven SAST scanner using whole-repository context, budget-aware chunking, LLM audit, and deterministic SARIF-oriented post-processing.
 - https://distributedapps.ai/agent-listing - AI Agent Security Directory, a listing intended to help discover and assess agent-security projects and services.
 - https://github.com/slowmist/openclaw-security-practice-guide (last update 04/2026) - security practice guide for OpenClaw / AI assistant workflows.
 
