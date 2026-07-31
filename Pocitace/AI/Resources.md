@@ -6,6 +6,7 @@
 
 - https://www.youtube.com/@t3dotgg - T3 / Theo channel with AI and software development videos.
 - https://www.youtube.com/@AndrejKarpathy - Andrej Karpathy's channel with AI, ML, and LLM explanations.
+- https://youtu.be/7xTGNNLPyMI - Andrej Karpathy’s 3.5-hour accessible walkthrough of how LLMs are pretrained, post-trained into assistants, and improved with reinforcement learning.
 - https://www.youtube.com/@AICodeKing - AI coding-focused YouTube channel.
 - https://www.youtube.com/@aiexplained-official - AI Explained channel.
 - https://www.youtube.com/watch?v=68BS5GCRcBo - AI-related video to review.
