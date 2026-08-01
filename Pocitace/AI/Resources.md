@@ -59,6 +59,7 @@
 
 ### Agent loops, learning & autonomy
 
+- https://x.com/Granite0x/status/2080665298609328201 - “A Graph of Loops”: a practical, repo-by-repo guide to assembling a full Claude Code agent system from GitHub components.
 - https://x.com/AnatoliKopadze/status/2068328135611822149 - thread/article on AI loops: goals plus execution, verification, retained state, and hard stop conditions; contrasts Claude Code, GPT self-check patterns, and Mira Telegram automations, with practical cost/oversight cautions.
 - https://x.com/AnatoliKopadze/status/2078106556634124335 - thread/article about Anthropic engineers building a full app with a three-agent plan/build/judge loop, cycling until the app works.
 - https://x.com/0xRicker/status/2078148918173368411 - X thread on Karpathy's warning that agent loops can generate low-diversity garbage at scale without visibility and evaluation.
