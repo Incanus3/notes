@@ -19,6 +19,7 @@
 - https://docs.sillytavern.app/ - locally installed user interface that allows you to interact with text generation LLMs, image generation engines, and TTS voice models
 - https://shumerprompt.com/prompts/clean-code-rules-prompt-554351c6-3bcb-4c20-9c77-f831b4aa6b0a
 - https://tamux.app/ - AI agent runtime with durable memory, approvals, sandboxing, and execution-path visibility
+- https://github.com/yc-software/qm (last update 08/2026) - open-source, multi-user agent platform for startups: scoped workspaces, memory, credentials, permissions, sandboxes, Slack/web collaboration, shared skills, and background jobs; supports Pi, OpenCode, Codex, and Claude Code harnesses.
 - https://www.assistant-ui.com/ - UI framework for AI assistant experiences
 - https://www.rwx.com/ - platform for building AI-powered browser and computer-use workflows
 - https://entire.io/ - developer platform that captures AI agent sessions alongside git commits
