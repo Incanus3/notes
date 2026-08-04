@@ -28,6 +28,7 @@
 - https://github.com/rohitg00/ai-engineering-from-scratch (last update 06/2026) - free open-source AI engineering curriculum with 503 lessons across math, ML, LLMs, tools, agents, and production systems.
 - https://pragprog.com/titles/jwpaieng/a-common-sense-guide-to-ai-engineering/ - PragProg book *A Common-Sense Guide to AI Engineering*.
 - https://agenticjumpstart.com/ - paid agentic AI course.
+- https://www.goodreads.com/book/show/204927599-nexus - Yuval Noah Harari’s *Nexus*: a history of information networks, from oral traditions and writing to AI, examining how they shape society, truth, and power.
 
 ## Agentic engineering
 
