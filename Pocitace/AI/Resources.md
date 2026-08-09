@@ -42,6 +42,7 @@
 - https://developers.openai.com/api/docs/guides/prompt-guidance/ - OpenAI prompt guidance documentation.
 - https://senkorasic.com/articles/ai-coding - AI coding article with links to more resources.
 - https://x.com/NainsiDwiv50980/status/2074081151397073156 - thread on Claude Code repo structure as the real bottleneck: context ladder (CLAUDE.md → rules → skills → agents), ASKED vs FORCED enforcement, path-gated rules, agent memory, and local CLAUDE.md in danger zones.
+- https://www.sonarsource.com/agent-centric-development/ - Sonar’s Agent Centric Development Cycle (AC/DC): guide agents with project context, independently verify generated code, then remediate findings in a continuous feedback loop.
 
 ### Agent harnesses, skills & developer tooling
 
