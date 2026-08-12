@@ -34,6 +34,13 @@
 
 ### AI-native engineering practices
 
+- https://emergingai.substack.com/p/context-harness-loop-graph-how-ai - overview of prompt, context, harness, loop, and graph engineering as nested layers of a reliable AI operation.
+- https://emergingai.substack.com/p/graph-engineering-the-next-step-after - guide to orchestrating worker, reviewer, evaluator, tools, retries, gates, state, and human approval as a graph.
+- https://emergingai.substack.com/p/loop-engineering-why-every-ai-engineer - guide to bounded discover → plan → execute → verify → iterate agent loops with real completion tests.
+- https://emergingai.substack.com/p/context-engineering-full-course - course on supplying models with structured instructions, documents, examples, tools, memory, task state, and constraints.
+- https://emergingai.substack.com/p/harness-engineering-the-simple-skill - overview of the system around an agent: repository context, tools, boundaries, verification, traces, and feedback loops.
+- https://emergingai.substack.com/p/how-to-master-prompt-engineering - practical guide to clear task briefs: background, constraints, examples, output format, and definition of success.
+
 - https://drive.google.com/file/d/1IR7CddF_2FyQo_PdfBNTaEA50EGiVt2r/view - PDF backup of *The New SDLC With Vibe Coding*, a 51-page paper by Addy Osmani, Shubham Saboo, and Sokratis Kartakis on moving from ad-hoc prompting to agentic engineering.
 - https://addyosmani.com/blog/intent-debt/ - Addy Osmani article on intent debt: missing written goals, constraints, and rationale that AI agents cannot reliably infer from code.
 - https://beyond.addy.ie/ - Addy Osmani guide to moving beyond vibe coding toward production AI-assisted engineering with specs, verification, security, and human expertise.
