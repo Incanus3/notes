@@ -92,6 +92,7 @@
 - https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b - Steve Yegge essay with an interesting formula for software survival odds, plus a useful UX idea for agent tools:
   - "What I did was make their hallucinations real, over and over, by implementing whatever I saw the agents trying to do with Beads, until nearly every guess by an agent is now correct."
 - https://cognition.com/blog/making-fable-cheaper-than-opus - Cognition’s Devin Fusion evaluation: a higher-priced lead model can cost less overall when it delegates early with spec-quality briefs, trusts a cheaper sidekick to implement/test, and reviews diffs rather than redoing the work; the advantage disappears on short or serial debugging tasks that cannot be decomposed.
+- https://youtu.be/Tos-zPxYPuc - walkthrough of an AgentOS-style autonomous multi-agent engineering workflow: disposable least-privilege containers, gated review steps, cost/time limits, and repeatable YAML-defined automation.
 
 ### Agent environments & experiments
 
