@@ -1,6 +1,9 @@
 ===== GitButler =====
 - https://github.com/gitbutlerapp/gitbutler (last update 07/2026) - Git-based desktop and CLI client designed for AI-assisted workflows, with stacked/parallel branches, visual commit rewriting, an undo timeline, conflict handling, forge integration, and AI helpers for commits and PRs.
 
+===== Hunk =====
+- https://www.hunk.dev/ - review-first terminal diff viewer with a single changeset stream, split/stacked layouts, syntax highlighting, keyboard navigation, and inline agent annotations (last update 08/2026)
+
 ===== GitButler on Linux Wayland: diagnostic/fix prompt =====
 '''
 GitButler will not start on my Linux Wayland session. Please diagnose and fix it
