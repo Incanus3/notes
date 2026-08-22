@@ -65,6 +65,7 @@
 - https://x.com/AnatoliKopadze/status/2080668775796314331 - Anatoli Kopadze’s practical introduction to graph engineering: represent agent work as nodes with explicit input/output contracts and data dependencies, remove fake sequential edges, and use fan-out → reduce → synthesize workflows.
 - https://drive.google.com/file/d/1OdGtGSpD2KnR6vrqvFohj0n5gqhH03f5/view - Andrew Ng’s 12-page *Graph Engineering* playbook for multi-agent systems, covering reflection, tool use, planning, and role-based agent coordination.
 - https://drive.google.com/file/d/1JuefNEiXNeCc3IcQUdyFYXy0R9bAfHxn/view - synthesis of Karpathy’s autoresearch/AgentHub concepts and Anthropic workflow patterns, arguing that knowledge graphs provide scalable shared memory for graph-grounded multi-agent systems.
+- https://x.com/rvaniaaaa/status/2090722810674975071 - diagram and framing for a “compiled wiki”: keep raw source material immutable, then use an agent to turn it into structured, linked evergreen knowledge for finished work.
 
 ### Agent loops, learning & autonomy
 
