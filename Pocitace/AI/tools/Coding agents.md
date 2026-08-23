@@ -60,6 +60,9 @@
 	- Desktop app with port forwarding, IDE integration (VS Code, Cursor, Xcode, JetBrains), and MCP support.
 - https://github.com/darrenhinde/OpenAgentsControl (last update 03/2026) - plan-first AI agent framework with approval-based execution.
 
+### Codebase intelligence / indexing
+- https://deusdata.github.io/codebase-memory-mcp/ - local MCP server that indexes repositories into a persistent code knowledge graph (functions, types, call chains, routes) for efficient structural and semantic queries; supports 158 languages and integrates with many coding agents, including KiloCode and OpenClaw.
+
 ### Context / prompts / skills
 - https://btca.dev/ - better context for agents.
 	- Ask questions about your libraries.
