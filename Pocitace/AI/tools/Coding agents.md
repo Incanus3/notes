@@ -63,6 +63,9 @@
 ### Codebase intelligence / indexing
 - https://deusdata.github.io/codebase-memory-mcp/ - local MCP server that indexes repositories into a persistent code knowledge graph (functions, types, call chains, routes) for efficient structural and semantic queries; supports 158 languages and integrates with many coding agents, including KiloCode and OpenClaw.
 
+### Agent personas / libraries
+- https://github.com/msitarzewski/agency-agents - open-source library of specialized, personality-driven agent definitions and workflows (engineering, marketing, sales, security, support, and more), installable or adaptable for Claude Code, Codex, KiloCode, OpenClaw, and other agent clients.
+
 ### Context / prompts / skills
 - https://btca.dev/ - better context for agents.
 	- Ask questions about your libraries.
