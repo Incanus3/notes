@@ -33,6 +33,7 @@
 	- Haven't tried, should be usable.
 	- Only OpenAI models; token limits unclear.
 - https://youtu.be/5Qu2SkSQeBU - video on treating the minimal, extensible Pi coding agent as a foundation for a personalized environment: TypeScript extensions add workflow phases, background terminals, web/file search, questions, and subagents; coordinate Pi, Codex, and Claude Code according to their strengths while reviewing architecture, reasoning, and diffs.
+- https://www.deepseek.com/harness/en/ - developer-preview, open-source agent harness whose models, tools, skills, sessions, sandboxes, storage, loops, scheduling, and UI are all swappable plugins.
 
 ### Agent multiplexers / terminals
 - https://traycer.ai/ - shared “nerve center” for agentic coding: runs Claude Code, Codex, OpenCode, Cursor, and custom/local agents in one workspace with shared task context, artifacts, agent-to-agent handoffs, and built-in planning/review workflows.
