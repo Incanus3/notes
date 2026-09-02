@@ -3,6 +3,7 @@
 - https://axiom.co/ - observability re-invented (e.g. structured logging)
 - https://umami.is/ - the modern analytics platform for effortless insights
 - https://mailpit.axllent.org/ - email & SMTP testing tool with API for developers
+- https://resend.com/ - email API for sending transactional and marketing email programmatically
 - https://defer.to/ - outsource your distractions
 	- Capture text you don't have time to think about now. We'll explain it later.
 - https://dokploy.com/

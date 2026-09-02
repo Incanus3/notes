@@ -1,5 +1,6 @@
 https://lnav.org
 https://github.com/goodroot/hyprwhspr
+https://caddyserver.com/ - open-source web server and reverse proxy with automatic HTTPS/TLS certificate management
 http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
 ### sitove utility
 - nslookup, host, dig, whois
