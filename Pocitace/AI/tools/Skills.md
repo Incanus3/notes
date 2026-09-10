@@ -1,5 +1,6 @@
 - https://skills.sh/ - a big skill library
 	- https://skills.sh/steveyegge/beads - beads
+	- https://www.skills.sh/ayghri/i-have-adhd/i-have-adhd - persistence prompt/skill for shaping every response into actionable, ADHD-friendly guidance
 	- https://skills.sh/obra/superpowers - these are reeeally good
 	- https://skills.sh/obra/superpowers-skills/getting-started-with-skills
 	- https://skills.sh/obra/episodic-memory/remembering-conversations
