@@ -12,6 +12,7 @@
 ### AI infrastructure / serving
 - https://www.solo.io/agentic - enterprise AI agent infrastructure for Kubernetes; agentgateway for context-aware routing/securing of LLM/agent traffic, kagent for agent lifecycle management
 - https://github.com/steipete/CLIProxyAPI (last update 07/2026) - self-hosted local proxy that exposes OAuth-authenticated Claude Code, Codex, Gemini, Grok, and Kimi CLI accounts through OpenAI-, Anthropic-, Gemini-, Codex-, and Grok-compatible APIs, with multi-account load balancing and tool/multimodal support.
+- https://typesafe.ai/ - AI lab building Jev, a System One Model for fast, low-cost, typed automation decisions with calibrated confidence.
 ### Sandboxing / isolation
 - https://github.com/containers/bubblewrap - low-level unprivileged sandboxing tool (used by Flatpak), leverages Linux user namespaces for non-root container isolation — useful for sandboxing AI agents
 ### Other stuff
