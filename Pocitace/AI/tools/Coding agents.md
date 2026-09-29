@@ -60,6 +60,7 @@
 	- Agent-agnostic: works with Claude Code, OpenCode, Cursor, or any CLI-based coding tool.
 	- Desktop app with port forwarding, IDE integration (VS Code, Cursor, Xcode, JetBrains), and MCP support.
 - https://github.com/darrenhinde/OpenAgentsControl (last update 03/2026) - plan-first AI agent framework with approval-based execution.
+- https://github.com/paperclipai/paperclip (last update 09/2026) - open-source control plane for teams of AI agents: task/project tracking, org roles and permissions, heartbeat/scheduled execution, approvals/audit trails, isolated workspaces, and budget/cost controls across OpenClaw, Claude Code, Codex, CLI, and web agents.
 
 ### Codebase intelligence / indexing
 - https://deusdata.github.io/codebase-memory-mcp/ - local MCP server that indexes repositories into a persistent code knowledge graph (functions, types, call chains, routes) for efficient structural and semantic queries; supports 158 languages and integrates with many coding agents, including KiloCode and OpenClaw.
