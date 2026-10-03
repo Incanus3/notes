@@ -12,6 +12,7 @@
 - https://www.youtube.com/watch?v=68BS5GCRcBo - AI-related video to review.
 - https://x.com/ajitcodes/status/2078313818627907773 - X thread pointing to a free 2-hour Andrej Karpathy lecture and guide for building a first AI loop.
 - https://x.com/hasantoxr/status/2082834171945447750 - curated list of 12 AI-engineering videos spanning LLM fundamentals, tokenization, attention, evaluation, interpretability, agents, and reinforcement learning.
+- https://x.com/karpathy/status/2105819303471976479 - Andrej Karpathy’s tips for making LLM outputs easier to understand: controlled-language explanations, diagrams, interactive HTML pages, and bespoke explainer videos.
 - https://bloomberg.github.io/foml/ - Foundations of Machine Learning course/materials.
 
 ### Blogs / newsletters / people
