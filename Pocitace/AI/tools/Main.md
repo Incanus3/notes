@@ -3,6 +3,7 @@
 	- choose any model
 	- $8/month
 ### Cloud services
+- https://namespace.so/ - high-performance globally distributed infrastructure platform with custom hardware, hypervisor, and scheduler.
 - https://www.daytona.io - run AI code in cloud sandbox
 - https://open-sandbox.ai/ - similar
 - https://sprites.dev/ - similar, but stateful
