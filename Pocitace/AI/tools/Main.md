@@ -7,6 +7,7 @@
 - https://www.daytona.io - run AI code in cloud sandbox
 - https://open-sandbox.ai/ - similar
 - https://sprites.dev/ - similar, but stateful
+- https://overalls.dev/ - open-source, self-hosted developer platform for persistent Firecracker microVMs with built-in AI-agent threads, preinstalled Claude Code/Codex, repo launch links, access controls, and fleet management.
 - https://www.coderabbit.ai/ - AI code review
 - https://www.greptile.com/ - similar, maybe a bit better, but also more expensive
 - https://app.devin.ai/review - in addition to giving review notes, it shows your PR in a much more review-able way - groups related changes, shows context
