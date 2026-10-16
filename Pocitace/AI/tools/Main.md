@@ -12,6 +12,7 @@
 - https://www.greptile.com/ - similar, maybe a bit better, but also more expensive
 - https://app.devin.ai/review - in addition to giving review notes, it shows your PR in a much more review-able way - groups related changes, shows context
 ### AI infrastructure / serving
+- https://qdrant.tech/ - Rust vector search engine/database for scalable AI retrieval: hybrid dense+sparse search, metadata filters, multi-vector retrieval, reranking, and REST/gRPC clients; self-hosted or cloud.
 - https://www.solo.io/agentic - enterprise AI agent infrastructure for Kubernetes; agentgateway for context-aware routing/securing of LLM/agent traffic, kagent for agent lifecycle management
 - https://github.com/steipete/CLIProxyAPI (last update 07/2026) - self-hosted local proxy that exposes OAuth-authenticated Claude Code, Codex, Gemini, Grok, and Kimi CLI accounts through OpenAI-, Anthropic-, Gemini-, Codex-, and Grok-compatible APIs, with multi-account load balancing and tool/multimodal support.
 - https://typesafe.ai/ - AI lab building Jev, a System One Model for fast, low-cost, typed automation decisions with calibrated confidence.
